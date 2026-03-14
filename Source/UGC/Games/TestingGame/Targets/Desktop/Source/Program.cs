@@ -1,5 +1,6 @@
 using VoxelEngine.RuntimeContexts.Standalone;
 using VoxelEngine.Platforms.Desktop;
+using VoxelEngine.Kernel.UGC;
 
 namespace TestingGame.Targets.Desktop;
 
@@ -11,7 +12,8 @@ public class Program
 
         try
         {
-            var layer = new GameState();
+            var game = new Game();
+            var layer = new GameState(game);
             var entryPoint = new EntryPoint();
             
             entryPoint.Run(args, layer);

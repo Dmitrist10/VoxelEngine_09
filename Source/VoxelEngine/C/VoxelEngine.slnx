@@ -1,0 +1,99 @@
+<Solution>
+
+  <Folder Name="/VoxelEngine/0_Common/">
+    <Project Path="Source/VoxelEngine/0_Common/Common.Core/Common.Core.csproj" />
+    <Project Path="Source/VoxelEngine/0_Common/Common.Diagnostics/Common.Diagnostics.csproj" />
+  </Folder>
+<!-- 
+
+  <Folder Name="/VoxelEngine/01_Kernel/">
+    <Project Path="Source/VoxelEngine/1_Kernel/Kernel.Core/Kernel.Core.csproj" />
+    <Project Path="Source/VoxelEngine/1_Kernel/Kernel.Runtime/Kernel.Runtime.csproj" />
+  </Folder>
+
+
+  
+  <Folder Name="/VoxelEngine/02_Engine/">
+    <Project Path="Source/VoxelEngine/2_Engine/Engine.Core/Engine.Core.csproj" />
+  </Folder>
+
+
+
+
+  <Folder Name="/VoxelEngine/03_Features/" >
+    <Project Path="Source/VoxelEngine/3_Features/Features.Client/Features.Client.csproj" />
+    <Project Path="Source/VoxelEngine/3_Features/Features.Server/Features.Server.csproj" />
+    <Project Path="Source/VoxelEngine/3_Features/Features.Rendering/Features.Rendering.csproj" />
+  </Folder>
+
+  <Folder Name="/VoxelEngine/03_Features/IO/">
+    <Project Path="Source/VoxelEngine/3_Features/Features.IO/Features.IO.FileManager/Features.IO.FileManager.csproj" />
+    <Project Path="Source/VoxelEngine/3_Features/Features.IO/Features.IO.Serialization/Features.IO.Serialization.csproj" />
+  </Folder>
+
+
+
+
+  <Folder Name="/VoxelEngine/04_Modules/" />
+
+  <Folder Name="/VoxelEngine/04_Modules/Graphics/">
+    <Project Path="Source/VoxelEngine/4_Modules/Graphics/Graphics.Adapter/Graphics.Adapter.csproj" />
+  </Folder>
+
+  <Folder Name="/VoxelEngine/04_Modules/Graphics/Drivers/">
+    <Project Path="Source/VoxelEngine/4_Modules/Graphics/Drivers/Graphics.Driver.OpenGl/Graphics.Driver.OpenGl.csproj" />
+    <Project Path="Source/VoxelEngine/4_Modules/Graphics/Drivers/Graphics.Driver.Veldrid/Graphics.Driver.Veldrid.csproj" />
+  </Folder>
+
+  <Folder Name="/VoxelEngine/04_Modules/Input/">
+    <Project Path="Source/VoxelEngine/4_Modules/Input/Input.Adapter/Input.Adapter.csproj" />
+    <Project Path="Source/VoxelEngine/4_Modules/Input/Input.Driver.Silk/Input.Driver.Silk.csproj" /> 
+  </Folder>
+
+  <Folder Name="/VoxelEngine/04_Modules/Physics/">
+    <Project Path="Source/VoxelEngine/4_Modules/Physics/Physics.Adapter/Physics.Adapter.csproj" />
+  </Folder>
+
+  <Folder Name="/VoxelEngine/04_Modules/Physics/Drivers/">
+    <!-- <Project Path="Source/VoxelEngine/4_Modules/Physics/Drivers/Physics.Driver.Bullet/Physics.Driver.Bullet.csproj" /> -->
+    <!-- <Project Path="Source/VoxelEngine/4_Modules/Physics/Drivers/Physics.Driver.Jolt/Physics.Driver.Jolt.csproj" /> -->
+    <Project Path="Source/VoxelEngine/4_Modules/Physics/Drivers/Physics.Driver.Bepu/Physics.Driver.Bepu.csproj" />
+  </Folder>
+
+
+
+  <!-- <Folder Name="/VoxelEngine/05_Packages/" /> -->
+
+  <Folder Name="/VoxelEngine/05_Packages/">
+    <Project Path="Source/VoxelEngine/5_Packages/Packages.Standart/Packages.Standart.csproj" />
+    <Project Path="Source/VoxelEngine/5_Packages/Packages.Voxel/Packages.Voxel.csproj" />
+  </Folder>
+
+
+  <Folder Name="/VoxelEngine/06_RuntineContext/" >
+    <Project Path="Source\VoxelEngine\6_RuntimeContext\RuntimeContext.Standalone\RuntimeContext.Standalone.csproj" />
+  </Folder>
+
+
+  <Folder Name="/VoxelEngine/07_Platforms/">
+    <Project Path="Source/VoxelEngine/7_Platforms/Platforms.Desktop/Platforms.Desktop.csproj" />
+    <Project Path="Source/VoxelEngine/7_Platforms/Platforms.Mobile.Android/Platforms.Mobile.Android.csproj" />
+  </Folder>
+ -->
+
+
+  <!-- UGC & Games -->
+
+  <Folder Name="/UGC/" />
+  <Folder Name="/UGC/Games/" />
+
+  <Folder Name="/UGC/Games/TestingGame/">
+    <Project Path="Source/UGC/Games/TestingGame/Source/Project/TestingGame.csproj" />
+  </Folder>
+  <Folder Name="/UGC/Games/TestingGame/Targets/">
+    <Project Path="Source/UGC/Games/TestingGame/Targets/Desktop/TestingGame.Targets.Desktop.csproj" />
+  </Folder>
+
+
+
+</Solution>

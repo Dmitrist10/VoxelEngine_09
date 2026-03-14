@@ -1,0 +1,131 @@
+{
+  "version": 2,
+  "dgSpecHash": "Baum7liyS9A=",
+  "success": true,
+  "projectFilePath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dmitrist10\\.nuget\\packages\\antlr\\3.4.1.9004\\antlr.3.4.1.9004.nupkg.sha512",
+    "C:\\Users\\Dmitrist10\\.nuget\\packages\\arch\\2.1.0\\arch.2.1.0.nupkg.sha512",
+    "C:\\Users\\Dmitrist10\\.nuget\\packages\\arch.lowlevel\\1.1.5\\arch.lowlevel.1.1.5.nupkg.sha512",
+    "C:\\Users\\Dmitrist10\\.nuget\\packages\\collections.pooled\\2.0.0-preview.27\\collections.pooled.2.0.0-preview.27.nupkg.sha512",
+    "C:\\Users\\Dmitrist10\\.nuget\\packages\\common.core\\1.0.0.40993\\common.core.1.0.0.40993.nupkg.sha512",
+    "C:\\Users\\Dmitrist10\\.nuget\\packages\\communitytoolkit.highperformance\\8.2.2\\communitytoolkit.highperformance.8.2.2.nupkg.sha512",
+    "C:\\Users\\Dmitrist10\\.nuget\\packages\\fluentvalidation\\5.1.0\\fluentvalidation.5.1.0.nupkg.sha512",
+    "C:\\Users\\Dmitrist10\\.nuget\\packages\\microsoft.aspnet.web.optimization\\1.1.3\\microsoft.aspnet.web.optimization.1.1.3.nupkg.sha512",
+    "C:\\Users\\Dmitrist10\\.nuget\\packages\\microsoft.extensions.objectpool\\7.0.0\\microsoft.extensions.objectpool.7.0.0.nupkg.sha512",
+    "C:\\Users\\Dmitrist10\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512",
+    "C:\\Users\\Dmitrist10\\.nuget\\packages\\newtonsoft.json\\5.0.4\\newtonsoft.json.5.0.4.nupkg.sha512",
+    "C:\\Users\\Dmitrist10\\.nuget\\packages\\webgrease\\1.5.2\\webgrease.1.5.2.nupkg.sha512",
+    "C:\\Users\\Dmitrist10\\.nuget\\packages\\zeroallocjobscheduler\\1.1.2\\zeroallocjobscheduler.1.1.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "Arch 2.1.0 hängt von Common.Core (>= 0.0.1-alpha) ab, aber Common.Core 0.0.1-alpha wurde nicht gefunden. Common.Core 1.0.0.40993 wurde stattdessen aufgelöst.",
+      "projectPath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "warningLevel": 1,
+      "filePath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "libraryId": "Common.Core",
+      "targetGraphs": [
+        "net11.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Das Paket \"Newtonsoft.Json\" 5.0.4 weist eine bekannte hoch Schweregrad-Sicherheitsanfälligkeit auf, https://github.com/advisories/GHSA-5crp-9r3c-p9vr.",
+      "projectPath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "warningLevel": 1,
+      "filePath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net11.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Das Paket \"Antlr 3.4.1.9004\" wurde nicht mit dem Projektzielframework \"net11.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "projectPath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "warningLevel": 1,
+      "filePath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "libraryId": "Antlr",
+      "targetGraphs": [
+        "net11.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Das Paket \"Common.Core 1.0.0.40993\" wurde nicht mit dem Projektzielframework \"net11.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "projectPath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "warningLevel": 1,
+      "filePath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "libraryId": "Common.Core",
+      "targetGraphs": [
+        "net11.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Das Paket \"FluentValidation 5.1.0\" wurde nicht mit dem Projektzielframework \"net11.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "projectPath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "warningLevel": 1,
+      "filePath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "libraryId": "FluentValidation",
+      "targetGraphs": [
+        "net11.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Das Paket \"Microsoft.AspNet.Web.Optimization 1.1.3\" wurde nicht mit dem Projektzielframework \"net11.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "projectPath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "warningLevel": 1,
+      "filePath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "libraryId": "Microsoft.AspNet.Web.Optimization",
+      "targetGraphs": [
+        "net11.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Das Paket \"Microsoft.Web.Infrastructure 1.0.0\" wurde nicht mit dem Projektzielframework \"net11.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "projectPath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "warningLevel": 1,
+      "filePath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "libraryId": "Microsoft.Web.Infrastructure",
+      "targetGraphs": [
+        "net11.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Das Paket \"Newtonsoft.Json 5.0.4\" wurde nicht mit dem Projektzielframework \"net11.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "projectPath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "warningLevel": 1,
+      "filePath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net11.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Das Paket \"WebGrease 1.5.2\" wurde nicht mit dem Projektzielframework \"net11.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "projectPath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "warningLevel": 1,
+      "filePath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "libraryId": "WebGrease",
+      "targetGraphs": [
+        "net11.0"
+      ]
+    }
+  ]
+}
