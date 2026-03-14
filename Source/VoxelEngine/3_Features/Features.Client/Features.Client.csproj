@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>VoxelEngine.Client</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\2_Engine\Engine.Core\Engine.Core.csproj" />
+    <ProjectReference Include="..\..\..\1_Kernel\Kernel.Core\Kernel.Core.csproj" />
+  </ItemGroup>
+
+</Project>

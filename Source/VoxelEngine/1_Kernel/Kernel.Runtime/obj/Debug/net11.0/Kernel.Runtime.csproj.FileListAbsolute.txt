@@ -1,0 +1,13 @@
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\bin\Kernel.Runtime\net11.0\Kernel.Runtime.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\bin\Kernel.Runtime\net11.0\Kernel.Runtime.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\bin\Kernel.Runtime\net11.0\Kernel.Runtime.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Kernel\Kernel.Runtime\obj\Debug\net11.0\Kernel.Runtime.csproj.AssemblyReference.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Kernel\Kernel.Runtime\obj\Debug\net11.0\Kernel.Runtime.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Kernel\Kernel.Runtime\obj\Debug\net11.0\Kernel.Runtime.AssemblyInfoInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Kernel\Kernel.Runtime\obj\Debug\net11.0\Kernel.Runtime.AssemblyInfo.cs
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Kernel\Kernel.Runtime\obj\Debug\net11.0\Kernel.Runtime.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Kernel\Kernel.Runtime\obj\Debug\net11.0\Kernel.R.E80349F5.Up2Date
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Kernel\Kernel.Runtime\obj\Debug\net11.0\Kernel.Runtime.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Kernel\Kernel.Runtime\obj\Debug\net11.0\refint\Kernel.Runtime.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Kernel\Kernel.Runtime\obj\Debug\net11.0\Kernel.Runtime.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Kernel\Kernel.Runtime\obj\Debug\net11.0\ref\Kernel.Runtime.dll

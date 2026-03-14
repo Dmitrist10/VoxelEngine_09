@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>VoxelEngine.Graphics.Veldrid</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\2_Engine\Engine.Core\Engine.Core.csproj" />
+  </ItemGroup>
+
+</Project>

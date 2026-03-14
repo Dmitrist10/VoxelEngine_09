@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>VoxelEngine.Platforms.Mobile.Android</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\1_Kernel\Kernel.Core\Kernel.Core.csproj" />
+    <ProjectReference Include="..\..\1_Kernel\Kernel.Runtime\Kernel.Runtime.csproj" />
+  </ItemGroup>
+</Project>

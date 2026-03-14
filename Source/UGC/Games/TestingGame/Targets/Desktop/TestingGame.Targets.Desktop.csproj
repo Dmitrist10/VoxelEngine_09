@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TestingGame.Targets.Desktop</RootNamespace>
+    <!-- <RootNamespace>Dmitrist10.TestingGame.Targets.Desktop</RootNamespace> -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\VoxelEngine\6_RuntimeContext\RuntimeContext.Standalone\RuntimeContext.Standalone.csproj" />
+    <ProjectReference Include="..\..\..\..\..\VoxelEngine\7_Platforms\Platforms.Desktop\Platforms.Desktop.csproj" />
+  </ItemGroup>
+
+</Project>
