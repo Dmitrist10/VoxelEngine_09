@@ -1,18 +1,18 @@
 using VoxelEngine.Common;
+using VoxelEngine.Core;
+using VoxelEngine.Core.Runtime;
 using VoxelEngine.Diagnostics;
-using VoxelEngine.Kernel;
-using VoxelEngine.Kernel.Runtime;
 
 namespace VoxelEngine.Platforms.Desktop;
 
 public sealed class EntryPoint
 {
 
-    public void Run(string[] args, IEngineState state)
+    public void Run(string[] args, IRuntimeContext context)
     {
         try
         {
-            Logger.Initialize(message: $"VoxelEngine initialized from Desktop platform with {state.Name} state.");
+            Logger.Initialize(message: $"VoxelEngine initialized from Desktop platform with {context.Name} RuntimeContext.");
             ArgumentsParser.BindArgs(args);
 
 #if AOT
@@ -38,7 +38,7 @@ public sealed class EntryPoint
 
                 Engine engine = new EngineBuilder().
                     WithPlatform(CreatePlatform())
-                    .WithEngineState(state)
+                    .WithRuntimeContext(context)
                     .Build();
 
                 Logger.Info("Starting engine...");

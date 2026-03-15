@@ -14,11 +14,11 @@
   "project": {
     "version": "0.0.1-alpha",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core\\Common.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj",
       "projectName": "Common.Core",
-      "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core\\Common.Core.csproj",
+      "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj",
       "packagesPath": "C:\\Users\\Dmitrist10\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core\\obj\\",
+      "outputPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\obj\\",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "fallbackFolders": [

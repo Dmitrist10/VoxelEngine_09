@@ -1,12 +1,18 @@
 namespace VoxelEngine.Core;
 
-public sealed class Universe
+public sealed partial class Universe
 {
 
-    public Scene Create()
+    private readonly List<Scene> _scenes = new();
+    private readonly UniverseGameServicesRegistry _servicesRegistry;
+    private readonly UniverseManager _universeManager;
+
+    public Universe(UniverseManager universeManager)
     {
-        Scene s = new();
-        return s;
+        _universeManager = universeManager;
+        _servicesRegistry = new UniverseGameServicesRegistry(this);
     }
+
+
 
 }

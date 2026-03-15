@@ -6,7 +6,7 @@ public sealed class UniverseManager
 {
     public Universe Create()
     {
-        Universe u = new();
+        Universe u = new(this);
         return u;
     }
 

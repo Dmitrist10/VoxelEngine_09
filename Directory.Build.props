@@ -63,7 +63,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="$(MSBuildThisFileDirectory)Source/VoxelEngine/0_Common/Common.Core/Common.Core.csproj" 
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Source/VoxelEngine/0_Common/Common.Core.csproj" 
                       Condition="'$(MSBuildProjectName)' != 'Common.Core'" />
     
     <!-- Core.IO depends on Core.Common, so Core.Common must NOT reference Core.IO to avoid a loop -->

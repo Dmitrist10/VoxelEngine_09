@@ -7,10 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\VoxelEngine\1_Kernel\Kernel.Core\Kernel.Core.csproj" />
-    <ProjectReference Include="..\..\..\..\..\VoxelEngine\2_Engine\Engine.Core\Engine.Core.csproj" />
-    <ProjectReference Include="..\..\..\..\..\VoxelEngine\6_RuntimeContext\RuntimeContext.Standalone\RuntimeContext.Standalone.csproj" />
-    <ProjectReference Include="..\..\..\..\..\VoxelEngine\7_Platforms\Platforms.Desktop\Platforms.Desktop.csproj" />
+    <ProjectReference Include="..\..\..\..\..\VoxelEngine\1_Engine\Engine.Core\Engine.Core.csproj" />
+    <ProjectReference Include="..\..\..\..\..\VoxelEngine\5_RuntimeContext\RuntimeContext.Standalone\RuntimeContext.Standalone.csproj" />
+    <ProjectReference Include="..\..\..\..\..\VoxelEngine\6_Platforms\Platforms.Desktop\Platforms.Desktop.csproj" />
     <ProjectReference Include="..\..\Source\Project\TestingGame.csproj" />
   </ItemGroup>
 

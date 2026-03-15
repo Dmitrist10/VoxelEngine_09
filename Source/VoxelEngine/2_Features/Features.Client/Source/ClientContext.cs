@@ -1,22 +1,22 @@
-using VoxelEngine.Kernel;
+// using VoxelEngine.Kernel;
 
-namespace VoxelEngine.Client;
+// namespace VoxelEngine.Client;
 
-public class ClientContext : IClientContext
-{
-    public void OnUpdate()
-    {
-    }
+// public class ClientContext : IClientContext
+// {
+//     public void OnUpdate()
+//     {
+//     }
 
-    public void OnRender()
-    {
-    }
+//     public void OnRender()
+//     {
+//     }
 
-    public void OnUniverseCreated()
-    {
-    }
+//     public void OnUniverseCreated()
+//     {
+//     }
 
-    public void OnSceneCreated()
-    {
-    }
-}
+//     public void OnSceneCreated()
+//     {
+//     }
+// }

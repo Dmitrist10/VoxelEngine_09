@@ -6,7 +6,7 @@ public abstract class Behavior : IBehavior
 {
     protected Actor Self;
     public Actor Owner => Self;
-    public Scene scene => Self.Scene;
+    public Scene scene => Self.scene;
 
     /// <summary>
     /// True after OnDestroy has been called. Accessing a destroyed behavior is invalid.
@@ -48,17 +48,14 @@ public abstract class Behavior : IBehavior
         // Self.scene.CommandBuffer.DestroyDeferred(e);
     }
 
-    // protected Actor Create()
-    // {
-    //     return default;
-    //     // return Self.scene.CreateActor();
-    // }
-
-    // protected Entity CreateEntity()
-    // {
-    //     return default;
-    //     // return Self.scene.CreateEntity();
-    // }
+    protected Actor Create()
+    {
+        return Self.scene.CreateActor();
+    }
+    protected Entity CreateEntity()
+    {
+        return Self.scene.CreateEntity();
+    }
 
     #endregion
 
@@ -106,6 +103,7 @@ public abstract class Behavior : IBehavior
         bool aAlive = a is not null && !a.IsDestroyed;
         bool bAlive = b is not null && !b.IsDestroyed;
 
+        // Check if the actors are dead
         if (!aAlive && !bAlive) return true; // both dead/null → equal
         if (!aAlive || !bAlive) return false; // one dead → not equal
         return ReferenceEquals(a, b);

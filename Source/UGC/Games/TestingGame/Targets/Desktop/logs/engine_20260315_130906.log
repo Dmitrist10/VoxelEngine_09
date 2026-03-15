@@ -1,0 +1,13 @@
+================================================================================
+Engine Log - Started at 2026-03-15 13:09:06
+================================================================================
+
+[13:09:06.997] [INFO ] VoxelEngine initialized from Desktop platform with Standalone RuntimeContext.
+[13:09:07.008] [INFO ] [EntryPoint:37] Creating engine
+[13:09:07.009] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[13:09:07.010] [INFO ] [EntryPoint:44] Starting engine...
+[13:09:07.014] [INFO ] [DesktopWindow:26] Creating window: 'VoxelEngine' (1280x720)
+[13:09:07.106] [INFO ] [DesktopWindow:40] Desktop window created successfully.
+[13:09:07.381] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: GraphicsContext
+[13:09:07.382] [INFO ] [GL_GraphicsDevice:9] Testing log
+[13:09:07.383] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat

@@ -5,7 +5,5 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\1_Kernel\Kernel.Core\Kernel.Core.csproj" />
-    <ProjectReference Include="..\..\1_Kernel\Kernel.Runtime\Kernel.Runtime.csproj" />
   </ItemGroup>
 </Project>

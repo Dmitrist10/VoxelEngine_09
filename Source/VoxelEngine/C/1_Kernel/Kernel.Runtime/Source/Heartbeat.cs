@@ -4,7 +4,7 @@ using VoxelEngine.Core;
 using VoxelEngine.Diagnostics;
 using VoxelEngine.Graphics;
 
-namespace VoxelEngine.Kernel.Runtime;
+namespace VoxelEngine.Core.Runtime;
 
 /// <summary>
 /// Main game loop. Handles fixed timesteps, variable updates, and frame limiting.

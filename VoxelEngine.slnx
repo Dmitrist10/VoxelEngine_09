@@ -14,12 +14,17 @@
   <Folder Name="/VoxelEngine/02_Features/" >
     <Project Path="Source/VoxelEngine/2_Features/Features.Client/Features.Client.csproj" />
     <Project Path="Source/VoxelEngine/2_Features/Features.Server/Features.Server.csproj" />
+    <Project Path="Source/VoxelEngine/2_Features/Features.Core/Features.Core.csproj" />
+
     <Project Path="Source/VoxelEngine/2_Features/Features.IO/Features.IO.csproj" />
-    <Project Path="Source/VoxelEngine/2_Features/Features.Physics/Features.Physics.csproj" />
+    <Project Path="Source/VoxelEngine/2_Features/Features.Assets/Features.Assets.csproj" />
+    
     <Project Path="Source/VoxelEngine/2_Features/Features.Graphics/Features.Graphics.csproj" />
-    <Project Path="Source/VoxelEngine/2_Features/Features.Rendering/Features.Rendering.csproj" />
     <Project Path="Source/VoxelEngine/2_Features/Features.Input/Features.Input.csproj" />
     <Project Path="Source/VoxelEngine/2_Features/Features.Audio/Features.Audio.csproj" />
+    <Project Path="Source/VoxelEngine/2_Features/Features.Physics/Features.Physics.csproj" />
+
+    <Project Path="Source/VoxelEngine/2_Features/Features.Rendering/Features.Rendering.csproj" />
   </Folder>
 
   <Folder Name="/VoxelEngine/02_Features/Editor/" >

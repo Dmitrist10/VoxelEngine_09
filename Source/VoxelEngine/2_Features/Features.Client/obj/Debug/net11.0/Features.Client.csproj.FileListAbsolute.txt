@@ -1,0 +1,14 @@
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Client\obj\Debug\net11.0\Features.Client.csproj.AssemblyReference.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Client\obj\Debug\net11.0\Features.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Client\obj\Debug\net11.0\Features.Client.AssemblyInfoInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Client\obj\Debug\net11.0\Features.Client.AssemblyInfo.cs
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Client\obj\Debug\net11.0\Features.Client.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Client\obj\Debug\net11.0\Features.Client.sourcelink.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\bin\Features.Client\net11.0\Features.Client.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\bin\Features.Client\net11.0\Features.Client.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\bin\Features.Client\net11.0\Features.Client.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Client\obj\Debug\net11.0\Features.3BD11087.Up2Date
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Client\obj\Debug\net11.0\Features.Client.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Client\obj\Debug\net11.0\refint\Features.Client.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Client\obj\Debug\net11.0\Features.Client.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Client\obj\Debug\net11.0\ref\Features.Client.dll

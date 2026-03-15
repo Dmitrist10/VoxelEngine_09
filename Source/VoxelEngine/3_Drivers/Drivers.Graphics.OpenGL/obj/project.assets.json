@@ -385,27 +385,13 @@
         "framework": ".NETCoreApp,Version=v11.0",
         "dependencies": {
           "Arch": "2.1.0",
-          "Common.Core": "0.0.1-alpha",
-          "Kernel.Core": "0.0.1-alpha"
-        },
-        "compile": {
-          "bin/placeholder/Engine.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Engine.Core.dll": {}
-        }
-      },
-      "Kernel.Core/0.0.1-alpha": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v11.0",
-        "dependencies": {
           "Common.Core": "0.0.1-alpha"
         },
         "compile": {
-          "bin/placeholder/Kernel.Core.dll": {}
+          "bin/placeholder/Engine.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Kernel.Core.dll": {}
+          "bin/placeholder/Engine.Core.dll": {}
         }
       }
     }
@@ -872,18 +858,13 @@
     },
     "Common.Core/0.0.1-alpha": {
       "type": "project",
-      "path": "../../../../0_Common/Common.Core/Common.Core.csproj",
-      "msbuildProject": "../../../../0_Common/Common.Core/Common.Core.csproj"
+      "path": "../../0_Common/Common.Core.csproj",
+      "msbuildProject": "../../0_Common/Common.Core.csproj"
     },
     "Engine.Core/0.0.1-alpha": {
       "type": "project",
-      "path": "../../../../2_Engine/Engine.Core/Engine.Core.csproj",
-      "msbuildProject": "../../../../2_Engine/Engine.Core/Engine.Core.csproj"
-    },
-    "Kernel.Core/0.0.1-alpha": {
-      "type": "project",
-      "path": "../../../../1_Kernel/Kernel.Core/Kernel.Core.csproj",
-      "msbuildProject": "../../../../1_Kernel/Kernel.Core/Kernel.Core.csproj"
+      "path": "../../1_Engine/Engine.Core/Engine.Core.csproj",
+      "msbuildProject": "../../1_Engine/Engine.Core/Engine.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -900,11 +881,11 @@
   "project": {
     "version": "0.0.1-alpha",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\4_Modules\\Graphics\\Drivers\\Graphics.Driver.OpenGl\\Graphics.Driver.OpenGl.csproj",
-      "projectName": "Graphics.Driver.OpenGl",
-      "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\4_Modules\\Graphics\\Drivers\\Graphics.Driver.OpenGl\\Graphics.Driver.OpenGl.csproj",
+      "projectUniqueName": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\3_Drivers\\Drivers.Graphics.OpenGL\\Drivers.Graphics.OpenGL.csproj",
+      "projectName": "Drivers.Graphics.OpenGL",
+      "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\3_Drivers\\Drivers.Graphics.OpenGL\\Drivers.Graphics.OpenGL.csproj",
       "packagesPath": "C:\\Users\\Dmitrist10\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\4_Modules\\Graphics\\Drivers\\Graphics.Driver.OpenGl\\obj\\",
+      "outputPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\3_Drivers\\Drivers.Graphics.OpenGL\\obj\\",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "fallbackFolders": [
@@ -927,11 +908,11 @@
         "net11.0": {
           "targetAlias": "net11.0",
           "projectReferences": {
-            "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core\\Common.Core.csproj": {
-              "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core\\Common.Core.csproj"
+            "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj": {
+              "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj"
             },
-            "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\2_Engine\\Engine.Core\\Engine.Core.csproj": {
-              "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\2_Engine\\Engine.Core\\Engine.Core.csproj"
+            "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj": {
+              "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj"
             }
           }
         }

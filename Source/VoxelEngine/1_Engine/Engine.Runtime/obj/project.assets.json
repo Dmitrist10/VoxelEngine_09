@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     "net11.0": {
-      "Antlr/3.4.1.9004": {
-        "type": "package",
-        "compile": {
-          "lib/Antlr3.Runtime.dll": {}
-        },
-        "runtime": {
-          "lib/Antlr3.Runtime.dll": {}
-        }
-      },
       "Arch/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -61,19 +52,6 @@
           }
         }
       },
-      "Common.Core/1.0.0.40993": {
-        "type": "package",
-        "dependencies": {
-          "FluentValidation": "5.1.0",
-          "Microsoft.AspNet.Web.Optimization": "1.1.3"
-        },
-        "compile": {
-          "lib/net45/Common.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Common.Core.dll": {}
-        }
-      },
       "CommunityToolkit.HighPerformance/8.2.2": {
         "type": "package",
         "compile": {
@@ -85,67 +63,6 @@
           "lib/net7.0/CommunityToolkit.HighPerformance.dll": {
             "related": ".pdb;.xml"
           }
-        }
-      },
-      "FluentValidation/5.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/Net40/FluentValidation.dll": {
-            "related": ".pdb;.XML"
-          }
-        },
-        "runtime": {
-          "lib/Net40/FluentValidation.dll": {
-            "related": ".pdb;.XML"
-          }
-        },
-        "resource": {
-          "lib/Net40/de/FluentValidation.resources.dll": {
-            "locale": "de"
-          },
-          "lib/Net40/es/FluentValidation.resources.dll": {
-            "locale": "es"
-          },
-          "lib/Net40/fr/FluentValidation.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/Net40/it/FluentValidation.resources.dll": {
-            "locale": "it"
-          },
-          "lib/Net40/ko/FluentValidation.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/Net40/nl/FluentValidation.resources.dll": {
-            "locale": "nl"
-          },
-          "lib/Net40/pl/FluentValidation.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/Net40/pt/FluentValidation.resources.dll": {
-            "locale": "pt"
-          },
-          "lib/Net40/ru/FluentValidation.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/Net40/sv/FluentValidation.resources.dll": {
-            "locale": "sv"
-          },
-          "lib/Net40/tr/FluentValidation.resources.dll": {
-            "locale": "tr"
-          }
-        }
-      },
-      "Microsoft.AspNet.Web.Optimization/1.1.3": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Web.Infrastructure": "1.0.0",
-          "WebGrease": "1.5.2"
-        },
-        "compile": {
-          "lib/net40/System.Web.Optimization.dll": {}
-        },
-        "runtime": {
-          "lib/net40/System.Web.Optimization.dll": {}
         }
       },
       "Microsoft.Extensions.ObjectPool/7.0.0": {
@@ -161,41 +78,6 @@
           }
         }
       },
-      "Microsoft.Web.Infrastructure/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
-        }
-      },
-      "Newtonsoft.Json/5.0.4": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "WebGrease/1.5.2": {
-        "type": "package",
-        "dependencies": {
-          "Antlr": "3.4.1.9004",
-          "Newtonsoft.Json": "5.0.4"
-        },
-        "compile": {
-          "lib/WebGrease.dll": {}
-        },
-        "runtime": {
-          "lib/WebGrease.dll": {}
-        }
-      },
       "ZeroAllocJobScheduler/1.1.2": {
         "type": "package",
         "compile": {
@@ -208,23 +90,34 @@
             "related": ".xml"
           }
         }
+      },
+      "Common.Core/0.0.1-alpha": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v11.0",
+        "compile": {
+          "bin/placeholder/Common.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Core.dll": {}
+        }
+      },
+      "Engine.Core/0.0.1-alpha": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v11.0",
+        "dependencies": {
+          "Arch": "2.1.0",
+          "Common.Core": "0.0.1-alpha"
+        },
+        "compile": {
+          "bin/placeholder/Engine.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Engine.Core.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "Antlr/3.4.1.9004": {
-      "sha512": "c1S+HBE+KYA5EBxtn25LEK02hHPH/tDQ6RviUTTCJpZIPoputtn8ArsQJy9lVJWZOnw37ufByO2Fmf1M8wpr8Q==",
-      "type": "package",
-      "path": "antlr/3.4.1.9004",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "antlr.3.4.1.9004.nupkg.sha512",
-        "antlr.nuspec",
-        "lib/Antlr3.Runtime.dll",
-        "lib/Antlr3.Runtime.pdb"
-      ]
-    },
     "Arch/2.1.0": {
       "sha512": "2enDQZVRsvnIEBZ/5LUrhq8R7CMY55wxSUhgcSGLoKXoWUe7MjwDZgVybhc/1M5UykVSDOg6kkBTBfhTdShOQA==",
       "type": "package",
@@ -274,18 +167,6 @@
         "lib/netstandard2.1/Collections.Pooled.xml"
       ]
     },
-    "Common.Core/1.0.0.40993": {
-      "sha512": "lITMuJs9salnZ2xOgmsk5UcX+Ve5DaohPTxOiKgL+/gKGo3Kf11zhj+WyVf64ztI7eeIggCQytKjM9/fV/09/Q==",
-      "type": "package",
-      "path": "common.core/1.0.0.40993",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "common.core.1.0.0.40993.nupkg.sha512",
-        "common.core.nuspec",
-        "lib/net45/Common.Core.dll"
-      ]
-    },
     "CommunityToolkit.HighPerformance/8.2.2": {
       "sha512": "+zIp8d3sbtYaRbM6hqDs4Ui/z34j7DcUmleruZlYLE4CVxXq+MO8XJyIs42vzeTYFX+k0Iq1dEbBUnQ4z/Gnrw==",
       "type": "package",
@@ -312,56 +193,6 @@
         "lib/netstandard2.1/CommunityToolkit.HighPerformance.xml"
       ]
     },
-    "FluentValidation/5.1.0": {
-      "sha512": "rPZ3mYUunfOWiUQ4QI4SHrDfBKHjyd4KOum57NJH/kcQiD6iqPdx+ZKmBCi2IRBrwA2oOiAPmTZGcJa2aGFuVQ==",
-      "type": "package",
-      "path": "fluentvalidation/5.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "fluentvalidation.5.1.0.nupkg.sha512",
-        "fluentvalidation.nuspec",
-        "lib/Net40/FluentValidation.XML",
-        "lib/Net40/FluentValidation.dll",
-        "lib/Net40/FluentValidation.pdb",
-        "lib/Net40/de/FluentValidation.resources.dll",
-        "lib/Net40/es/FluentValidation.resources.dll",
-        "lib/Net40/fr/FluentValidation.resources.dll",
-        "lib/Net40/it/FluentValidation.resources.dll",
-        "lib/Net40/ko/FluentValidation.resources.dll",
-        "lib/Net40/nl/FluentValidation.resources.dll",
-        "lib/Net40/pl/FluentValidation.resources.dll",
-        "lib/Net40/pt/FluentValidation.resources.dll",
-        "lib/Net40/ru/FluentValidation.resources.dll",
-        "lib/Net40/sv/FluentValidation.resources.dll",
-        "lib/Net40/tr/FluentValidation.resources.dll",
-        "lib/portable-win+net40+sl50+wp80/FluentValidation.XML",
-        "lib/portable-win+net40+sl50+wp80/FluentValidation.dll",
-        "lib/portable-win+net40+sl50+wp80/FluentValidation.pdb",
-        "lib/portable-win+net40+sl50+wp80/de/FluentValidation.resources.dll",
-        "lib/portable-win+net40+sl50+wp80/es/FluentValidation.resources.dll",
-        "lib/portable-win+net40+sl50+wp80/fr/FluentValidation.resources.dll",
-        "lib/portable-win+net40+sl50+wp80/it/FluentValidation.resources.dll",
-        "lib/portable-win+net40+sl50+wp80/nl/FluentValidation.resources.dll",
-        "lib/portable-win+net40+sl50+wp80/pl/FluentValidation.resources.dll",
-        "lib/portable-win+net40+sl50+wp80/pt/FluentValidation.resources.dll",
-        "lib/portable-win+net40+sl50+wp80/ru/FluentValidation.resources.dll",
-        "lib/portable-win+net40+sl50+wp80/sv/FluentValidation.resources.dll"
-      ]
-    },
-    "Microsoft.AspNet.Web.Optimization/1.1.3": {
-      "sha512": "TWKKpTWEdB8jXp2Vl2TXNKW30GBQg6nnh0y8iZWmGY5c1XY4f649vfDslNHsCsvk9JZxc1Rkm/UGDdfq4gjWRQ==",
-      "type": "package",
-      "path": "microsoft.aspnet.web.optimization/1.1.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Web.Optimization.dll",
-        "lib/net40/system.web.optimization.xml",
-        "microsoft.aspnet.web.optimization.1.1.3.nupkg.sha512",
-        "microsoft.aspnet.web.optimization.nuspec"
-      ]
-    },
     "Microsoft.Extensions.ObjectPool/7.0.0": {
       "sha512": "udvKco0sAVgYGTBnHUb0tY9JQzJ/nPDiv/8PIyz69wl1AibeCDZOLVVI+6156dPfHmJH7ws5oUJRiW4ZmAvuuA==",
       "type": "package",
@@ -381,59 +212,6 @@
         "microsoft.extensions.objectpool.nuspec"
       ]
     },
-    "Microsoft.Web.Infrastructure/1.0.0": {
-      "sha512": "FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
-      "type": "package",
-      "path": "microsoft.web.infrastructure/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/Microsoft.Web.Infrastructure.dll",
-        "microsoft.web.infrastructure.1.0.0.nupkg.sha512",
-        "microsoft.web.infrastructure.nuspec"
-      ]
-    },
-    "Newtonsoft.Json/5.0.4": {
-      "sha512": "aooA15Gkq+lfhbtHRpu0f4t9yV4WNCqbTB1wTqlI/d6yftWR7kcyOckXrTnpBd04vpZefVwYlVBRpi3zcP0vlA==",
-      "type": "package",
-      "path": "newtonsoft.json/5.0.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netcore45/Newtonsoft.Json.dll",
-        "lib/netcore45/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl4+wp7+win8/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl4+wp7+win8/Newtonsoft.Json.xml",
-        "lib/portable-net45+wp80+win8/Newtonsoft.Json.dll",
-        "lib/portable-net45+wp80+win8/Newtonsoft.Json.xml",
-        "newtonsoft.json.5.0.4.nupkg.sha512",
-        "newtonsoft.json.nuspec"
-      ]
-    },
-    "WebGrease/1.5.2": {
-      "sha512": "VoyDSOOugLx3q5IyOgEcjeYZQOqV9VWZQT57UtN4szlYhAmOcEjVfKWXbtRqBuX43pgyL9E7nMSIPoryC8Cu1Q==",
-      "type": "package",
-      "path": "webgrease/1.5.2",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/WebGrease.dll",
-        "tools/WG.exe",
-        "tools/install.ps1",
-        "tools/uninstall.ps1",
-        "webgrease.1.5.2.nupkg.sha512",
-        "webgrease.nuspec"
-      ]
-    },
     "ZeroAllocJobScheduler/1.1.2": {
       "sha512": "PKu/zSvwV1fWxt8+CEW15O9OlQ2zB9UoeAaor/aJJ0QeTKxxSjigczYLoVPKjYLAQu3ddZQd7Z3zplVTtUgigQ==",
       "type": "package",
@@ -446,11 +224,23 @@
         "zeroallocjobscheduler.1.1.2.nupkg.sha512",
         "zeroallocjobscheduler.nuspec"
       ]
+    },
+    "Common.Core/0.0.1-alpha": {
+      "type": "project",
+      "path": "../../0_Common/Common.Core.csproj",
+      "msbuildProject": "../../0_Common/Common.Core.csproj"
+    },
+    "Engine.Core/0.0.1-alpha": {
+      "type": "project",
+      "path": "../Engine.Core/Engine.Core.csproj",
+      "msbuildProject": "../Engine.Core/Engine.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net11.0": [
-      "Arch >= 2.1.0"
+      "Arch >= 2.1.0",
+      "Common.Core >= 0.0.1-alpha",
+      "Engine.Core >= 0.0.1-alpha"
     ]
   },
   "packageFolders": {
@@ -460,18 +250,18 @@
   "project": {
     "version": "0.0.1-alpha",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "projectUniqueName": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
       "projectName": "Engine.Runtime",
-      "projectPath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
+      "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\Engine.Runtime.csproj",
       "packagesPath": "C:\\Users\\Dmitrist10\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\obj\\",
+      "outputPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Runtime\\obj\\",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\NuGet.Config",
+        "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\NuGet.Config",
         "C:\\Users\\Dmitrist10\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -480,13 +270,20 @@
         "net11.0"
       ],
       "sources": {
-        "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\Librarys\\nupkg": {},
+        "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\Librarys\\nupkg": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net11.0": {
           "targetAlias": "net11.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj": {
+              "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj"
+            },
+            "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj": {
+              "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -827,97 +624,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Arch 2.1.0 hängt von Common.Core (>= 0.0.1-alpha) ab, aber Common.Core 0.0.1-alpha wurde nicht gefunden. Common.Core 1.0.0.40993 wurde stattdessen aufgelöst.",
-      "libraryId": "Common.Core",
-      "targetGraphs": [
-        "net11.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Das Paket \"Newtonsoft.Json\" 5.0.4 weist eine bekannte hoch Schweregrad-Sicherheitsanfälligkeit auf, https://github.com/advisories/GHSA-5crp-9r3c-p9vr.",
-      "libraryId": "Newtonsoft.Json",
-      "targetGraphs": [
-        "net11.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Das Paket \"Antlr 3.4.1.9004\" wurde nicht mit dem Projektzielframework \"net11.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
-      "libraryId": "Antlr",
-      "targetGraphs": [
-        "net11.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Das Paket \"Common.Core 1.0.0.40993\" wurde nicht mit dem Projektzielframework \"net11.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
-      "libraryId": "Common.Core",
-      "targetGraphs": [
-        "net11.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Das Paket \"FluentValidation 5.1.0\" wurde nicht mit dem Projektzielframework \"net11.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
-      "libraryId": "FluentValidation",
-      "targetGraphs": [
-        "net11.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Das Paket \"Microsoft.AspNet.Web.Optimization 1.1.3\" wurde nicht mit dem Projektzielframework \"net11.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
-      "libraryId": "Microsoft.AspNet.Web.Optimization",
-      "targetGraphs": [
-        "net11.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Das Paket \"Microsoft.Web.Infrastructure 1.0.0\" wurde nicht mit dem Projektzielframework \"net11.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
-      "libraryId": "Microsoft.Web.Infrastructure",
-      "targetGraphs": [
-        "net11.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Das Paket \"Newtonsoft.Json 5.0.4\" wurde nicht mit dem Projektzielframework \"net11.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
-      "libraryId": "Newtonsoft.Json",
-      "targetGraphs": [
-        "net11.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Das Paket \"WebGrease 1.5.2\" wurde nicht mit dem Projektzielframework \"net11.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
-      "libraryId": "WebGrease",
-      "targetGraphs": [
-        "net11.0"
-      ]
-    }
-  ]
+  }
 }

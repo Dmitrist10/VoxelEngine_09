@@ -1,4 +1,4 @@
-namespace VoxelEngine.Kernel.Runtime;
+namespace VoxelEngine.Core.Runtime;
 
 public sealed class Kernel
 {

@@ -1,0 +1,11 @@
+namespace VoxelEngine.Common;
+
+public enum Face
+{
+    Front,
+    Back,
+    Left,
+    Right,
+    Top,
+    Bottom
+}

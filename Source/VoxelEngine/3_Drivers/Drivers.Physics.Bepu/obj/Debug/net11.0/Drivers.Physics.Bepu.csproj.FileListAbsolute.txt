@@ -1,0 +1,14 @@
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\bin\Drivers.Physics.Bepu\net11.0\Drivers.Physics.Bepu.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\bin\Drivers.Physics.Bepu\net11.0\Drivers.Physics.Bepu.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\bin\Drivers.Physics.Bepu\net11.0\Drivers.Physics.Bepu.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\3_Drivers\Drivers.Physics.Bepu\obj\Debug\net11.0\Drivers.Physics.Bepu.csproj.AssemblyReference.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\3_Drivers\Drivers.Physics.Bepu\obj\Debug\net11.0\Drivers.Physics.Bepu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\3_Drivers\Drivers.Physics.Bepu\obj\Debug\net11.0\Drivers.Physics.Bepu.AssemblyInfoInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\3_Drivers\Drivers.Physics.Bepu\obj\Debug\net11.0\Drivers.Physics.Bepu.AssemblyInfo.cs
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\3_Drivers\Drivers.Physics.Bepu\obj\Debug\net11.0\Drivers.Physics.Bepu.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\3_Drivers\Drivers.Physics.Bepu\obj\Debug\net11.0\Drivers.Physics.Bepu.sourcelink.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\3_Drivers\Drivers.Physics.Bepu\obj\Debug\net11.0\Drivers..CC2C2731.Up2Date
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\3_Drivers\Drivers.Physics.Bepu\obj\Debug\net11.0\Drivers.Physics.Bepu.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\3_Drivers\Drivers.Physics.Bepu\obj\Debug\net11.0\refint\Drivers.Physics.Bepu.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\3_Drivers\Drivers.Physics.Bepu\obj\Debug\net11.0\Drivers.Physics.Bepu.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\3_Drivers\Drivers.Physics.Bepu\obj\Debug\net11.0\ref\Drivers.Physics.Bepu.dll

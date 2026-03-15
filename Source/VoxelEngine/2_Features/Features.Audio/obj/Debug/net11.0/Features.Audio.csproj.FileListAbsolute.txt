@@ -1,0 +1,6 @@
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Audio\obj\Debug\net11.0\Features.Audio.csproj.AssemblyReference.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Audio\obj\Debug\net11.0\Features.Audio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Audio\obj\Debug\net11.0\Features.Audio.AssemblyInfoInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Audio\obj\Debug\net11.0\Features.Audio.AssemblyInfo.cs
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Audio\obj\Debug\net11.0\Features.Audio.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Audio\obj\Debug\net11.0\Features.Audio.sourcelink.json

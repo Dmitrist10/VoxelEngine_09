@@ -5,14 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\1_Kernel\Kernel.Core\Kernel.Core.csproj" />
-    <ProjectReference Include="..\..\1_Kernel\Kernel.Runtime\Kernel.Runtime.csproj" />
-    <ProjectReference Include="..\..\3_Features\Features.Client\Features.Client.csproj" />
-    <ProjectReference Include="..\..\3_Features\Features.Server\Features.Server.csproj" />
+    <PackageReference Include="Silk.NET" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Silk.NET" />
+    <ProjectReference Include="..\..\1_Engine\Engine.Core\Engine.Core.csproj" />
+    <ProjectReference Include="..\..\1_Engine\Engine.Runtime\Engine.Runtime.csproj" />
+    <ProjectReference Include="..\..\2_Features\Features.Client\Features.Client.csproj" />
+    <ProjectReference Include="..\..\2_Features\Features.Server\Features.Server.csproj" />
+    <ProjectReference Include="..\..\3_Drivers\Drivers.Audio.OpenAl\Drivers.Audio.OpenAl.csproj" />
+    <ProjectReference Include="..\..\3_Drivers\Drivers.Graphics.OpenGL\Drivers.Graphics.OpenGL.csproj" />
+    <ProjectReference Include="..\..\3_Drivers\Drivers.Input.Silk\Drivers.Input.Silk.csproj" />
+    <ProjectReference Include="..\..\3_Drivers\Drivers.Physics.Bepu\Drivers.Physics.Bepu.csproj" />
   </ItemGroup>
 
 </Project>

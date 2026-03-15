@@ -1,0 +1,14 @@
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\bin\Features.Graphics\net11.0\Features.Graphics.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\bin\Features.Graphics\net11.0\Features.Graphics.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\bin\Features.Graphics\net11.0\Features.Graphics.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Graphics\obj\Debug\net11.0\Features.Graphics.csproj.AssemblyReference.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Graphics\obj\Debug\net11.0\Features.Graphics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Graphics\obj\Debug\net11.0\Features.Graphics.AssemblyInfoInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Graphics\obj\Debug\net11.0\Features.Graphics.AssemblyInfo.cs
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Graphics\obj\Debug\net11.0\Features.Graphics.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Graphics\obj\Debug\net11.0\Features.Graphics.sourcelink.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Graphics\obj\Debug\net11.0\Features.E1C7824B.Up2Date
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Graphics\obj\Debug\net11.0\Features.Graphics.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Graphics\obj\Debug\net11.0\refint\Features.Graphics.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Graphics\obj\Debug\net11.0\Features.Graphics.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Graphics\obj\Debug\net11.0\ref\Features.Graphics.dll

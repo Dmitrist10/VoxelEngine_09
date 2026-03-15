@@ -106,8 +106,7 @@
         "framework": ".NETCoreApp,Version=v11.0",
         "dependencies": {
           "Arch": "2.1.0",
-          "Common.Core": "0.0.1-alpha",
-          "Kernel.Core": "0.0.1-alpha"
+          "Common.Core": "0.0.1-alpha"
         },
         "compile": {
           "bin/placeholder/Engine.Core.dll": {}
@@ -116,17 +115,139 @@
           "bin/placeholder/Engine.Core.dll": {}
         }
       },
-      "Kernel.Core/0.0.1-alpha": {
+      "Features.Audio/0.0.1-alpha": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v11.0",
         "dependencies": {
-          "Common.Core": "0.0.1-alpha"
+          "Common.Core": "0.0.1-alpha",
+          "Engine.Core": "0.0.1-alpha"
         },
         "compile": {
-          "bin/placeholder/Kernel.Core.dll": {}
+          "bin/placeholder/Features.Audio.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Kernel.Core.dll": {}
+          "bin/placeholder/Features.Audio.dll": {}
+        }
+      },
+      "Features.Client/0.0.1-alpha": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v11.0",
+        "dependencies": {
+          "Common.Core": "0.0.1-alpha",
+          "Engine.Core": "0.0.1-alpha",
+          "Features.Rendering": "0.0.1-alpha"
+        },
+        "compile": {
+          "bin/placeholder/Features.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Features.Client.dll": {}
+        }
+      },
+      "Features.Core/0.0.1-alpha": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v11.0",
+        "dependencies": {
+          "Common.Core": "0.0.1-alpha",
+          "Engine.Core": "0.0.1-alpha",
+          "Features.Audio": "0.0.1-alpha",
+          "Features.Graphics": "0.0.1-alpha",
+          "Features.IO": "0.0.1-alpha",
+          "Features.Input": "0.0.1-alpha",
+          "Features.Physics": "0.0.1-alpha"
+        },
+        "compile": {
+          "bin/placeholder/Features.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Features.Core.dll": {}
+        }
+      },
+      "Features.Graphics/0.0.1-alpha": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v11.0",
+        "dependencies": {
+          "Common.Core": "0.0.1-alpha",
+          "Engine.Core": "0.0.1-alpha"
+        },
+        "compile": {
+          "bin/placeholder/Features.Graphics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Features.Graphics.dll": {}
+        }
+      },
+      "Features.Input/0.0.1-alpha": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v11.0",
+        "dependencies": {
+          "Common.Core": "0.0.1-alpha",
+          "Engine.Core": "0.0.1-alpha"
+        },
+        "compile": {
+          "bin/placeholder/Features.Input.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Features.Input.dll": {}
+        }
+      },
+      "Features.IO/0.0.1-alpha": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v11.0",
+        "dependencies": {
+          "Common.Core": "0.0.1-alpha",
+          "Engine.Core": "0.0.1-alpha"
+        },
+        "compile": {
+          "bin/placeholder/Features.IO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Features.IO.dll": {}
+        }
+      },
+      "Features.Physics/0.0.1-alpha": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v11.0",
+        "dependencies": {
+          "Common.Core": "0.0.1-alpha",
+          "Engine.Core": "0.0.1-alpha"
+        },
+        "compile": {
+          "bin/placeholder/Features.Physics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Features.Physics.dll": {}
+        }
+      },
+      "Features.Rendering/0.0.1-alpha": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v11.0",
+        "dependencies": {
+          "Common.Core": "0.0.1-alpha",
+          "Engine.Core": "0.0.1-alpha"
+        },
+        "compile": {
+          "bin/placeholder/Features.Rendering.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Features.Rendering.dll": {}
+        }
+      },
+      "Features.Server/0.0.1-alpha": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v11.0",
+        "dependencies": {
+          "Common.Core": "0.0.1-alpha",
+          "Engine.Core": "0.0.1-alpha",
+          "Features.Audio": "0.0.1-alpha",
+          "Features.Graphics": "0.0.1-alpha",
+          "Features.IO": "0.0.1-alpha"
+        },
+        "compile": {
+          "bin/placeholder/Features.Server.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Features.Server.dll": {}
         }
       }
     }
@@ -241,24 +362,67 @@
     },
     "Common.Core/0.0.1-alpha": {
       "type": "project",
-      "path": "../../../../../VoxelEngine/0_Common/Common.Core/Common.Core.csproj",
-      "msbuildProject": "../../../../../VoxelEngine/0_Common/Common.Core/Common.Core.csproj"
+      "path": "../../../../../VoxelEngine/0_Common/Common.Core.csproj",
+      "msbuildProject": "../../../../../VoxelEngine/0_Common/Common.Core.csproj"
     },
     "Engine.Core/0.0.1-alpha": {
       "type": "project",
-      "path": "../../../../../VoxelEngine/2_Engine/Engine.Core/Engine.Core.csproj",
-      "msbuildProject": "../../../../../VoxelEngine/2_Engine/Engine.Core/Engine.Core.csproj"
+      "path": "../../../../../VoxelEngine/1_Engine/Engine.Core/Engine.Core.csproj",
+      "msbuildProject": "../../../../../VoxelEngine/1_Engine/Engine.Core/Engine.Core.csproj"
     },
-    "Kernel.Core/0.0.1-alpha": {
+    "Features.Audio/0.0.1-alpha": {
       "type": "project",
-      "path": "../../../../../VoxelEngine/1_Kernel/Kernel.Core/Kernel.Core.csproj",
-      "msbuildProject": "../../../../../VoxelEngine/1_Kernel/Kernel.Core/Kernel.Core.csproj"
+      "path": "../../../../../VoxelEngine/2_Features/Features.Audio/Features.Audio.csproj",
+      "msbuildProject": "../../../../../VoxelEngine/2_Features/Features.Audio/Features.Audio.csproj"
+    },
+    "Features.Client/0.0.1-alpha": {
+      "type": "project",
+      "path": "../../../../../VoxelEngine/2_Features/Features.Client/Features.Client.csproj",
+      "msbuildProject": "../../../../../VoxelEngine/2_Features/Features.Client/Features.Client.csproj"
+    },
+    "Features.Core/0.0.1-alpha": {
+      "type": "project",
+      "path": "../../../../../VoxelEngine/2_Features/Features.Core/Features.Core.csproj",
+      "msbuildProject": "../../../../../VoxelEngine/2_Features/Features.Core/Features.Core.csproj"
+    },
+    "Features.Graphics/0.0.1-alpha": {
+      "type": "project",
+      "path": "../../../../../VoxelEngine/2_Features/Features.Graphics/Features.Graphics.csproj",
+      "msbuildProject": "../../../../../VoxelEngine/2_Features/Features.Graphics/Features.Graphics.csproj"
+    },
+    "Features.Input/0.0.1-alpha": {
+      "type": "project",
+      "path": "../../../../../VoxelEngine/2_Features/Features.Input/Features.Input.csproj",
+      "msbuildProject": "../../../../../VoxelEngine/2_Features/Features.Input/Features.Input.csproj"
+    },
+    "Features.IO/0.0.1-alpha": {
+      "type": "project",
+      "path": "../../../../../VoxelEngine/2_Features/Features.IO/Features.IO.csproj",
+      "msbuildProject": "../../../../../VoxelEngine/2_Features/Features.IO/Features.IO.csproj"
+    },
+    "Features.Physics/0.0.1-alpha": {
+      "type": "project",
+      "path": "../../../../../VoxelEngine/2_Features/Features.Physics/Features.Physics.csproj",
+      "msbuildProject": "../../../../../VoxelEngine/2_Features/Features.Physics/Features.Physics.csproj"
+    },
+    "Features.Rendering/0.0.1-alpha": {
+      "type": "project",
+      "path": "../../../../../VoxelEngine/2_Features/Features.Rendering/Features.Rendering.csproj",
+      "msbuildProject": "../../../../../VoxelEngine/2_Features/Features.Rendering/Features.Rendering.csproj"
+    },
+    "Features.Server/0.0.1-alpha": {
+      "type": "project",
+      "path": "../../../../../VoxelEngine/2_Features/Features.Server/Features.Server.csproj",
+      "msbuildProject": "../../../../../VoxelEngine/2_Features/Features.Server/Features.Server.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net11.0": [
       "Common.Core >= 0.0.1-alpha",
-      "Engine.Core >= 0.0.1-alpha"
+      "Engine.Core >= 0.0.1-alpha",
+      "Features.Client >= 0.0.1-alpha",
+      "Features.Core >= 0.0.1-alpha",
+      "Features.Server >= 0.0.1-alpha"
     ]
   },
   "packageFolders": {
@@ -295,11 +459,20 @@
         "net11.0": {
           "targetAlias": "net11.0",
           "projectReferences": {
-            "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core\\Common.Core.csproj": {
-              "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core\\Common.Core.csproj"
+            "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj": {
+              "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj"
             },
-            "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\2_Engine\\Engine.Core\\Engine.Core.csproj": {
-              "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\2_Engine\\Engine.Core\\Engine.Core.csproj"
+            "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj": {
+              "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj"
+            },
+            "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\2_Features\\Features.Client\\Features.Client.csproj": {
+              "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\2_Features\\Features.Client\\Features.Client.csproj"
+            },
+            "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\2_Features\\Features.Core\\Features.Core.csproj": {
+              "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\2_Features\\Features.Core\\Features.Core.csproj"
+            },
+            "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\2_Features\\Features.Server\\Features.Server.csproj": {
+              "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\2_Features\\Features.Server\\Features.Server.csproj"
             }
           }
         }

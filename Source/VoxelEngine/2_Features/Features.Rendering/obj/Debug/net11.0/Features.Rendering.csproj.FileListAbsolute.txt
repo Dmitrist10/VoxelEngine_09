@@ -1,0 +1,6 @@
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Rendering\obj\Debug\net11.0\Features.Rendering.csproj.AssemblyReference.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Rendering\obj\Debug\net11.0\Features.Rendering.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Rendering\obj\Debug\net11.0\Features.Rendering.AssemblyInfoInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Rendering\obj\Debug\net11.0\Features.Rendering.AssemblyInfo.cs
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Rendering\obj\Debug\net11.0\Features.Rendering.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Rendering\obj\Debug\net11.0\Features.Rendering.sourcelink.json

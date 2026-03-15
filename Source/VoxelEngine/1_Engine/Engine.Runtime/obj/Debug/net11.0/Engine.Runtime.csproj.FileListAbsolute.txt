@@ -1,0 +1,14 @@
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\bin\Engine.Runtime\net11.0\Engine.Runtime.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\bin\Engine.Runtime\net11.0\Engine.Runtime.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\bin\Engine.Runtime\net11.0\Engine.Runtime.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Runtime\obj\Debug\net11.0\Engine.Runtime.csproj.AssemblyReference.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Runtime\obj\Debug\net11.0\Engine.Runtime.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Runtime\obj\Debug\net11.0\Engine.Runtime.AssemblyInfoInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Runtime\obj\Debug\net11.0\Engine.Runtime.AssemblyInfo.cs
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Runtime\obj\Debug\net11.0\Engine.Runtime.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Runtime\obj\Debug\net11.0\Engine.Runtime.sourcelink.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Runtime\obj\Debug\net11.0\Engine.R.BBA89D94.Up2Date
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Runtime\obj\Debug\net11.0\Engine.Runtime.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Runtime\obj\Debug\net11.0\refint\Engine.Runtime.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Runtime\obj\Debug\net11.0\Engine.Runtime.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Runtime\obj\Debug\net11.0\ref\Engine.Runtime.dll

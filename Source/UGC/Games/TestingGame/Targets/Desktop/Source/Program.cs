@@ -1,6 +1,6 @@
 using VoxelEngine.RuntimeContexts.Standalone;
 using VoxelEngine.Platforms.Desktop;
-using VoxelEngine.Kernel.UGC;
+using VoxelEngine.Core.UGC;
 
 namespace TestingGame.Targets.Desktop;
 
@@ -12,11 +12,11 @@ public class Program
 
         try
         {
-            var game = new Game();
-            var layer = new GameState(game);
+            IGame game = new Game();
+            var context = new StandaloneRuntimeContext(game);
             var entryPoint = new EntryPoint();
             
-            entryPoint.Run(args, layer);
+            entryPoint.Run(args, context);
         }
         catch (Exception e)
         {
