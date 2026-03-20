@@ -10,6 +10,7 @@
         "dependencies": {
           "Common.Core": "0.0.1-alpha",
           "Engine.Core": "0.0.1-alpha",
+          "Features.Graphics": "0.0.1-alpha",
           "Silk.NET": "2.23.0"
         },
         "runtime": {
@@ -296,6 +297,18 @@
             "fileVersion": "0.0.1.0"
           }
         }
+      },
+      "Features.Graphics/0.0.1-alpha": {
+        "dependencies": {
+          "Common.Core": "0.0.1-alpha",
+          "Engine.Core": "0.0.1-alpha"
+        },
+        "runtime": {
+          "Features.Graphics.dll": {
+            "assemblyVersion": "0.0.1.0",
+            "fileVersion": "0.0.1.0"
+          }
+        }
       }
     }
   },
@@ -308,7 +321,7 @@
     "Arch/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2enDQZVRsvnIEBZ/5LUrhq8R7CMY55wxSUhgcSGLoKXoWUe7MjwDZgVybhc/1M5UykVSDOg6kkBTBfhTdShOQA==",
+      "sha512": "sha512-/0pzI07yQmtqTPn2l4z90yj3puQdX49nr3rxpyVb+xVPCaDgEWggvGN/TCi+kByIpuZ/r2FLvlCM/RLNomcSuQ==",
       "path": "arch/2.1.0",
       "hashPath": "arch.2.1.0.nupkg.sha512"
     },
@@ -465,6 +478,11 @@
       "sha512": ""
     },
     "Engine.Core/0.0.1-alpha": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Features.Graphics/0.0.1-alpha": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,30 @@
+================================================================================
+Engine Log - Started at 2026-03-16 18:33:13
+================================================================================
+
+[18:33:13.654] [INFO ] VoxelEngine initialized from Desktop platform with Standalone RuntimeContext.
+[18:33:13.665] [INFO ] [EntryPoint:37] Creating engine
+[18:33:13.668] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[18:33:13.674] [INFO ] [EntryPoint:47] Starting engine...
+[18:33:13.677] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IAssetsManager
+[18:33:13.683] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsDevice
+[18:33:13.685] [INFO ] [DesktopWindow:26] Creating window: 'VoxelEngine' (1280x720)
+[18:33:13.767] [INFO ] [DesktopWindow:40] Desktop window created successfully.
+[18:33:14.021] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: GraphicsContext
+[18:33:14.026] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: UniverseManager
+[18:33:14.027] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[18:33:14.028] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[18:33:14.029] [LINE ] ================================================================================
+[18:33:14.029] [LINE ] ================================================================================
+[18:33:14.029] [ERROR] [EntryPoint:56] Exception: [ServiceContainer] Requested service 'IWindowSurface' is not registered.
+[18:33:14.060] [ERROR] [EntryPoint:62] Exception Stack Trace:    at VoxelEngine.Core.EngineContext.Get[T]() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Core\Source\Kernel\EngineContext.cs:line 26
+   at VoxelEngine.Core.Runtime.EngineLoop.OnInitialize() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\EngineLoop.cs:line 24
+   at VoxelEngine.Core.Runtime.Heartbeat.Start(IUpdateCallbacksHandler callbacks, IWindowSurface window) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\Heartbeat.cs:line 72
+   at VoxelEngine.Core.Runtime.Engine.Run() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\Engine.cs:line 64
+   at VoxelEngine.Platforms.Desktop.EntryPoint.Run(String[] args, IRuntimeContext context, List`1 collections) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\6_Platforms\Platforms.Desktop\Source\EntryPoint.cs:line 48
+[18:33:14.061] [INFO ] [EntryPoint:66] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-16 18:33:14
+================================================================================

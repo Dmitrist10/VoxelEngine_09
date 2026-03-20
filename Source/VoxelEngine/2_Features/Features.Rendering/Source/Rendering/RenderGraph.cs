@@ -1,0 +1,42 @@
+using VoxelEngine.Assets;
+using VoxelEngine.Core;
+using VoxelEngine.Graphics;
+
+namespace VoxelEngine.Rendering;
+
+public sealed class RenderGraph
+{
+
+    private List<RenderPass> _renderPasses;
+
+    private IGraphicsDevice device = null!;
+
+    public BufferHandle CameraBuffer;
+
+    public RenderGraph()
+    {
+        _renderPasses = new List<RenderPass>();
+        _renderPasses.Add(new RP_ClearColor());
+        _renderPasses.Add(new RP_Forward());
+    }
+
+    public void Initialize()
+    {
+        device = EngineContext.Get<IGraphicsDevice>();
+
+        foreach (var renderPass in _renderPasses)
+        {
+            renderPass.Init(device, this);
+            renderPass.Initialize();
+        }
+    }
+
+    public void Execute(ReadOnlySpan<RenderCommand> renderCommands)
+    {
+        foreach (var renderPass in _renderPasses)
+        {
+            renderPass.Execute(renderCommands);
+        }
+    }
+
+}

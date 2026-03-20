@@ -119,7 +119,7 @@
   },
   "libraries": {
     "Arch/2.1.0": {
-      "sha512": "2enDQZVRsvnIEBZ/5LUrhq8R7CMY55wxSUhgcSGLoKXoWUe7MjwDZgVybhc/1M5UykVSDOg6kkBTBfhTdShOQA==",
+      "sha512": "/0pzI07yQmtqTPn2l4z90yj3puQdX49nr3rxpyVb+xVPCaDgEWggvGN/TCi+kByIpuZ/r2FLvlCM/RLNomcSuQ==",
       "type": "package",
       "path": "arch/2.1.0",
       "files": [

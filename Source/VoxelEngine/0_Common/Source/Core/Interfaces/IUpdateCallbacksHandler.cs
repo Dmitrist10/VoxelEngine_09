@@ -8,7 +8,11 @@ public interface IUpdateCallbacksHandler : IDisposable
     void OnFixedUpdate();
     void OnTick();
     void OnRender();
+    void OnSecond();
+
 }
+
+public readonly record struct Event_OnSecond();
 
 public interface IUpdatable { void OnUpdate(); }
 public interface IFixedUpdatable { void OnFixedUpdate(); }

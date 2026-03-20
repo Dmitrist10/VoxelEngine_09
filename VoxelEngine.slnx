@@ -7,11 +7,15 @@
   
   <Folder Name="/VoxelEngine/01_Engine/">
     <Project Path="Source/VoxelEngine/1_Engine/Engine.Core/Engine.Core.csproj" />
-    <Project Path="Source/VoxelEngine/1_Engine/Engine.Runtime/Engine.Runtime.csproj" />
   </Folder>
 
 
-  <Folder Name="/VoxelEngine/02_Features/" >
+  <Folder Name="/VoxelEngine/02_Modules/" >
+    <Project Path="Source/VoxelEngine/2_Modules/VoxelEngine.Graphics.OpenGL/VoxelEngine.Graphics.OpenGL.csproj" />
+  </Folder>
+
+
+  <!-- <Folder Name="/VoxelEngine/02_Features/" >
     <Project Path="Source/VoxelEngine/2_Features/Features.Client/Features.Client.csproj" />
     <Project Path="Source/VoxelEngine/2_Features/Features.Server/Features.Server.csproj" />
     <Project Path="Source/VoxelEngine/2_Features/Features.Core/Features.Core.csproj" />
@@ -25,17 +29,17 @@
     <Project Path="Source/VoxelEngine/2_Features/Features.Physics/Features.Physics.csproj" />
 
     <Project Path="Source/VoxelEngine/2_Features/Features.Rendering/Features.Rendering.csproj" />
-  </Folder>
+  </Folder> -->
 
   <Folder Name="/VoxelEngine/02_Features/Editor/" >
   </Folder>
 
-  <Folder Name="/VoxelEngine/03_Drivers/">
+  <!-- <Folder Name="/VoxelEngine/03_Drivers/">
     <Project Path="Source/VoxelEngine/3_Drivers/Drivers.Input.Silk/Drivers.Input.Silk.csproj" />
     <Project Path="Source/VoxelEngine/3_Drivers/Drivers.Audio.OpenAl/Drivers.Audio.OpenAl.csproj" />
     <Project Path="Source/VoxelEngine/3_Drivers/Drivers.Graphics.OpenGL/Drivers.Graphics.OpenGL.csproj" />
     <Project Path="Source/VoxelEngine/3_Drivers/Drivers.Physics.Bepu/Drivers.Physics.Bepu.csproj" />
-  </Folder>
+  </Folder> -->
 
 
   <Folder Name="/VoxelEngine/04_Packages/">
@@ -44,7 +48,7 @@
   </Folder>
 
   <Folder Name="/VoxelEngine/05_RuntimeContext/" >
-    <Project Path="Source\VoxelEngine\5_RuntimeContext\RuntimeContext.Standalone\RuntimeContext.Standalone.csproj" />
+    <Project Path="Source/VoxelEngine/5_RuntimeContext/RuntimeContext.Standalone/RuntimeContext.Standalone.csproj" />
   </Folder>
 
 

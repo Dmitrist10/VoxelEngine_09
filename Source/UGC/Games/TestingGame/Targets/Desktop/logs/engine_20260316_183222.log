@@ -1,0 +1,25 @@
+================================================================================
+Engine Log - Started at 2026-03-16 18:32:22
+================================================================================
+
+[18:32:22.264] [INFO ] VoxelEngine initialized from Desktop platform with Standalone RuntimeContext.
+[18:32:22.275] [INFO ] [EntryPoint:37] Creating engine
+[18:32:22.279] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[18:32:22.285] [INFO ] [EntryPoint:47] Starting engine...
+[18:32:22.287] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IAssetsManager
+[18:32:22.294] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsDevice
+[18:32:22.296] [INFO ] [DesktopWindow:26] Creating window: 'VoxelEngine' (1280x720)
+[18:32:22.378] [INFO ] [DesktopWindow:40] Desktop window created successfully.
+[18:32:22.632] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: GraphicsContext
+[18:32:22.637] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: UniverseManager
+[18:32:22.638] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[18:32:22.639] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[18:32:22.656] [DEBUG] [GameSetup:13] Game setup is running for scene: (Scene: scene_01, ID: 0)
+[18:32:25.414] [INFO ] [DesktopWindow:53] Desktop window closing...
+[18:32:25.414] [EXTRAINFO] [Heartbeat:115] Heartbeat Stopped
+[18:32:25.415] [INFO ] [EntryPoint:66] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-16 18:32:25
+================================================================================

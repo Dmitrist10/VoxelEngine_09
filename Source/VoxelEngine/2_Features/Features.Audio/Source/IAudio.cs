@@ -1,4 +1,5 @@
 using System.Numerics;
+using VoxelEngine.Assets;
 using VoxelEngine.Core;
 
 namespace VoxelEngine.Audio;

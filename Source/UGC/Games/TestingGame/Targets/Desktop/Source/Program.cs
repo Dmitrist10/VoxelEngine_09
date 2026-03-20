@@ -1,6 +1,10 @@
-using VoxelEngine.RuntimeContexts.Standalone;
-using VoxelEngine.Platforms.Desktop;
+using VoxelEngine.Core;
+using VoxelEngine.Client;
+using VoxelEngine.Server;
 using VoxelEngine.Core.UGC;
+using VoxelEngine.Core.Runtime;
+using VoxelEngine.Platforms.Desktop;
+using VoxelEngine.RuntimeContexts.Standalone;
 
 namespace TestingGame.Targets.Desktop;
 
@@ -15,8 +19,13 @@ public class Program
             IGame game = new Game();
             var context = new StandaloneRuntimeContext(game);
             var entryPoint = new EntryPoint();
+            var collections = new List<IFeatureCollection>()
+            {
+                new ClientFeaturesCollection(),
+                new ServerFeaturesCollection(),
+            };
             
-            entryPoint.Run(args, context);
+            entryPoint.Run(args, context, collections);
         }
         catch (Exception e)
         {

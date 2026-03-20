@@ -10,8 +10,9 @@ public sealed partial class Universe
 
     public Scene Create(string name = "scene_01")
     {
-        Scene s = new(name, (uint)_scenes.Count);
+        Scene s = new(this, name, (uint)_scenes.Count);
         _scenes.Add(s);
+        EngineContext.Publish(new Event_OnSceneCreated(s));
         return s;
     }
 
@@ -19,6 +20,7 @@ public sealed partial class Universe
     {
         _scenes.Remove(scene);
         Logger.ExtraInfo("A Scene was destroyed");
+        EngineContext.Publish(new Event_OnSceneDestroyed(scene));
         // _universeManager.CallSceneDestroyed(scene);
     }
 

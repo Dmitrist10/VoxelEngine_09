@@ -8,13 +8,15 @@ public sealed partial class Scene
     public readonly uint ID;
 
     public readonly World World;
+    public readonly Universe Universe;
 
     private readonly ActorsRegistry _actorsRegistry;
     private readonly SceneGameServicesRegistry _servicesRegistry;
     private readonly EntityProcessorsRegistry _entityProcessorsRegistry;
 
-    public Scene(string name, uint id)
+    internal Scene(Universe universe, string name, uint id)
     {
+        Universe = universe;
         Name = name;
         ID = id;
 

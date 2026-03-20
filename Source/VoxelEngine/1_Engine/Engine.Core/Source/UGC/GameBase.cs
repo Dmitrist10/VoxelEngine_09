@@ -1,19 +1,8 @@
 namespace VoxelEngine.Core.UGC;
 
-public abstract class GameBase : IGame
+public abstract class GameBase
 {
-    public UniverseManager universeManager { get; private set; } = null!;
-
-    public void SetUniverseManager(UniverseManager universeManager)
-    {
-        this.universeManager = universeManager;
-    }
-
-    // protected GameBase(UniverseManager universeManager)
-    // {
-    //     this.universeManager = universeManager;
-    // }
-
+    public UniverseManager universeManager { get; internal set; } = null!;
 
     public abstract void OnInitialize();
     public abstract void StartSession();

@@ -1,0 +1,41 @@
+================================================================================
+Engine Log - Started at 2026-03-16 18:52:35
+================================================================================
+
+[18:52:35.766] [INFO ] VoxelEngine initialized from Desktop platform with Standalone RuntimeContext.
+[18:52:35.776] [INFO ] [EntryPoint:37] Creating engine
+[18:52:35.779] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[18:52:35.834] [INFO ] [EntryPoint:47] Starting engine...
+[18:52:35.841] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsDevice
+[18:52:35.842] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IAssetsManager
+[18:52:35.845] [INFO ] [DesktopWindow:26] Creating window: 'VoxelEngine' (1280x720)
+[18:52:36.036] [INFO ] [DesktopWindow:40] Desktop window created successfully.
+[18:52:36.305] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IWindowSurface
+[18:52:36.306] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: UniverseManager
+[18:52:36.308] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: CamerasRegistries
+[18:52:36.311] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: RenderManager
+[18:52:36.312] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[18:52:36.313] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[18:52:36.483] [INFO ] [Game:17] guheugheuhgeui
+[18:52:36.485] [DEBUG] [Features.Rendering:39] OnUniverseCreated
+[18:52:36.647] [DEBUG] [Features.Rendering:33] OnSceneCreated
+[18:52:36.655] [DEBUG] [GameSetup:14] Game setup is running for scene: (Scene: scene_01, ID: 0)
+[18:52:36.719] [DEBUG] [RenderManager:47] AAA
+[18:52:36.725] [LINE ] ================================================================================
+[18:52:36.726] [LINE ] ================================================================================
+[18:52:36.726] [ERROR] [EntryPoint:56] Exception: Object reference not set to an instance of an object.
+[18:52:36.757] [ERROR] [EntryPoint:62] Exception Stack Trace:    at VoxelEngine.Rendering.RP_ClearColor.Execute(ReadOnlySpan`1 renderCommands) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Rendering\Source\Rendering\RenderPasses\RP_ClearColor.cs:line 16
+   at VoxelEngine.Rendering.RenderGraph.Execute(ReadOnlySpan`1 renderCommands) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Rendering\Source\Rendering\RenderGraph.cs:line 38
+   at VoxelEngine.Rendering.RenderManager.Render() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Rendering\Source\Rendering\RenderManager.cs:line 61
+   at VoxelEngine.Rendering.RenderingFeature.OnRender(Event_OnRender render) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\2_Features\Features.Rendering\Source\Features.Rendering.cs:line 28
+   at VoxelEngine.Core.EngineContext.Publish[T](T message) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Core\Source\EngineContext.cs:line 36
+   at VoxelEngine.Core.Runtime.EngineLoop.OnRender() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\EngineLoop.cs:line 45
+   at VoxelEngine.Core.Runtime.Heartbeat.Start(IUpdateCallbacksHandler callbacks, IWindowSurface window) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\Heartbeat.cs:line 108
+   at VoxelEngine.Core.Runtime.Engine.Run() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\Engine.cs:line 64
+   at VoxelEngine.Platforms.Desktop.EntryPoint.Run(String[] args, IRuntimeContext context, List`1 collections) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\VoxelEngine\6_Platforms\Platforms.Desktop\Source\EntryPoint.cs:line 48
+[18:52:36.758] [INFO ] [EntryPoint:66] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-16 18:52:36
+================================================================================

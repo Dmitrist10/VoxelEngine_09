@@ -12,6 +12,7 @@
     <ProjectReference Include="..\..\1_Engine\Engine.Core\Engine.Core.csproj" />
     <ProjectReference Include="..\..\1_Engine\Engine.Runtime\Engine.Runtime.csproj" />
     <ProjectReference Include="..\..\2_Features\Features.Client\Features.Client.csproj" />
+    <ProjectReference Include="..\..\2_Features\Features.Core\Features.Core.csproj" />
     <ProjectReference Include="..\..\2_Features\Features.Server\Features.Server.csproj" />
     <ProjectReference Include="..\..\3_Drivers\Drivers.Audio.OpenAl\Drivers.Audio.OpenAl.csproj" />
     <ProjectReference Include="..\..\3_Drivers\Drivers.Graphics.OpenGL\Drivers.Graphics.OpenGL.csproj" />

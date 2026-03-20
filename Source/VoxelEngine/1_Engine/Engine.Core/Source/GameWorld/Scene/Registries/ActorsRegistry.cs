@@ -30,7 +30,7 @@ internal sealed class ActorsRegistry
     [MethodImpl(AggressiveInlining)]
     internal Entity CreateEntity()
     {
-        var entity = _world.Create(new C_Actor(), new C_Transform(), new C_Hierarchy(), new C_WorldTransformMatrix());
+        var entity = _world.Create(new C_Actor(), new C_ID(), new C_Transform(), new C_Hierarchy(), new C_WorldTransformMatrix());
         EntitysCount++;
         return entity;
     }

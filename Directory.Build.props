@@ -6,6 +6,7 @@
 
     <BuildMode>JIT</BuildMode>
     <DefineConstants>$(DefineConstants);JIT</DefineConstants>
+    <DefineConstants>$(DefineConstants);GameDebug</DefineConstants>
     
     <!-- High-Performance JIT Optimizations -->
     <TieredPGO>true</TieredPGO>

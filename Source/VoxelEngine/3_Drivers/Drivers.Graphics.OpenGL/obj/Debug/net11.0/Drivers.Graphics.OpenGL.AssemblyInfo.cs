@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © 2026")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.1-alpha+6a367f3408554547f4c7be72c18d64a533d9ae72")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.1-alpha+06b69067d628d8e712ba5e4edbf00699ff785f01")]
 [assembly: System.Reflection.AssemblyProductAttribute("VoxelEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Drivers.Graphics.OpenGL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.0.1.0")]

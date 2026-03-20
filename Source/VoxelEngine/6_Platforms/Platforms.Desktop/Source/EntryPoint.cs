@@ -8,7 +8,7 @@ namespace VoxelEngine.Platforms.Desktop;
 public sealed class EntryPoint
 {
 
-    public void Run(string[] args, IRuntimeContext context)
+    public void Run(string[] args, IRuntimeContext context, List<IFeatureCollection> collections)
     {
         try
         {
@@ -36,9 +36,12 @@ public sealed class EntryPoint
             {
                 Logger.Info("Creating engine");
 
-                Engine engine = new EngineBuilder().
-                    WithPlatform(CreatePlatform())
+                Engine engine = new EngineBuilder()
+                    .WithPlatform(CreatePlatform())
                     .WithRuntimeContext(context)
+                    .AddFeatureCollection(new CoreFeaturesCollection())
+                    .AddFeatureCollection(new DesktopFeaturesCollection())
+                    .AddFeatureCollectionsList(collections)
                     .Build();
 
                 Logger.Info("Starting engine...");

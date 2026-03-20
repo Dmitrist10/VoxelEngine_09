@@ -115,12 +115,27 @@
           "bin/placeholder/Engine.Core.dll": {}
         }
       },
-      "Features.Rendering/0.0.1-alpha": {
+      "Features.Graphics/0.0.1-alpha": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v11.0",
         "dependencies": {
           "Common.Core": "0.0.1-alpha",
           "Engine.Core": "0.0.1-alpha"
+        },
+        "compile": {
+          "bin/placeholder/Features.Graphics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Features.Graphics.dll": {}
+        }
+      },
+      "Features.Rendering/0.0.1-alpha": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v11.0",
+        "dependencies": {
+          "Common.Core": "0.0.1-alpha",
+          "Engine.Core": "0.0.1-alpha",
+          "Features.Graphics": "0.0.1-alpha"
         },
         "compile": {
           "bin/placeholder/Features.Rendering.dll": {}
@@ -133,7 +148,7 @@
   },
   "libraries": {
     "Arch/2.1.0": {
-      "sha512": "2enDQZVRsvnIEBZ/5LUrhq8R7CMY55wxSUhgcSGLoKXoWUe7MjwDZgVybhc/1M5UykVSDOg6kkBTBfhTdShOQA==",
+      "sha512": "/0pzI07yQmtqTPn2l4z90yj3puQdX49nr3rxpyVb+xVPCaDgEWggvGN/TCi+kByIpuZ/r2FLvlCM/RLNomcSuQ==",
       "type": "package",
       "path": "arch/2.1.0",
       "files": [
@@ -248,6 +263,11 @@
       "type": "project",
       "path": "../../1_Engine/Engine.Core/Engine.Core.csproj",
       "msbuildProject": "../../1_Engine/Engine.Core/Engine.Core.csproj"
+    },
+    "Features.Graphics/0.0.1-alpha": {
+      "type": "project",
+      "path": "../Features.Graphics/Features.Graphics.csproj",
+      "msbuildProject": "../Features.Graphics/Features.Graphics.csproj"
     },
     "Features.Rendering/0.0.1-alpha": {
       "type": "project",

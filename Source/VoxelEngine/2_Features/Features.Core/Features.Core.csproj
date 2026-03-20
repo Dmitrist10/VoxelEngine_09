@@ -8,6 +8,7 @@
     <ProjectReference Include="..\..\1_Engine\Engine.Core\Engine.Core.csproj" />
 
     <ProjectReference Include="..\Features.IO\Features.IO.csproj" />
+    <ProjectReference Include="..\Features.Assets\Features.Assets.csproj" />
     
     <ProjectReference Include="..\Features.Audio\Features.Audio.csproj" />
     <ProjectReference Include="..\Features.Input\Features.Input.csproj" />

@@ -308,7 +308,7 @@
     "Arch/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2enDQZVRsvnIEBZ/5LUrhq8R7CMY55wxSUhgcSGLoKXoWUe7MjwDZgVybhc/1M5UykVSDOg6kkBTBfhTdShOQA==",
+      "sha512": "sha512-/0pzI07yQmtqTPn2l4z90yj3puQdX49nr3rxpyVb+xVPCaDgEWggvGN/TCi+kByIpuZ/r2FLvlCM/RLNomcSuQ==",
       "path": "arch/2.1.0",
       "hashPath": "arch.2.1.0.nupkg.sha512"
     },

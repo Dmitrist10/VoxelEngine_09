@@ -13,4 +13,9 @@
     <PackageReference Include="StbImageSharp" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\1_Engine\Engine.Core\Engine.Core.csproj" />
+  </ItemGroup>
+
+
 </Project>
