@@ -1,35 +1,35 @@
-using System.IO;
-using System;
-
 using StbImageSharp;
+
+using VoxelEngine.Core;
+using VoxelEngine.Graphics;
 using VoxelEngine.Diagnostics;
+using VoxelEngine.IO.FilesManagement;
 
 namespace VoxelEngine.Assets;
 
-public class TextureLoader : IAssetLoader<TextureData, TextureOptions>
+public static class TextureLoader
 {
-    public TextureData Load(string path, TextureOptions options)
+
+    public static TextureData Load(string path, TextureOptions options, IFileManager fileManager)
     {
-        TextureOptions options = TextureOptions.PixelArt;
-
-        byte[] fileData = File.ReadAllBytes(absolutePath);
-
+        byte[] fileData = fileManager.ReadAllBytes(path);
         ImageResult image = ImageResult.FromMemory(fileData, ColorComponents.RedGreenBlueAlpha);
 
         if (image.Data == null || image.Data.Length == 0)
         {
-            Logger.Error($"[TextureLoader] Failed to load {absolutePath} or empty.");
+            Logger.Error($"[TextureLoader] Failed to load {path} or empty.");
             return new TextureData([255, 0, 255, 255], 1, 1, options); // Magenta error texture
         }
 
-        byte[] pixelData = image.Data;
+        byte[] pixels = image.Data; // Copy pointer
 
         if (options.FlipVertically)
         {
-            pixelData = FlipVertically(image.Data, image.Width, image.Height);
+            pixels = FlipVertically(image.Data, image.Width, image.Height);
         }
 
-        return new TextureData(pixelData, (uint)image.Width, (uint)image.Height, options);
+        var data = new TextureData(pixels, (uint)image.Width, (uint)image.Height, (uint)image.Comp, options);
+        return data;
     }
 
     private static byte[] FlipVertically(byte[] data, int width, int height)
@@ -46,5 +46,6 @@ public class TextureLoader : IAssetLoader<TextureData, TextureOptions>
 
         return flipped;
     }
+
 
 }

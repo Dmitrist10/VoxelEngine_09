@@ -52,7 +52,7 @@
         "net11.0": {
           "targetAlias": "net11.0",
           "centralPackageVersions": {
-            "Arch": "2.1.0",
+            "Arch": "2.1.0-custom",
             "Arch.LowLevel": "1.1.5",
             "AssimpNet": "4.1.0",
             "BepuPhysics": "2.4.0",
@@ -422,7 +422,7 @@
           "dependencies": {
             "Arch": {
               "target": "Package",
-              "version": "[2.1.0, )",
+              "version": "[2.1.0-custom, )",
               "versionCentrallyManaged": true
             },
             "AssimpNet": {
@@ -447,7 +447,7 @@
             }
           },
           "centralPackageVersions": {
-            "Arch": "2.1.0",
+            "Arch": "2.1.0-custom",
             "Arch.LowLevel": "1.1.5",
             "AssimpNet": "4.1.0",
             "BepuPhysics": "2.4.0",

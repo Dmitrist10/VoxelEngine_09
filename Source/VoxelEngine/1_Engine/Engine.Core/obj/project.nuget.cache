@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gQxb3yRVldg=",
+  "dgSpecHash": "XcgW7VJNmXA=",
   "success": true,
   "projectFilePath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Dmitrist10\\.nuget\\packages\\arch\\2.1.0\\arch.2.1.0.nupkg.sha512",
+    "C:\\Users\\Dmitrist10\\.nuget\\packages\\arch\\2.1.0-custom\\arch.2.1.0-custom.nupkg.sha512",
     "C:\\Users\\Dmitrist10\\.nuget\\packages\\arch.lowlevel\\1.1.5\\arch.lowlevel.1.1.5.nupkg.sha512",
     "C:\\Users\\Dmitrist10\\.nuget\\packages\\assimpnet\\4.1.0\\assimpnet.4.1.0.nupkg.sha512",
     "C:\\Users\\Dmitrist10\\.nuget\\packages\\collections.pooled\\2.0.0-preview.27\\collections.pooled.2.0.0-preview.27.nupkg.sha512",

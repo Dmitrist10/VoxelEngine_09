@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\2_Features\\Features.Input\\Features.Input.csproj": {}
+    "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\2_Features\\Features.Input\\Features.Input.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj": {
+    "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj": {
       "version": "0.0.1-alpha",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj",
         "projectName": "Common.Core",
-        "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj",
+        "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj",
         "packagesPath": "C:\\Users\\Dmitrist10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\obj\\",
+        "outputPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\0_Common\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\NuGet.Config",
+          "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\NuGet.Config",
           "C:\\Users\\Dmitrist10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -27,7 +27,7 @@
           "net11.0"
         ],
         "sources": {
-          "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\Librarys\\nupkg": {},
+          "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\Librarys\\nupkg": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,7 +52,7 @@
         "net11.0": {
           "targetAlias": "net11.0",
           "centralPackageVersions": {
-            "Arch": "2.1.0",
+            "Arch": "2.1.0-custom",
             "Arch.LowLevel": "1.1.5",
             "AssimpNet": "4.1.0",
             "BepuPhysics": "2.4.0",
@@ -368,21 +368,21 @@
         }
       }
     },
-    "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj": {
+    "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj": {
       "version": "0.0.1-alpha",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj",
         "projectName": "Engine.Core",
-        "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj",
+        "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj",
         "packagesPath": "C:\\Users\\Dmitrist10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\obj\\",
+        "outputPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\NuGet.Config",
+          "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\NuGet.Config",
           "C:\\Users\\Dmitrist10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -391,15 +391,15 @@
           "net11.0"
         ],
         "sources": {
-          "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\Librarys\\nupkg": {},
+          "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\Librarys\\nupkg": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net11.0": {
             "targetAlias": "net11.0",
             "projectReferences": {
-              "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj": {
-                "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj"
+              "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj": {
+                "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj"
               }
             }
           }
@@ -422,12 +422,32 @@
           "dependencies": {
             "Arch": {
               "target": "Package",
-              "version": "[2.1.0, )",
+              "version": "[2.1.0-custom, )",
+              "versionCentrallyManaged": true
+            },
+            "AssimpNet": {
+              "target": "Package",
+              "version": "[4.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "NAudio": {
+              "target": "Package",
+              "version": "[2.2.1, )",
+              "versionCentrallyManaged": true
+            },
+            "NVorbis": {
+              "target": "Package",
+              "version": "[0.10.5, )",
+              "versionCentrallyManaged": true
+            },
+            "StbImageSharp": {
+              "target": "Package",
+              "version": "[2.30.15, )",
               "versionCentrallyManaged": true
             }
           },
           "centralPackageVersions": {
-            "Arch": "2.1.0",
+            "Arch": "2.1.0-custom",
             "Arch.LowLevel": "1.1.5",
             "AssimpNet": "4.1.0",
             "BepuPhysics": "2.4.0",
@@ -743,21 +763,21 @@
         }
       }
     },
-    "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\2_Features\\Features.Input\\Features.Input.csproj": {
+    "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\2_Features\\Features.Input\\Features.Input.csproj": {
       "version": "0.0.1-alpha",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\2_Features\\Features.Input\\Features.Input.csproj",
+        "projectUniqueName": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\2_Features\\Features.Input\\Features.Input.csproj",
         "projectName": "Features.Input",
-        "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\2_Features\\Features.Input\\Features.Input.csproj",
+        "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\2_Features\\Features.Input\\Features.Input.csproj",
         "packagesPath": "C:\\Users\\Dmitrist10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\2_Features\\Features.Input\\obj\\",
+        "outputPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\2_Features\\Features.Input\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\NuGet.Config",
+          "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\NuGet.Config",
           "C:\\Users\\Dmitrist10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -766,18 +786,18 @@
           "net11.0"
         ],
         "sources": {
-          "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\Librarys\\nupkg": {},
+          "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\Librarys\\nupkg": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net11.0": {
             "targetAlias": "net11.0",
             "projectReferences": {
-              "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj": {
-                "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj"
+              "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj": {
+                "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj"
               },
-              "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj": {
-                "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_09_VE_Sln_RingBased\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj"
+              "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj": {
+                "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj"
               }
             }
           }
@@ -798,7 +818,7 @@
         "net11.0": {
           "targetAlias": "net11.0",
           "centralPackageVersions": {
-            "Arch": "2.1.0",
+            "Arch": "2.1.0-custom",
             "Arch.LowLevel": "1.1.5",
             "AssimpNet": "4.1.0",
             "BepuPhysics": "2.4.0",

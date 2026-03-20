@@ -65,8 +65,18 @@ public sealed class Engine
         IAssetsManager assetsManager = new AssetsManager();
         EngineContext.Register<IAssetsManager>(assetsManager);
 
-        MeshLoader meshLoader = new();
-        assetsManager.MountAssetsLoader<STDMeshData, MeshOptions>(meshLoader);
+        // Register AssetsLoaders
+        IGraphicsFactory graphicsFactory = EngineContext.Get<IGraphicsDevice>().Factory;
+
+        assetsManager.MountAssetsLoader<MeshAsset, MeshOptions>(new AssetLoader_MeshAsset(graphicsFactory)); // GPU Mesh
+        assetsManager.MountAssetsLoader<STDMeshData, MeshOptions>(new AssetLoader_STDMeshData()); // CPU Vertecies
+        assetsManager.MountAssetsLoader<MeshDataRaw, MeshOptions>(new AssetLoader_MeshDataRaw()); // Raw CPU Mesh Data (Pos, Norm, UV)
+
+        assetsManager.MountAssetsLoader<TextureData, TextureOptions>(new AssetsLoader_TextureData(fileManager)); // Raw CPU Texture Data
+        assetsManager.MountAssetsLoader<TextureAsset, TextureOptions>(new AssetsLoader_TextureAsset(fileManager, graphicsFactory)); // GPU Texture
+
+        assetsManager.MountAssetsLoader<ShaderData, ShaderOptions>(new AssetsLoader_ShaderData(fileManager, graphicsFactory)); // Raw CPU ShaderData
+        // assetsManager.MountAssetsLoader<PipelineAsset, PipelineOptions>(new AssetsLoader_PipelineAsset(fileManager, graphicsFactory)); // Raw CPU PipelineAsset
     }
 
     private void Run()

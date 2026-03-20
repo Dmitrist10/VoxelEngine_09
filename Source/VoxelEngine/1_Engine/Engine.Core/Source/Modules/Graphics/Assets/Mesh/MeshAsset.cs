@@ -43,19 +43,19 @@ public record VoxelMeshData : MeshData<VoxelVertex>
 }
 
 
-public record MeshDataRaw(Vector3 Position, Vector3 Normal, Vector2 TexCoord)
+public readonly record struct MeshDataRaw(Vector3[] Position, Vector3[] Normal, Vector2[] TexCoord) : IAssetData
 {
     public static readonly uint Size = 12 + 12 + 8;
 }
-public record MeshDataRawPositions(Vector3 Position)
+public readonly record struct MeshDataRawPositions(Vector3[] Position) : IAssetData
 {
     public static readonly uint Size = 12;
 }
-public record MeshDataRawNormals(Vector3 Normal)
+public readonly record struct MeshDataRawNormals(Vector3[] Normal) : IAssetData
 {
     public static readonly uint Size = 12;
 }
-public record MeshDataRawTexCoords(Vector2 TexCoord)
+public readonly record struct MeshDataRawTexCoords(Vector2[] TexCoord) : IAssetData
 {
     public static readonly uint Size = 8;
 }

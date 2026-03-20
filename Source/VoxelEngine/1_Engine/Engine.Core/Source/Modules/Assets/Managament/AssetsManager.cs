@@ -35,10 +35,10 @@ public sealed class AssetsManager : IAssetsManager
 
     public AssetsManager()
     {
-        // EngineContext.Subscribe<Event_OnSecond>(OnSecond);
+        // EngineContext.Subscribe<Event_OnSecond>(PerformCleanUp);
     }
 
-    private void OnSecond(Event_OnSecond @event)
+    private void PerformCleanUp(Event_OnSecond @event)
     {
         foreach (var item in _assetCache)
         {
@@ -88,7 +88,7 @@ public sealed class AssetsManager : IAssetsManager
             TAsset asset = typedLoader.Load(path, options);
             var item = new AssetCacheItem(key, asset);
             _assetCache.Add(key.VirtualPath, item);
-            
+
             return asset;
         }
 
@@ -106,16 +106,16 @@ public sealed class AssetsManager : IAssetsManager
         {
             item.RemoveReference();
         }
-        #if GameDebug
+#if GameDebug
         else
         {
             Logger.Error($"Asset under path: '{path}' not found in cache");
         }
-        #endif
+#endif
     }
 
     public void FreeAsset<TAsset>(TAsset asset) where TAsset : IAsset
     {
-        throw new NotImplementedException();
+        throw new NotImplementedException("zhe shi not implemented yet!");
     }
 }

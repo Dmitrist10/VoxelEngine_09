@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net11.0": {
-      "Arch/2.1.0": {
+      "Arch/2.1.0-custom": {
         "type": "package",
         "dependencies": {
           "Arch.LowLevel": "1.1.5",
@@ -275,13 +275,13 @@
     }
   },
   "libraries": {
-    "Arch/2.1.0": {
-      "sha512": "/0pzI07yQmtqTPn2l4z90yj3puQdX49nr3rxpyVb+xVPCaDgEWggvGN/TCi+kByIpuZ/r2FLvlCM/RLNomcSuQ==",
+    "Arch/2.1.0-custom": {
+      "sha512": "OVO39ZWSXlfJaUNipnjFVMXs8LXbW30VCuUELG5gRUHcQilmiHF5r7/9niZuv9HB0noD/FOw1lXKASNVo6Awyw==",
       "type": "package",
-      "path": "arch/2.1.0",
+      "path": "arch/2.1.0-custom",
       "files": [
         ".nupkg.metadata",
-        "arch.2.1.0.nupkg.sha512",
+        "arch.2.1.0-custom.nupkg.sha512",
         "arch.nuspec",
         "lib/net11.0/Arch.dll",
         "lib/net11.0/Arch.xml"
@@ -566,7 +566,7 @@
   },
   "projectFileDependencyGroups": {
     "net11.0": [
-      "Arch >= 2.1.0",
+      "Arch >= 2.1.0-custom",
       "AssimpNet >= 4.1.0",
       "Common.Core >= 0.0.1-alpha",
       "NAudio >= 2.2.1",
@@ -632,7 +632,7 @@
         "dependencies": {
           "Arch": {
             "target": "Package",
-            "version": "[2.1.0, )",
+            "version": "[2.1.0-custom, )",
             "versionCentrallyManaged": true
           },
           "AssimpNet": {
@@ -657,7 +657,7 @@
           }
         },
         "centralPackageVersions": {
-          "Arch": "2.1.0",
+          "Arch": "2.1.0-custom",
           "Arch.LowLevel": "1.1.5",
           "AssimpNet": "4.1.0",
           "BepuPhysics": "2.4.0",
