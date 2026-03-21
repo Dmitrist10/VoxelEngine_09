@@ -1,23 +1,25 @@
-namespace VoxelEngine.Core;
+// using VoxelEngine.Rendering;
 
-public sealed class CamerasRegistries
-{
-    List<CameraData> cameras = new List<CameraData>();
-    public IReadOnlyCollection<CameraData> Cameras => cameras;
+// namespace VoxelEngine.Core;
 
-    public void Sort()
-    {
-        cameras.Sort((a, b) => a.priority - b.priority);
-    }
+// public sealed class CamerasRegistries
+// {
+//     List<CameraData> cameras = new List<CameraData>();
+//     public IReadOnlyCollection<CameraData> Cameras => cameras;
 
-    public void Add(CameraData c)
-    {
-        cameras.Add(c);
-    }
+//     public void Sort()
+//     {
+//         cameras.Sort((a, b) => a.priority - b.priority);
+//     }
 
-    public void Clear()
-    {
-        cameras.Clear();
-    }
+//     public void Add(CameraData c)
+//     {
+//         cameras.Add(c);
+//     }
 
-}
+//     public void Clear()
+//     {
+//         cameras.Clear();
+//     }
+
+// }

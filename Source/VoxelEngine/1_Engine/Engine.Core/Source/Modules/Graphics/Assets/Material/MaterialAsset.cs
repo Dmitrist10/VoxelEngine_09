@@ -5,34 +5,42 @@ namespace VoxelEngine.Graphics;
 
 public abstract class Material : IAsset
 {
-    public required PipelineHandle Pipeline;
+    public PipelineHandle Pipeline;
 
     public string Name { get; set; } = "Material.New()";
+    public bool IsTransparent = false;
 
     protected readonly IGraphicsFactory _factory;
-    protected BufferHandle _BufferHandle;
+    public BufferHandle BufferHandle;
     protected bool _isDirty = true; // Dirty by default on creation
 
     public const uint MATERIAL_BINDING_SLOT = 1;
-
-    public virtual void SetRendering(IGraphicsCommandsList cmdBuffer)
-    {
-        if (_isDirty)
-        {
-            ApplyChangesCommand(cmdBuffer);
-            _isDirty = false;
-        }
-
-        cmdBuffer.BindPipeline(Pipeline);
-        cmdBuffer.BindUniformBuffer(_BufferHandle, MATERIAL_BINDING_SLOT);
-    }
-
-    protected virtual void ApplyChangesCommand(IGraphicsCommandsList cmdBuffer) { }
 
     public Material()
     {
         _factory = EngineContext.Get<IGraphicsDevice>().Factory;
     }
+
+    public virtual void SetForRendering(IGraphicsCommandsList cmdBuffer)
+    {
+        if (_isDirty)
+        {
+            ApplyChangesImmediately(cmdBuffer);
+            _isDirty = false;
+        }
+
+        cmdBuffer.BindPipeline(Pipeline);
+        cmdBuffer.BindUniformBuffer(BufferHandle, MATERIAL_BINDING_SLOT);
+    }
+
+
+    // public virtual T Clone<T>() where T : Material
+    // {
+    //     return (T)MemberwiseClone();
+    // }
+
+    public void ApplyChanges() => _isDirty = true;
+    protected virtual void ApplyChangesImmediately(IGraphicsCommandsList cmdBuffer) { }
 
     public virtual void Dispose()
     {
@@ -50,25 +58,21 @@ public class Material<T> : Material, IDisposable where T : unmanaged, IMaterialP
 {
     public T Properties;
 
-    public Material(T properties) : base()
+    public Material(T properties, PipelineHandle pipeline) : base()
     {
         Properties = properties;
+        Pipeline = pipeline;
 
-        _BufferHandle = _factory.CreateBuffer(new BufferDescription()
+        BufferHandle = _factory.CreateBuffer(new BufferDescription()
         {
             Size = (uint)System.Runtime.CompilerServices.Unsafe.SizeOf<T>(),
             Usage = BufferUsage.UniformBuffer
         });
     }
-    public Material() : this(new T()) { }
+    public Material(PipelineHandle pipeline) : this(new T(), pipeline) { }
 
-    public void ApplyChanges()
+    protected override void ApplyChangesImmediately(IGraphicsCommandsList cmdBuffer)
     {
-        _isDirty = true;
-    }
-
-    protected override void ApplyChangesCommand(IGraphicsCommandsList cmdBuffer)
-    {
-        cmdBuffer.UpdateBuffer(_BufferHandle, 0, ref Properties);
+        cmdBuffer.UpdateBuffer(BufferHandle, 0, ref Properties);
     }
 }

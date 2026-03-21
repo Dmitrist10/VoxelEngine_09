@@ -8,7 +8,6 @@ namespace VoxelEngine.Rendering;
 
 public sealed class EP_MeshRenderer : EntityProcessor, IRenderable
 {
-
     private readonly QueryDescription _query;
     private readonly IRenderer _renderer;
 
@@ -33,6 +32,9 @@ public sealed class EP_MeshRenderer : EntityProcessor, IRenderable
                 mesh.Mesh,
                 mesh.Material,
                 transform.WorldMatrix
+            // 0,
+            // new AABB(),
+            // 0
             ));
         });
 

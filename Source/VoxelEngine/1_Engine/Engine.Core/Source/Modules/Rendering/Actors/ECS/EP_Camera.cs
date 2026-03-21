@@ -7,13 +7,13 @@ namespace VoxelEngine.Rendering;
 
 public sealed class EP_Camera : EntityProcessor, IRenderable
 {
-    private readonly CamerasRegistries camerasRegistries;
+    private readonly IRenderer renderer;
     private readonly IWindowSurface window;
     private readonly QueryDescription query;
 
     public EP_Camera()
     {
-        camerasRegistries = EngineContext.Get<CamerasRegistries>();
+        renderer = EngineContext.Get<IRenderer>();
         window = EngineContext.Get<IWindowSurface>();
 
         query = new QueryDescription().WithAll<C_Transform, C_Camera>();
@@ -32,7 +32,7 @@ public sealed class EP_Camera : EntityProcessor, IRenderable
         {
             camera.UpdateView(transform.WorldPosition, transform.WorldPosition + transform.Forward, transform.Up);
             camera.UpdateAspectRatio(aspectRatio); // Auto update projection
-            camerasRegistries.Add(new CameraData(camera.View, camera.Projection, camera.Priority));
+            renderer.Submit(new CameraData(camera.View, camera.Projection, camera.Priority));
         });
     }
 }

@@ -1,0 +1,26 @@
+================================================================================
+Engine Log - Started at 2026-03-20 19:18:46
+================================================================================
+
+[19:18:46.291] [INFO ] VoxelEngine initialized from Desktop platform with Standalone RuntimeContext.
+[19:18:46.302] [INFO ] [EntryPoint:38] Creating engine
+[19:18:46.303] [INFO ] [EntryPoint:48] Starting engine...
+[19:18:46.307] [INFO ] [DesktopWindow:26] Creating window: 'VoxelEngine' (1280x720)
+[19:18:46.384] [INFO ] [DesktopWindow:40] Desktop window created successfully.
+[19:18:46.386] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IWindowSurface
+[19:18:46.813] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsDriver
+[19:18:46.815] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IFileManager
+[19:18:46.817] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IAssetsManager
+[19:18:46.818] [LINE ] ================================================================================
+[19:18:46.818] [LINE ] ================================================================================
+[19:18:46.818] [ERROR] [EntryPoint:57] Exception: [ServiceContainer] Requested service 'IGraphicsDevice' is not registered.
+[19:18:46.829] [ERROR] [EntryPoint:63] Exception Stack Trace:    at VoxelEngine.Core.EngineContext.Get[T]() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\EngineContext.cs:line 27
+   at VoxelEngine.Core.Runtime.Engine.PostInit() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\Engine.cs:line 71
+   at VoxelEngine.Core.Runtime.Engine.StartEngine() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\Engine.cs:line 27
+   at VoxelEngine.Platforms.Desktop.EntryPoint.Run(String[] args, IRuntimeContext context) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Desktop\Source\EntryPoint.cs:line 49
+[19:18:46.829] [INFO ] [EntryPoint:67] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-20 19:18:46
+================================================================================

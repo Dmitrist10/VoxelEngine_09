@@ -6,9 +6,9 @@ namespace VoxelEngine.RuntimeContexts.Standalone;
 public class StandaloneRuntimeContext : IRuntimeContext
 {
     public string Name => "Standalone";
-    private IGame game;
+    private GameBase game;
 
-    public StandaloneRuntimeContext(IGame game)
+    public StandaloneRuntimeContext(GameBase game)
     {
         this.game = game;
     }

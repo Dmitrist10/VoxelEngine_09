@@ -4,6 +4,7 @@ using Silk.NET.Windowing;
 
 using VoxelEngine.Core;
 using VoxelEngine.Diagnostics;
+using VoxelEngine.Windowing;
 
 namespace VoxelEngine.Graphics.OpenGL;
 
@@ -27,12 +28,15 @@ public class GL_GraphicsDevice : IGraphicsDevice
         _nativeWindow = (_window.NativeWindow as IWindow)!;
         _GL = GL.GetApi(_nativeWindow);
 
+
         _GL.Enable(EnableCap.DepthTest); // Enable Depth Testing
         _GL.Enable(EnableCap.CullFace);
 
         _assetsManager = new GL_AssetsManager();
 
         Factory = new GL_GraphicsFactory(_GL, _assetsManager);
+        EngineContext.Register<IGraphicsDevice>(this);
+        EngineContext.Register<IGraphicsFactory>(Factory);
     }
 
     private void OnWindowResize(Vector2 vector)
@@ -68,6 +72,7 @@ public class GL_GraphicsDevice : IGraphicsDevice
     public void Dispose()
     {
         _GL.Dispose();
+        // GC.SuppressFinalize(this);
     }
 
 }

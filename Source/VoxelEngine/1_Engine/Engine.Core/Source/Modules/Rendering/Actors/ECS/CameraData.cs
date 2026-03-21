@@ -1,4 +1,6 @@
 using System.Numerics;
+using VoxelEngine.Common;
+using VoxelEngine.Graphics;
 
 namespace VoxelEngine.Rendering;
 
@@ -6,13 +8,20 @@ public struct CameraData
 {
     public Matrix4x4 view;
     public Matrix4x4 projection;
-    public int priority;
+    public Vector3 Position;
+
+
+    public int Priority;
+    public CameraClearFlags ClearFlags;
+    public Color ClearColor;
+    public uint CullingMask; // Bitmask for layers
+    public RenderTargetAsset? Target; // Null means render to swapchain/screen
 
     public CameraData(Matrix4x4 view, Matrix4x4 projection, int priority)
     {
         this.view = view;
         this.projection = projection;
-        this.priority = priority;
+        this.Priority = priority;
     }
 
     /// <summary>
@@ -41,5 +50,5 @@ public struct CameraData
 
         return (Vector3.Zero, Vector3.UnitZ);
     }
-    
+
 }

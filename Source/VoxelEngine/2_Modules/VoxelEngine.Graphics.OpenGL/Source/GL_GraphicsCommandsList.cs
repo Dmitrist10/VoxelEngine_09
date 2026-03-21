@@ -3,6 +3,7 @@ using VoxelEngine.Assets;
 using VoxelEngine.Common;
 using VoxelEngine.Core;
 using VoxelEngine.Diagnostics;
+using VoxelEngine.Rendering;
 
 namespace VoxelEngine.Graphics.OpenGL;
 

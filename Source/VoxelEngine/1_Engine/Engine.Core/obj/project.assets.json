@@ -581,18 +581,18 @@
   "project": {
     "version": "0.0.1-alpha",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj",
       "projectName": "Engine.Core",
-      "projectPath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj",
+      "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\Engine.Core.csproj",
       "packagesPath": "C:\\Users\\Dmitrist10\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\obj\\",
+      "outputPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\1_Engine\\Engine.Core\\obj\\",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\NuGet.Config",
+        "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\NuGet.Config",
         "C:\\Users\\Dmitrist10\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -601,15 +601,15 @@
         "net11.0"
       ],
       "sources": {
-        "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\Librarys\\nupkg": {},
+        "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\Librarys\\nupkg": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net11.0": {
           "targetAlias": "net11.0",
           "projectReferences": {
-            "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj": {
-              "projectPath": "c:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj"
+            "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj": {
+              "projectPath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\0_Common\\Common.Core.csproj"
             }
           }
         }

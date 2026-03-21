@@ -1,13 +1,16 @@
 namespace VoxelEngine.Graphics;
 
-public record struct PipelineDescription
-{
-    public required string VertexShaderSource;
-    public required string FragmentShaderSource;
+// public record struct PipelineDescription
+// {
+//     public required string VertexShaderSource;
+//     public required string FragmentShaderSource;
 
-    public PipelineDescription(string vertexShaderSource, string fragmentShaderSource) : this()
-    {
-        VertexShaderSource = vertexShaderSource;
-        FragmentShaderSource = fragmentShaderSource;
-    }
+//     public PipelineDescription(string vertexShaderSource, string fragmentShaderSource) : this()
+//     {
+//         VertexShaderSource = vertexShaderSource;
+//         FragmentShaderSource = fragmentShaderSource;
+//     }
+// }
+public readonly record struct PipelineDescription(ShaderData ShaderData)
+{
 }

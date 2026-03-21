@@ -2,6 +2,7 @@ namespace VoxelEngine.Rendering;
 
 public interface IRenderer
 {
-    void Render();
+    void RenderFrame();
     void Submit(RenderCommand renderCommand);
+    void Submit(CameraData cameraData);
 }

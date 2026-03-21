@@ -3,9 +3,10 @@ using VoxelEngine.Core;
 
 namespace VoxelEngine.Graphics;
 
-public record struct PipelineAsset : IAsset
+public record struct PipelineAsset(PipelineHandle Handle) : IAsset
 {
-    public PipelineHandle Handle;
+    // public PipelineHandle Handle;
+    // public 
 }
 
 public record PipelineData

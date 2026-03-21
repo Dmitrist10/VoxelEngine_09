@@ -1,6 +1,6 @@
 using VoxelEngine.Core;
-using VoxelEngine.Client;
-using VoxelEngine.Server;
+// using VoxelEngine.Client;
+// using VoxelEngine.Server;
 using VoxelEngine.Core.UGC;
 using VoxelEngine.Core.Runtime;
 using VoxelEngine.Platforms.Desktop;
@@ -16,16 +16,17 @@ public class Program
 
         try
         {
-            IGame game = new Game();
+            var game = new Game();
             var context = new StandaloneRuntimeContext(game);
             var entryPoint = new EntryPoint();
-            var collections = new List<IFeatureCollection>()
-            {
-                new ClientFeaturesCollection(),
-                new ServerFeaturesCollection(),
-            };
-            
-            entryPoint.Run(args, context, collections);
+            // var collections = new List<IFeatureCollection>()
+            // {
+            //     new ClientFeaturesCollection(),
+            //     new ServerFeaturesCollection(),
+            // };
+
+            // entryPoint.Run(args, context, collections);
+            entryPoint.Run(args, context, game);
         }
         catch (Exception e)
         {

@@ -6,11 +6,11 @@ namespace VoxelEngine.Graphics;
 
 public sealed class PBRMaterial : Material<PBRMaterialProperties>
 {
-    public PBRMaterial(PBRMaterialProperties properties) : base(properties)
+    public PBRMaterial(PBRMaterialProperties properties, PipelineHandle pipeline) : base(properties, pipeline)
     {
 
     }
-    public PBRMaterial() : base()
+    public PBRMaterial(PipelineHandle pipeline) : base(pipeline)
     {
 
     }
@@ -19,18 +19,18 @@ public sealed class ChunkMaterial : Material<ChunkMaterialProperties>
 {
     public TextureHandle AlbedoTexture;
 
-    public ChunkMaterial(ChunkMaterialProperties properties) : base(properties)
+    public ChunkMaterial(ChunkMaterialProperties properties, PipelineHandle pipeline) : base(properties, pipeline)
     {
 
     }
-    public ChunkMaterial() : base()
+    public ChunkMaterial(PipelineHandle pipeline) : base(pipeline)
     {
 
     }
 
-    public override void SetRendering(IGraphicsCommandsList cmdBuffer)
+    public override void SetForRendering(IGraphicsCommandsList cmdBuffer)
     {
-        base.SetRendering(cmdBuffer);
+        base.SetForRendering(cmdBuffer);
         cmdBuffer.BindTexture(AlbedoTexture, 0);
     }
 }

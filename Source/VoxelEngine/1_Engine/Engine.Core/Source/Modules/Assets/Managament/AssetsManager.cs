@@ -109,7 +109,7 @@ public sealed class AssetsManager : IAssetsManager
 #if GameDebug
         else
         {
-            Logger.Error($"Asset under path: '{path}' not found in cache");
+            Logger.Error($"Asset under path: '{path}' not found in cache! Pls don't call FreeAsset() on this one!");
         }
 #endif
     }

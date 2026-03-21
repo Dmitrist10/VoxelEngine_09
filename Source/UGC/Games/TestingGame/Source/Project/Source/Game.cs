@@ -13,7 +13,8 @@ public sealed class Game : GameBase
     public override void OnInitialize()
     {
         IFileManager fileManager = EngineContext.Get<IFileManager>();
-        fileManager.Mount("assets", new DiskFilesProvider(ASSETS_PATH, true, true));
+        // fileManager.Mount("assets", new DiskFilesProvider(ASSETS_PATH, true, true));
+        fileManager.Mount("resources", new DiskFilesProvider(ASSETS_PATH, true, true));
     }
 
     public override void StartSession()

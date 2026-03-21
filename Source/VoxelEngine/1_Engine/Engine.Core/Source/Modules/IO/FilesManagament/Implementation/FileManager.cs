@@ -1,4 +1,5 @@
 using System.Collections.Concurrent;
+using VoxelEngine.Diagnostics;
 
 namespace VoxelEngine.IO.FilesManagement;
 
@@ -15,11 +16,11 @@ public sealed class FileManager : IFileManager
         // if (IsRestrictedMode)
         //     throw new UnauthorizedAccessException("[VFS Security] Cannot mount new providers while in Restricted Mode.");
 
-        _providers[protocol + "://"] = provider;
+        _providers[protocol] = provider;
     }
     public void Unmount(string protocol)
     {
-        if (_providers.TryRemove(protocol + "://", out var provider) && provider is IDisposable disposable)
+        if (_providers.TryRemove(protocol, out var provider) && provider is IDisposable disposable)
         {
             disposable.Dispose();
         }
@@ -125,6 +126,10 @@ public sealed class FileManager : IFileManager
         {
             throw new UnauthorizedAccessException($"[VFS Security] Path traversal attempted in URI: {uri}");
         }
+
+#if FileManagerDebug
+        Logger.Debug($"[FileManager] Parsed URI: {uri} -> Protocol: {protocol}, Path: {path}");
+#endif
 
         return (protocol, path);
     }

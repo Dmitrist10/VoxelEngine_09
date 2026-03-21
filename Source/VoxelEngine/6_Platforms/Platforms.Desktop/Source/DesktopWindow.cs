@@ -4,8 +4,8 @@ using Silk.NET.Core;
 using Silk.NET.Maths;
 using Silk.NET.Windowing;
 
+using VoxelEngine.Windowing;
 using VoxelEngine.Diagnostics;
-using VoxelEngine.Graphics;
 
 namespace VoxelEngine.Platforms.Desktop;
 

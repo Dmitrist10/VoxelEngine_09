@@ -1,15 +1,15 @@
-using VoxelEngine.Core;
-using VoxelEngine.Graphics.OpenGL;
+// using VoxelEngine.Core;
+// using VoxelEngine.Graphics.OpenGL;
 
-namespace VoxelEngine.Platforms.Desktop;
+// namespace VoxelEngine.Platforms.Desktop;
 
-internal class DesktopFeaturesCollection : IFeatureCollection
-{
-    public List<IFeature> GetFeatures()
-    {
-        return new List<IFeature>
-        {
-            new Features_OpenGL()
-        };
-    }
-}
+// internal class DesktopFeaturesCollection : IFeatureCollection
+// {
+//     public List<IFeature> GetFeatures()
+//     {
+//         return new List<IFeature>
+//         {
+//             new Features_OpenGL()
+//         };
+//     }
+// }

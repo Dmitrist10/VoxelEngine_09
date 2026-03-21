@@ -20,4 +20,5 @@ public readonly record struct EmptyOptions : IAssetOptions
 // public readonly record struct TextureOptions(bool PixelPerfect = false, bool GenerateMipMaps = true, bool FlipVertically = false) : IAssetOptions;
 public readonly record struct MeshOptions(bool Triangulate = true, bool GenerateNormals = true) : IAssetOptions;
 public readonly record struct ShaderOptions() : IAssetOptions;
-public readonly record struct PipelineOptions(ShaderOptions shaderOptions) : IAssetOptions;
+public readonly record struct PipelineOptions(ShaderOptions ShaderOptions) : IAssetOptions;
+public readonly record struct MaterialOptions(PipelineOptions PipelineOptions) : IAssetOptions;

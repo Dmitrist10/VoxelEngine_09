@@ -1,6 +1,7 @@
 using VoxelEngine.Common;
 using VoxelEngine.Core;
 using VoxelEngine.Core.Runtime;
+using VoxelEngine.Core.UGC;
 using VoxelEngine.Diagnostics;
 
 namespace VoxelEngine.Platforms.Desktop;
@@ -8,7 +9,8 @@ namespace VoxelEngine.Platforms.Desktop;
 public sealed class EntryPoint
 {
 
-    public void Run(string[] args, IRuntimeContext context, List<IFeatureCollection> collections)
+    // public void Run(string[] args, IRuntimeContext context, List<IFeatureCollection> collections)
+    public void Run(string[] args, IRuntimeContext context, GameBase game)
     {
         try
         {
@@ -39,13 +41,14 @@ public sealed class EntryPoint
                 Engine engine = new EngineBuilder()
                     .WithPlatform(CreatePlatform())
                     .WithRuntimeContext(context)
-                    .AddFeatureCollection(new CoreFeaturesCollection())
-                    .AddFeatureCollection(new DesktopFeaturesCollection())
-                    .AddFeatureCollectionsList(collections)
+                    .WithGame(game)
+                    // .AddFeatureCollection(new CoreFeaturesCollection())
+                    // .AddFeatureCollection(new DesktopFeaturesCollection())
+                    // .AddFeatureCollectionsList(collections)
                     .Build();
 
                 Logger.Info("Starting engine...");
-                engine.Run();
+                engine.StartEngine();
             }
             catch (Exception ex)
             {

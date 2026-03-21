@@ -1,0 +1,29 @@
+================================================================================
+Engine Log - Started at 2026-03-20 19:36:41
+================================================================================
+
+[19:36:41.178] [INFO ] VoxelEngine initialized from Desktop platform with Standalone RuntimeContext.
+[19:36:41.188] [INFO ] [EntryPoint:39] Creating engine
+[19:36:41.189] [INFO ] [EntryPoint:50] Starting engine...
+[19:36:41.192] [DEBUG] [Engine:49] [Engine] Initializing Core Services & Drivers...
+[19:36:41.195] [INFO ] [DesktopWindow:26] Creating window: 'VoxelEngine' (1280x720)
+[19:36:41.277] [INFO ] [DesktopWindow:40] Desktop window created successfully.
+[19:36:41.278] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IWindowSurface
+[19:36:41.649] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsDriver
+[19:36:41.655] [DEBUG] [GL_GraphicsDevice:25] [GL_GraphicsDevice] Initializing...
+[19:36:41.659] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsDevice
+[19:36:41.660] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsFactory
+[19:36:41.661] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IFileManager
+[19:36:41.662] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IAssetsManager
+[19:36:41.664] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: UniverseManager
+[19:36:41.666] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[19:36:41.667] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[19:36:41.669] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[19:36:46.489] [INFO ] [DesktopWindow:53] Desktop window closing...
+[19:36:46.489] [EXTRAINFO] [Heartbeat:115] Heartbeat Stopped
+[19:36:46.490] [INFO ] [EntryPoint:69] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-20 19:36:46
+================================================================================

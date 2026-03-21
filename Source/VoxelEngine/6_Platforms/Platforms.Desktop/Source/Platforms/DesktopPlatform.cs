@@ -1,11 +1,16 @@
 using VoxelEngine.Core;
 using VoxelEngine.Graphics;
 using VoxelEngine.Graphics.OpenGL;
+using VoxelEngine.Windowing;
 
 namespace VoxelEngine.Platforms.Desktop;
 
 public class DesktopPlatform : IPlatform
 {
+    public IGraphicsDriver CreateGraphicsDriver()
+    {
+        return new GL_GraphicsDriver();
+    }
 
     public IWindowSurface CreateWindowSurface()
     {

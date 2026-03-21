@@ -1,0 +1,14 @@
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\Platforms.Mobile.Android\net11.0\Platforms.Mobile.Android.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\Platforms.Mobile.Android\net11.0\Platforms.Mobile.Android.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\Platforms.Mobile.Android\net11.0\Platforms.Mobile.Android.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Mobile.Android\obj\Debug\net11.0\Platforms.Mobile.Android.csproj.AssemblyReference.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Mobile.Android\obj\Debug\net11.0\Platforms.Mobile.Android.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Mobile.Android\obj\Debug\net11.0\Platforms.Mobile.Android.AssemblyInfoInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Mobile.Android\obj\Debug\net11.0\Platforms.Mobile.Android.AssemblyInfo.cs
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Mobile.Android\obj\Debug\net11.0\Platforms.Mobile.Android.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Mobile.Android\obj\Debug\net11.0\Platforms.Mobile.Android.sourcelink.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Mobile.Android\obj\Debug\net11.0\Platform.69DA5AED.Up2Date
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Mobile.Android\obj\Debug\net11.0\Platforms.Mobile.Android.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Mobile.Android\obj\Debug\net11.0\refint\Platforms.Mobile.Android.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Mobile.Android\obj\Debug\net11.0\Platforms.Mobile.Android.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Mobile.Android\obj\Debug\net11.0\ref\Platforms.Mobile.Android.dll

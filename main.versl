@@ -1,0 +1,11 @@
+#define version 0.1.0
+#define name "Voxel Engine"
+
+void Render(){
+
+    for c in context.cameras{
+        
+        Execute();    
+    }       
+
+}

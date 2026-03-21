@@ -1,0 +1,28 @@
+================================================================================
+Engine Log - Started at 2026-03-20 19:43:24
+================================================================================
+
+[19:43:24.734] [INFO ] VoxelEngine initialized from Desktop platform with Standalone RuntimeContext.
+[19:43:24.744] [INFO ] [EntryPoint:39] Creating engine
+[19:43:24.745] [INFO ] [EntryPoint:50] Starting engine...
+[19:43:24.748] [DEBUG] [Engine:49] [Engine] Initializing Core Services & Drivers...
+[19:43:24.751] [INFO ] [DesktopWindow:26] Creating window: 'VoxelEngine' (1280x720)
+[19:43:24.843] [INFO ] [DesktopWindow:40] Desktop window created successfully.
+[19:43:24.844] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IWindowSurface
+[19:43:25.222] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsDriver
+[19:43:25.230] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsDevice
+[19:43:25.230] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsFactory
+[19:43:25.231] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IFileManager
+[19:43:25.233] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IAssetsManager
+[19:43:25.234] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: UniverseManager
+[19:43:25.236] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[19:43:25.237] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[19:43:25.237] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[19:43:30.160] [INFO ] [DesktopWindow:53] Desktop window closing...
+[19:43:30.160] [EXTRAINFO] [Heartbeat:115] Heartbeat Stopped
+[19:43:30.161] [INFO ] [EntryPoint:69] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-20 19:43:30
+================================================================================

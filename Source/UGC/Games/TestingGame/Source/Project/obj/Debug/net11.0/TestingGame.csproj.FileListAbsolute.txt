@@ -12,3 +12,17 @@ C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source
 C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\refint\TestingGame.dll
 C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\TestingGame.pdb
 C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_09_VE_Sln_RingBased\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\ref\TestingGame.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\TestingGame.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\refint\TestingGame.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\TestingGame.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\TestingGame\net11.0\TestingGame.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\TestingGame\net11.0\TestingGame.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\TestingGame\net11.0\TestingGame.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\TestingGame.csproj.AssemblyReference.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\TestingGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\TestingGame.AssemblyInfoInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\TestingGame.AssemblyInfo.cs
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\TestingGame.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\TestingGame.sourcelink.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\TestingG.38C93030.Up2Date
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\ref\TestingGame.dll

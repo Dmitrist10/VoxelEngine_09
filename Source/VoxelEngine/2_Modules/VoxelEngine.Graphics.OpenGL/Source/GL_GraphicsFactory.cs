@@ -48,11 +48,11 @@ internal unsafe class GL_GraphicsFactory : IGraphicsFactory
     public PipelineHandle CreatePipeline(PipelineDescription description)
     {
         uint vertexShader = _GL.CreateShader(ShaderType.VertexShader);
-        _GL.ShaderSource(vertexShader, description.VertexShaderSource);
+        _GL.ShaderSource(vertexShader, description.ShaderData.Vert);
         _GL.CompileShader(vertexShader);
 
         uint fragmentShader = _GL.CreateShader(ShaderType.FragmentShader);
-        _GL.ShaderSource(fragmentShader, description.FragmentShaderSource);
+        _GL.ShaderSource(fragmentShader, description.ShaderData.Frag);
         _GL.CompileShader(fragmentShader);
 
         uint pipeline = _GL.CreateProgram();

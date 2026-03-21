@@ -30,3 +30,6 @@ c:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\0_Co
 c:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\0_Common\obj\Debug\net11.0\refint\Common.Core.dll
 c:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\0_Common\obj\Debug\net11.0\Common.Core.pdb
 c:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\0_Common\obj\Debug\net11.0\ref\Common.Core.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\Common.Core\net11.0\Common.Core.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\Common.Core\net11.0\Common.Core.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\Common.Core\net11.0\Common.Core.pdb
