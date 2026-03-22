@@ -112,19 +112,16 @@ void main()
     }
     public static PBRMaterial LoadPBRMaterial(this IAssetsManager assetsManager, string path)
     {
-        MaterialOptions options = new MaterialOptions
-        {
-            PipelineOptions = new PipelineOptions()
-            {
-                ShaderOptions = new ShaderOptions
-                {
-                    // VertexShaderSource = VertexShaderSource,
-                    // FragmentShaderSource = FragmentShaderSource
-                }
-            }
-        };
-        PBRMaterial asset = assetsManager.Load<PBRMaterial, MaterialOptions>(path, options);
-        return asset;
+        // Load (or retrieve from cache) the compiled pipeline — the SHADER is shared.
+        PipelineAsset pipeline = assetsManager.Load<PipelineAsset, PipelineOptions>(
+            path, new PipelineOptions());
+
+        // Always create a FRESH material instance wrapping the shared pipeline.
+        // This mirrors how Unreal "Material Instances" or Unity "Material.Instantiate" works:
+        //   - The heavy GPU resource (compiled shader / pipeline) is cached and reused.
+        //   - The lightweight property block (color, texture slot) is unique per instance.
+        PBRMaterial material = new PBRMaterial(pipeline.Handle);
+        return material;
     }
 
 }

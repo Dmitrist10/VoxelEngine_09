@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wwDVf0Ikg1U=",
+  "dgSpecHash": "GLcWHGHlcyo=",
   "success": true,
   "projectFilePath": "C:\\Users\\Dmitrist10\\Desktop\\VoxelGames\\Source\\Project_10\\Source\\VoxelEngine\\5_RuntimeContext\\RuntimeContext.Standalone\\RuntimeContext.Standalone.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Dmitrist10\\.nuget\\packages\\assimpnet\\4.1.0\\assimpnet.4.1.0.nupkg.sha512",
     "C:\\Users\\Dmitrist10\\.nuget\\packages\\collections.pooled\\2.0.0-preview.27\\collections.pooled.2.0.0-preview.27.nupkg.sha512",
     "C:\\Users\\Dmitrist10\\.nuget\\packages\\communitytoolkit.highperformance\\8.2.2\\communitytoolkit.highperformance.8.2.2.nupkg.sha512",
+    "C:\\Users\\Dmitrist10\\.nuget\\packages\\imgui.net\\1.91.6.1\\imgui.net.1.91.6.1.nupkg.sha512",
     "C:\\Users\\Dmitrist10\\.nuget\\packages\\microsoft.extensions.objectpool\\7.0.0\\microsoft.extensions.objectpool.7.0.0.nupkg.sha512",
     "C:\\Users\\Dmitrist10\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Dmitrist10\\.nuget\\packages\\naudio\\2.2.1\\naudio.2.2.1.nupkg.sha512",

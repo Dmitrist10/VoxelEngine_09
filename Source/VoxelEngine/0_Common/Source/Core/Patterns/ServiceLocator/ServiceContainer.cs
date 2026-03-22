@@ -21,7 +21,7 @@ public sealed class ServiceContainer : IServiceContainer
 
         var type = typeof(T);
 #if DEBUG
-        Logger.ExtraInfo($"[ServiceContainer] Registering service: {type.Name}");
+        Logger.ExtraInfo($"Registering service: {type.Name}");
 #endif
         _services[type] = service;
     }
@@ -50,7 +50,7 @@ public sealed class ServiceContainer : IServiceContainer
         if (_services.TryGetValue(typeof(T), out var service))
             return (T)service;
 
-        throw new InvalidOperationException($"[ServiceContainer] Requested service '{typeof(T).Name}' is not registered.");
+        throw new InvalidOperationException($"Requested service '{typeof(T).Name}' is not registered.");
     }
 
     /// <summary>
@@ -91,7 +91,7 @@ public sealed class ServiceContainer : IServiceContainer
     public void Clear()
     {
 #if DEBUG
-        Logger.ExtraInfo("[ServiceContainer] Clearing all registered services.");
+        Logger.ExtraInfo("Clearing all registered services.");
 #endif
         _services.Clear();
     }

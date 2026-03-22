@@ -1,0 +1,30 @@
+================================================================================
+Engine Log - Started at 2026-03-22 10:52:59
+================================================================================
+
+[10:52:59.158] [INFO ] VoxelEngine initialized from Desktop platform with Standalone RuntimeContext.
+[10:52:59.169] [INFO ] [EntryPoint:39] Creating engine
+[10:52:59.170] [INFO ] [EntryPoint:50] Starting engine...
+[10:52:59.172] [DEBUG] [Engine:53] [Engine] Initializing Core Services & Drivers...
+[10:52:59.175] [INFO ] [DesktopWindow:26] Creating window: 'VoxelEngine' (1280x720)
+[10:52:59.253] [INFO ] [DesktopWindow:40] Desktop window created successfully.
+[10:52:59.254] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IWindowSurface
+[10:52:59.478] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsDriver
+[10:52:59.484] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsDevice
+[10:52:59.485] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsFactory
+[10:52:59.485] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IFileManager
+[10:52:59.486] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IAssetsManager
+[10:52:59.487] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: UniverseManager
+[10:52:59.490] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IRenderer
+[10:52:59.505] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[10:52:59.506] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[10:52:59.506] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[10:52:59.525] [DEBUG] [GameSetup:14] Game setup is running for scene: (Scene: scene_01, ID: 0)
+[10:53:02.868] [INFO ] [DesktopWindow:53] Desktop window closing...
+[10:53:02.869] [EXTRAINFO] [Heartbeat:115] Heartbeat Stopped
+[10:53:02.869] [INFO ] [EntryPoint:69] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-22 10:53:02
+================================================================================

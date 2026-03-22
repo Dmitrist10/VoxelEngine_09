@@ -12,6 +12,7 @@
 
   <Folder Name="/VoxelEngine/02_Modules/" >
     <Project Path="Source/VoxelEngine/2_Modules/VoxelEngine.Graphics.OpenGL/VoxelEngine.Graphics.OpenGL.csproj" />
+    <Project Path="Source/VoxelEngine/2_Modules/VoxelEngine.Input/VoxelEngine.Input.csproj" />
   </Folder>
 
 

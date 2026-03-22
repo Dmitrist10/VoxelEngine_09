@@ -80,32 +80,40 @@ internal sealed class EntityProcessorsRegistry
 
     internal void OnUpdate()
     {
-        foreach (var i in _allUpdatables)
+        var mask = EngineContext.ActiveGroups;
+        foreach (var i in _allProcessors)
         {
-            i.OnUpdate();
+            if ((mask & i.Group) != 0 && i is IUpdatable u)
+                u.OnUpdate();
         }
     }
     internal void OnFixedUpdate()
     {
-        foreach (var i in _allFixedUpdatables)
+        var mask = EngineContext.ActiveGroups;
+        foreach (var i in _allProcessors)
         {
-            i.OnFixedUpdate();
+            if ((mask & i.Group) != 0 && i is IFixedUpdatable fu)
+                fu.OnFixedUpdate();
         }
     }
 
     internal void OnRender()
     {
-        foreach (var i in _allRenderables)
+        var mask = EngineContext.ActiveGroups;
+        foreach (var i in _allProcessors)
         {
-            i.OnRender();
+            if ((mask & i.Group) != 0 && i is IRenderable r)
+                r.OnRender();
         }
     }
 
     internal void OnTick()
     {
-        foreach (var i in _allTickables)
+        var mask = EngineContext.ActiveGroups;
+        foreach (var i in _allProcessors)
         {
-            i.OnTick();
+            if ((mask & i.Group) != 0 && i is ITickable t)
+                t.OnTick();
         }
     }
 }

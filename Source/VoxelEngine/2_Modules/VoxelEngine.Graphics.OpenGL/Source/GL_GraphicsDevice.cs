@@ -16,6 +16,7 @@ public class GL_GraphicsDevice : IGraphicsDevice
     private IWindow _nativeWindow = null!;
 
     private GL _GL = null!;
+    public GL GL => _GL;
     private GL_AssetsManager _assetsManager = null!;
 
     private List<GL_GraphicsCommandsList> _commandLists = new();

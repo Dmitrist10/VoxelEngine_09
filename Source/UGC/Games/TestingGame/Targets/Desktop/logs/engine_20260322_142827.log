@@ -1,0 +1,27 @@
+================================================================================
+Engine Log - Started at 2026-03-22 14:28:27
+================================================================================
+
+[14:28:27.489] [INFO ] VoxelEngine initialized from Desktop platform with Standalone RuntimeContext.
+[14:28:27.504] [INFO ] [EntryPoint:39] Creating engine
+[14:28:27.505] [INFO ] [EntryPoint:50] Starting engine...
+[14:28:27.508] [DEBUG] [Engine:54] [Engine] Initializing Core Services & Drivers...
+[14:28:27.777] [INFO ] [DesktopWindow:26] Creating window: 'VoxelEngine' (1280x720)
+[14:28:27.979] [INFO ] [DesktopWindow:40] Desktop window created successfully.
+[14:28:27.980] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindowSurface
+[14:28:28.473] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDriver
+[14:28:28.590] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[14:28:28.590] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsFactory
+[14:28:28.842] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputContext
+[14:28:28.986] [EXTRAINFO] [ServiceContainer:24] Registering service: IGuiRenderer
+[14:28:28.987] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputDriver
+[14:28:28.988] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputContext
+[14:28:28.988] [EXTRAINFO] [ServiceContainer:24] Registering service: IFileManager
+[14:28:28.989] [EXTRAINFO] [ServiceContainer:24] Registering service: IAssetsManager
+[14:28:28.991] [EXTRAINFO] [ServiceContainer:24] Registering service: UniverseManager
+[14:28:28.991] [EXTRAINFO] [ServiceContainer:24] Registering service: LightingService
+[14:28:28.994] [EXTRAINFO] [ServiceContainer:24] Registering service: IRenderer
+[14:28:29.281] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[14:28:29.282] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[14:28:29.282] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[14:28:29.360] [DEBUG] [GameSetup:15] Game setup is running for scene: (Scene: scene_01, ID: 0)

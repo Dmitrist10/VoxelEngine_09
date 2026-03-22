@@ -1,0 +1,33 @@
+================================================================================
+Engine Log - Started at 2026-03-22 13:13:30
+================================================================================
+
+[13:13:30.854] [INFO ] VoxelEngine initialized from Desktop platform with Standalone RuntimeContext.
+[13:13:30.864] [INFO ] [EntryPoint:39] Creating engine
+[13:13:30.865] [INFO ] [EntryPoint:50] Starting engine...
+[13:13:30.868] [DEBUG] [Engine:53] [Engine] Initializing Core Services & Drivers...
+[13:13:30.871] [INFO ] [DesktopWindow:26] Creating window: 'VoxelEngine' (1280x720)
+[13:13:30.958] [INFO ] [DesktopWindow:40] Desktop window created successfully.
+[13:13:30.959] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindowSurface
+[13:13:31.179] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDriver
+[13:13:31.186] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[13:13:31.186] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsFactory
+[13:13:31.295] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputContext
+[13:13:31.314] [EXTRAINFO] [ServiceContainer:24] Registering service: IGuiRenderer
+[13:13:31.314] [EXTRAINFO] [ServiceContainer:24] Registering service: IFileManager
+[13:13:31.315] [EXTRAINFO] [ServiceContainer:24] Registering service: IAssetsManager
+[13:13:31.317] [EXTRAINFO] [ServiceContainer:24] Registering service: UniverseManager
+[13:13:31.317] [EXTRAINFO] [ServiceContainer:24] Registering service: LightingService
+[13:13:31.320] [EXTRAINFO] [ServiceContainer:24] Registering service: IRenderer
+[13:13:31.334] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[13:13:31.335] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[13:13:31.336] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[13:13:31.353] [DEBUG] [GameSetup:15] Game setup is running for scene: (Scene: scene_01, ID: 0)
+[13:14:46.626] [INFO ] [DesktopWindow:53] Desktop window closing...
+[13:14:46.627] [EXTRAINFO] [Heartbeat:115] Heartbeat Stopped
+[13:14:46.627] [INFO ] [EntryPoint:69] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-22 13:14:46
+================================================================================

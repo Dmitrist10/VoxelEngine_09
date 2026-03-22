@@ -14,6 +14,7 @@
     <PackageReference Include="NAudio" />
     <PackageReference Include="NVorbis" />
     <PackageReference Include="StbImageSharp" />
+    <PackageReference Include="ImGui.NET" />
   </ItemGroup>
 
 

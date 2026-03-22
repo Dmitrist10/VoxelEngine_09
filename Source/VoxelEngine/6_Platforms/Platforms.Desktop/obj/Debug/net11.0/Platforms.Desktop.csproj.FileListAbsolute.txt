@@ -36,3 +36,6 @@ C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Platforms.Desktop\n
 C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Platforms.Desktop\net11.0\Platforms.Desktop.pdb
 C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Desktop\obj\Debug\net11.0\Platform.BFE7E2C1.Up2Date
 C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Desktop\obj\Debug\net11.0\ref\Platforms.Desktop.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\Platforms.Desktop\net11.0\Platforms.Desktop.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\Platforms.Desktop\net11.0\Platforms.Desktop.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\Platforms.Desktop\net11.0\Platforms.Desktop.pdb

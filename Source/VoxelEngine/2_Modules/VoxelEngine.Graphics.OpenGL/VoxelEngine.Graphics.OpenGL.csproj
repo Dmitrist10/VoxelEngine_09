@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Silk.NET" />
+    <PackageReference Include="Silk.NET.OpenGL.Extensions.ImGui" />
   </ItemGroup>
 
 </Project>

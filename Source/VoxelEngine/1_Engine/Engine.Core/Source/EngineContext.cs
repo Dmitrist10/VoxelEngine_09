@@ -12,6 +12,8 @@ public sealed class EngineContext
         // internal set;
     }
 
+    public static bool IsPlaying { get; set; } = false;
+    public static ProcessorGroup ActiveGroups { get; set; } = ProcessorGroup.Engine | ProcessorGroup.Editor;
     public readonly IEventBus EventBus;
     public readonly IServiceContainer ServiceContainer;
 

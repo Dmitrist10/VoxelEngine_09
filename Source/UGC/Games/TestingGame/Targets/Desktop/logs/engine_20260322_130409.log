@@ -1,0 +1,214 @@
+================================================================================
+Engine Log - Started at 2026-03-22 13:04:09
+================================================================================
+
+[13:04:09.811] [INFO ] VoxelEngine initialized from Desktop platform with Standalone RuntimeContext.
+[13:04:09.823] [INFO ] [EntryPoint:39] Creating engine
+[13:04:09.824] [INFO ] [EntryPoint:50] Starting engine...
+[13:04:09.827] [DEBUG] [Engine:53] [Engine] Initializing Core Services & Drivers...
+[13:04:09.830] [INFO ] [DesktopWindow:26] Creating window: 'VoxelEngine' (1280x720)
+[13:04:09.918] [INFO ] [DesktopWindow:40] Desktop window created successfully.
+[13:04:09.919] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindowSurface
+[13:04:10.154] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDriver
+[13:04:10.160] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[13:04:10.161] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsFactory
+[13:04:10.290] [EXTRAINFO] [ServiceContainer:24] Registering service: IGuiRenderer
+[13:04:10.291] [EXTRAINFO] [ServiceContainer:24] Registering service: IFileManager
+[13:04:10.292] [EXTRAINFO] [ServiceContainer:24] Registering service: IAssetsManager
+[13:04:10.294] [EXTRAINFO] [ServiceContainer:24] Registering service: UniverseManager
+[13:04:10.294] [EXTRAINFO] [ServiceContainer:24] Registering service: LightingService
+[13:04:10.297] [EXTRAINFO] [ServiceContainer:24] Registering service: IRenderer
+[13:04:10.313] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[13:04:10.314] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[13:04:10.314] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[13:04:10.331] [DEBUG] [GameSetup:15] Game setup is running for scene: (Scene: scene_01, ID: 0)
+[13:04:10.519] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.557] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.678] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.688] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.693] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.699] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.705] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.712] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.718] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.724] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.730] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.736] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.742] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.748] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.754] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.760] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.766] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.772] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.778] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.784] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.790] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.796] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.803] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.809] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.815] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.821] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.827] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.833] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.839] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.845] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.851] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.857] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.863] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.869] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.875] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.881] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.887] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.893] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.899] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.906] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.912] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.918] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.924] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.930] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.936] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.942] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.948] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.954] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.960] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.966] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.972] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.978] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.984] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.991] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:10.997] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.003] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.009] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.015] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.021] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.027] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.033] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.039] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.045] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.051] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.057] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.063] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.069] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.075] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.082] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.088] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.093] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.100] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.106] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.112] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.118] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.124] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.130] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.136] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.142] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.148] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.154] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.160] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.167] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.172] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.178] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.185] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.191] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.197] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.203] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.209] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.215] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.221] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.227] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.233] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.240] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.246] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.252] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.258] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.264] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.270] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.276] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.282] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.288] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.294] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.300] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.306] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.312] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.319] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.324] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.331] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.336] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.343] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.349] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.355] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.361] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.367] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.373] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.379] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.385] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.391] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.398] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.404] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.410] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.416] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.422] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.428] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.434] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.440] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.446] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.452] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.458] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.464] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.470] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.476] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.482] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.488] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.494] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.501] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.507] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.513] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.519] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.525] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.531] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.537] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.543] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.549] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.555] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.561] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.568] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.573] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.580] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.585] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.591] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.598] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.604] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.610] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.616] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.622] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.628] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.634] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.640] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.646] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.652] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.658] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.664] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.670] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.676] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.682] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.688] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.695] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.700] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.707] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.712] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.719] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.725] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.731] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.737] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.743] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.749] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.755] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.762] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.770] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.776] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.785] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.800] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.815] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.832] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.847] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.863] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.
+[13:04:11.879] [ERROR] [EP_FlyCamera:43] Failed to initialize FlyCamera input: More than one input context for window 2133076655040.

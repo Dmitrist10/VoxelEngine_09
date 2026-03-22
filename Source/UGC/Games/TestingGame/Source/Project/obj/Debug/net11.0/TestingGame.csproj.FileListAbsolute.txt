@@ -26,3 +26,6 @@ C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\UGC\Games\Testin
 C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\TestingGame.sourcelink.json
 C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\TestingG.38C93030.Up2Date
 C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\UGC\Games\TestingGame\Source\Project\obj\Debug\net11.0\ref\TestingGame.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\TestingGame\net11.0\TestingGame.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\TestingGame\net11.0\TestingGame.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\TestingGame\net11.0\TestingGame.pdb

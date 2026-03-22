@@ -1,4 +1,5 @@
 using VoxelEngine.Core;
+using VoxelEngine.Rendering;
 using VoxelEngine.Windowing;
 
 namespace VoxelEngine.Graphics.OpenGL;
@@ -18,6 +19,9 @@ public sealed class GL_GraphicsDriver : IGraphicsDriver
     {
         IWindowSurface windowSurface = EngineContext.Get<IWindowSurface>();
         _graphicsDevice.Init(windowSurface);
+
+        IGuiRenderer guiRenderer = new GL_GuiRenderer(_graphicsDevice.GL, windowSurface);
+        EngineContext.Register<IGuiRenderer>(guiRenderer);
     }
 
     public void Dispose()

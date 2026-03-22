@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\1_Engine\Engine.Core\Engine.Core.csproj" />
     <ProjectReference Include="..\..\2_Modules\VoxelEngine.Graphics.OpenGL\VoxelEngine.Graphics.OpenGL.csproj" />
+    <ProjectReference Include="..\..\2_Modules\VoxelEngine.Input\VoxelEngine.Input.csproj" />
     <!-- 
     <ProjectReference Include="..\..\1_Engine\Engine.Runtime\Engine.Runtime.csproj" />
     <ProjectReference Include="..\..\2_Features\Features.Client\Features.Client.csproj" />

@@ -1,0 +1,14 @@
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\Packages.Standart\net11.0\Packages.Standart.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\Packages.Standart\net11.0\Packages.Standart.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\Packages.Standart\net11.0\Packages.Standart.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\4_Packages\Packages.Standart\obj\Debug\net11.0\Packages.Standart.csproj.AssemblyReference.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\4_Packages\Packages.Standart\obj\Debug\net11.0\Packages.Standart.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\4_Packages\Packages.Standart\obj\Debug\net11.0\Packages.Standart.AssemblyInfoInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\4_Packages\Packages.Standart\obj\Debug\net11.0\Packages.Standart.AssemblyInfo.cs
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\4_Packages\Packages.Standart\obj\Debug\net11.0\Packages.Standart.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\4_Packages\Packages.Standart\obj\Debug\net11.0\Packages.Standart.sourcelink.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\4_Packages\Packages.Standart\obj\Debug\net11.0\Packages.25BDA9F2.Up2Date
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\4_Packages\Packages.Standart\obj\Debug\net11.0\Packages.Standart.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\4_Packages\Packages.Standart\obj\Debug\net11.0\refint\Packages.Standart.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\4_Packages\Packages.Standart\obj\Debug\net11.0\Packages.Standart.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\4_Packages\Packages.Standart\obj\Debug\net11.0\ref\Packages.Standart.dll

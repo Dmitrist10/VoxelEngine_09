@@ -1,43 +1,64 @@
 using VoxelEngine.Graphics;
+using VoxelEngine.Windowing;
 
 namespace VoxelEngine.Rendering;
 
-// public class RenderContext
+// public sealed class RenderContext
 // {
-//     public IGraphicsCommandsList CommandList;
-//     public CameraData Camera;
-//     public DebugRenderMode DebugMode;
+//     private CameraData _camera;
+//     private List<RenderCommand> _renderCommands = new();
 
-//     private List<RenderCommand> _opaqueQueue = new();
-//     private List<RenderCommand> _transparentQueue = new();
+//     private readonly IWindowSurface _windowSurface;
+//     private readonly IGraphicsDevice _graphicsDevice;
+//     private readonly IGraphicsFactory _graphicsFactory;
 
-//     public ReadOnlySpan<RenderCommand> OpaqueQueue => _opaqueQueue.ToArray().AsSpan();
-//     public ReadOnlySpan<RenderCommand> TransparentQueue => _transparentQueue.ToArray().AsSpan();
-
-//     internal RenderContext(IGraphicsCommandsList commandList)
+//     public RenderContext(IWindowSurface windowSurface, IGraphicsDevice graphicsDevice)
 //     {
-//         CommandList = commandList;
+//         _windowSurface = windowSurface;
+//         _graphicsDevice = graphicsDevice;
+//         _graphicsFactory = graphicsDevice.Factory;
 //     }
 
-//     internal void ClearQueues()
+//     public void Begin(CameraData cameraData)
 //     {
-//         _opaqueQueue.Clear();
-//         _transparentQueue.Clear();
+//         _camera = cameraData;
 //     }
 
-//     [MethodImpl(AggressiveInlining)]
-//     internal void AddToQueue(RenderCommand cmd, bool isTransparent)
+//     public void End()
 //     {
-//         if (isTransparent) _transparentQueue.Add(cmd);
-//         else _opaqueQueue.Add(cmd);
+
 //     }
 
-//     internal void SortQueues()
-//     {
-//         // Opaque: Front-to-Back (Minimize overdraw), then group by Material/Mesh
-//         _opaqueQueue.Sort((a, b) => a.SortingKey.CompareTo(b.SortingKey));
-
-//         // Transparent: Back-to-Front (Crucial for alpha blending)
-//         _transparentQueue.Sort((a, b) => b.SortingKey.CompareTo(a.SortingKey));
-//     }
 // }
+public readonly struct RenderContext
+{
+    public readonly CameraData camera;
+    public readonly List<RenderCommand> renderCommands;
+
+    public readonly IWindowSurface windowSurface;
+    public readonly IGraphicsDevice graphicsDevice;
+    public readonly IGraphicsFactory graphicsFactory;
+
+    private readonly List<IGraphicsCommandsList> _graphicsCommandsLists = new(16);
+    public IReadOnlyList<IGraphicsCommandsList> GraphicsCommandsLists => _graphicsCommandsLists;
+
+    public RenderContext(IWindowSurface windowSurface, IGraphicsDevice graphicsDevice, List<RenderCommand> renderCommands, CameraData cameraData)
+    {
+        this.windowSurface = windowSurface;
+        this.graphicsDevice = graphicsDevice;
+        this.graphicsFactory = graphicsDevice.Factory;
+        this.renderCommands = renderCommands;
+        this.camera = cameraData;
+    }
+
+    public IGraphicsCommandsList CreateGraphicsCommandsList()
+    {
+        return graphicsFactory.CreateCommandsList();
+    }
+
+    internal void Submit(IGraphicsCommandsList commands)
+    {
+        // _graphicsCommandsLists.Add(commands);
+        graphicsDevice.Submit(commands);
+    }
+}

@@ -1,0 +1,30 @@
+================================================================================
+Engine Log - Started at 2026-03-22 12:56:32
+================================================================================
+
+[12:56:32.112] [INFO ] VoxelEngine initialized from Desktop platform with Standalone RuntimeContext.
+[12:56:32.123] [INFO ] [EntryPoint:39] Creating engine
+[12:56:32.123] [INFO ] [EntryPoint:50] Starting engine...
+[12:56:32.126] [DEBUG] [Engine:53] [Engine] Initializing Core Services & Drivers...
+[12:56:32.129] [INFO ] [DesktopWindow:26] Creating window: 'VoxelEngine' (1280x720)
+[12:56:32.216] [INFO ] [DesktopWindow:40] Desktop window created successfully.
+[12:56:32.216] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindowSurface
+[12:56:32.498] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDriver
+[12:56:32.506] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[12:56:32.506] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsFactory
+[12:56:32.648] [EXTRAINFO] [ServiceContainer:24] Registering service: IGuiRenderer
+[12:56:32.648] [EXTRAINFO] [ServiceContainer:24] Registering service: IFileManager
+[12:56:32.649] [EXTRAINFO] [ServiceContainer:24] Registering service: IAssetsManager
+[12:56:32.651] [EXTRAINFO] [ServiceContainer:24] Registering service: UniverseManager
+[12:56:32.653] [EXTRAINFO] [ServiceContainer:24] Registering service: IRenderer
+[12:56:32.667] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[12:56:32.668] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[12:56:32.685] [DEBUG] [GameSetup:15] Game setup is running for scene: (Scene: scene_01, ID: 0)
+[12:56:50.727] [INFO ] [DesktopWindow:53] Desktop window closing...
+[12:56:50.727] [EXTRAINFO] [Heartbeat:115] Heartbeat Stopped
+[12:56:50.728] [INFO ] [EntryPoint:69] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-22 12:56:50
+================================================================================

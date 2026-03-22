@@ -12,7 +12,7 @@ public struct CameraData
 
 
     public int Priority;
-    public CameraClearFlags ClearFlags;
+    // public CameraClearFlags ClearFlags;
     public Color ClearColor;
     public uint CullingMask; // Bitmask for layers
     public RenderTargetAsset? Target; // Null means render to swapchain/screen

@@ -1,0 +1,17 @@
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\2_Modules\VoxelEngine.Graphics.OpenGL\obj\Debug\net11.0\VoxelEngine.Graphics.OpenGL.csproj.AssemblyReference.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\2_Modules\VoxelEngine.Graphics.OpenGL\obj\Debug\net11.0\VoxelEngine.Graphics.OpenGL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\2_Modules\VoxelEngine.Graphics.OpenGL\obj\Debug\net11.0\VoxelEngine.Graphics.OpenGL.AssemblyInfoInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\2_Modules\VoxelEngine.Graphics.OpenGL\obj\Debug\net11.0\VoxelEngine.Graphics.OpenGL.AssemblyInfo.cs
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\2_Modules\VoxelEngine.Graphics.OpenGL\obj\Debug\net11.0\VoxelEngine.Graphics.OpenGL.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\2_Modules\VoxelEngine.Graphics.OpenGL\obj\Debug\net11.0\VoxelEngine.Graphics.OpenGL.sourcelink.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\VoxelEngine.Graphics.OpenGL\net11.0\VoxelEngine.Graphics.OpenGL.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\VoxelEngine.Graphics.OpenGL\net11.0\VoxelEngine.Graphics.OpenGL.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\VoxelEngine.Graphics.OpenGL\net11.0\VoxelEngine.Graphics.OpenGL.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\2_Modules\VoxelEngine.Graphics.OpenGL\obj\Debug\net11.0\VoxelEng.101E4748.Up2Date
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\2_Modules\VoxelEngine.Graphics.OpenGL\obj\Debug\net11.0\VoxelEngine.Graphics.OpenGL.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\2_Modules\VoxelEngine.Graphics.OpenGL\obj\Debug\net11.0\refint\VoxelEngine.Graphics.OpenGL.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\2_Modules\VoxelEngine.Graphics.OpenGL\obj\Debug\net11.0\VoxelEngine.Graphics.OpenGL.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\2_Modules\VoxelEngine.Graphics.OpenGL\obj\Debug\net11.0\ref\VoxelEngine.Graphics.OpenGL.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\VoxelEngine.Graphics.OpenGL\net11.0\VoxelEngine.Graphics.OpenGL.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\VoxelEngine.Graphics.OpenGL\net11.0\VoxelEngine.Graphics.OpenGL.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\VoxelEngine.Graphics.OpenGL\net11.0\VoxelEngine.Graphics.OpenGL.pdb

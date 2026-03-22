@@ -26,3 +26,6 @@ C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Engine.Core\net11.0
 C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Engine.Core\net11.0\Engine.Core.pdb
 C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\obj\Debug\net11.0\Engine.C.91E6C2CF.Up2Date
 C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\obj\Debug\net11.0\ref\Engine.Core.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\Engine.Core\net11.0\Engine.Core.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\Engine.Core\net11.0\Engine.Core.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\bin\Debug\Engine.Core\net11.0\Engine.Core.pdb

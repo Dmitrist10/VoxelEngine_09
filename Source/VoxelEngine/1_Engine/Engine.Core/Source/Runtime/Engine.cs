@@ -7,6 +7,8 @@ using VoxelEngine.Assets;
 using VoxelEngine.IO.FilesManagement;
 using VoxelEngine.Core.UGC;
 using VoxelEngine.Rendering;
+using Arch.Core;
+using VoxelEngine.Input;
 
 namespace VoxelEngine.Core.Runtime;
 
@@ -16,6 +18,7 @@ public sealed class Engine
     private IRuntimeContext _runtimeContext;
     private GameBase _game;
 
+    private IGraphicsDevice? _graphicsDevice;
     private IWindowSurface? _windowSurface;
     private UniverseManager? _universeManager;
     private IRenderer? _renderer;
@@ -57,10 +60,16 @@ public sealed class Engine
         {
             EngineContext.Publish(new Event_WindowLoadedEvent(_windowSurface, _platform));
 
+            // Create InputDriver before graphics so we have input context for GUI
+            IInputDriver inputDriver = _platform.CreateInputDriver();
+            EngineContext.Register<IInputDriver>(inputDriver);
+            IInputContext inputContext = inputDriver.GetInputContext();
+            EngineContext.Register<IInputContext>(inputContext);
+
             // Create GraphicsDriver 
             IGraphicsDriver graphicsDriver = _platform.CreateGraphicsDriver();
             EngineContext.Register<IGraphicsDriver>(graphicsDriver);
-            graphicsDriver.CreateGraphicsDevice();
+            _graphicsDevice = graphicsDriver.CreateGraphicsDevice();
             graphicsDriver.Initialize();
         };
 
@@ -94,13 +103,27 @@ public sealed class Engine
         _universeManager = new UniverseManager();
         EngineContext.Register<UniverseManager>(_universeManager);
 
-        _renderer = new Renderer();
+        LightingService lightingService = new LightingService();
+        EngineContext.Register<LightingService>(lightingService);
+
+        _renderer = new Renderer(_windowSurface, _graphicsDevice!);
         EngineContext.Register<IRenderer>(_renderer);
     }
 
 
     private void PostInit()
     {
+        // Initialize Arch ECS SharedJobScheduler for parallel queries
+        var archJobConfig = new Schedulers.JobScheduler.Config
+        {
+            ThreadPrefixName = "VoxelEngine_Arch",
+            ThreadCount = 0, // Auto-detect core count
+            MaxExpectedConcurrentJobs = 256,
+            StrictAllocationMode = false
+        };
+        World.SharedJobScheduler = new Schedulers.JobScheduler(archJobConfig);
+
+
         _game.universeManager = _universeManager!;
         _game.OnInitialize();
     }

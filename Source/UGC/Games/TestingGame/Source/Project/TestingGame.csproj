@@ -19,4 +19,8 @@
     <!-- <ProjectReference Include="..\..\..\..\..\VoxelEngine\2_Features\Features.Graphics\Features.Graphics.csproj" /> -->
   </ItemGroup>
 
+  <!-- <ItemGroup>
+    <PackageReference Include="Silk.NET" />
+  </ItemGroup> -->
+
 </Project>

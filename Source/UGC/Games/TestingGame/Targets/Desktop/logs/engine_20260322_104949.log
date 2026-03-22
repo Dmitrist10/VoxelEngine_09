@@ -1,0 +1,43 @@
+================================================================================
+Engine Log - Started at 2026-03-22 10:49:49
+================================================================================
+
+[10:49:49.981] [INFO ] VoxelEngine initialized from Desktop platform with Standalone RuntimeContext.
+[10:49:49.993] [INFO ] [EntryPoint:39] Creating engine
+[10:49:49.994] [INFO ] [EntryPoint:50] Starting engine...
+[10:49:49.997] [DEBUG] [Engine:52] [Engine] Initializing Core Services & Drivers...
+[10:49:50.177] [INFO ] [DesktopWindow:26] Creating window: 'VoxelEngine' (1280x720)
+[10:49:50.350] [INFO ] [DesktopWindow:40] Desktop window created successfully.
+[10:49:50.351] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IWindowSurface
+[10:49:50.649] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsDriver
+[10:49:50.769] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsDevice
+[10:49:50.770] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IGraphicsFactory
+[10:49:50.770] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IFileManager
+[10:49:50.771] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IAssetsManager
+[10:49:50.773] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: UniverseManager
+[10:49:50.779] [EXTRAINFO] [ServiceContainer:24] [ServiceContainer] Registering service: IRenderer
+[10:49:50.780] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[10:49:50.781] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[10:49:50.782] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[10:49:51.068] [DEBUG] [GameSetup:14] Game setup is running for scene: (Scene: scene_01, ID: 0)
+[10:49:51.419] [LINE ] ================================================================================
+[10:49:51.420] [LINE ] ================================================================================
+[10:49:51.420] [ERROR] [EntryPoint:59] Exception: SharedJobScheduler is missing, assign an instance to World.SharedJobScheduler. This singleton used for parallel iterations.
+[10:49:51.448] [ERROR] [EntryPoint:65] Exception Stack Trace:    at Arch.Core.World.InlineParallelChunkQuery[T](QueryDescription& queryDescription, T& innerJob)
+   at Arch.Core.World.ParallelQuery[T0,T1](QueryDescription& description, ForEach`2 forEach)
+   at VoxelEngine.Core.EP_Transform.OnUpdate() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\GameWorld\Actor\ECS\Primitives\EP_Transform.cs:line 34
+   at VoxelEngine.Core.EntityProcessorsRegistry.OnUpdate() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\GameWorld\Scene\Registries\EntityProcessorsRegistry.cs:line 85
+   at VoxelEngine.Core.Scene.OnUpdate() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\GameWorld\Scene\Scene.Lifecycle.cs:line 11
+   at VoxelEngine.Core.Universe.OnUpdate() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\GameWorld\Universe\Universe.Lifecycle.cs:line 11
+   at VoxelEngine.Core.UniverseManager.OnUpdate() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\GameWorld\Universe\UniverseManager.cs:line 29
+   at VoxelEngine.Core.Runtime.EngineLoop.OnUpdate() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\EngineLoop.cs:line 32
+   at VoxelEngine.Core.Runtime.Heartbeat.Start(IUpdateCallbacksHandler callbacks, IWindowSurface window) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\Heartbeat.cs:line 107
+   at VoxelEngine.Core.Runtime.Engine.Run() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\Engine.cs:line 115
+   at VoxelEngine.Core.Runtime.Engine.StartEngine() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\Engine.cs:line 37
+   at VoxelEngine.Platforms.Desktop.EntryPoint.Run(String[] args, IRuntimeContext context, GameBase game) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Desktop\Source\EntryPoint.cs:line 51
+[10:49:51.449] [INFO ] [EntryPoint:69] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-22 10:49:51
+================================================================================

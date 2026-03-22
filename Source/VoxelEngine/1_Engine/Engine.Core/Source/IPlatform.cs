@@ -1,4 +1,5 @@
 using VoxelEngine.Graphics;
+using VoxelEngine.Input;
 using VoxelEngine.Windowing;
 
 namespace VoxelEngine.Core;
@@ -9,6 +10,7 @@ public interface IPlatform : IDisposable
 
     // Drivers
     IGraphicsDriver CreateGraphicsDriver();
+    IInputDriver CreateInputDriver();
     // IAudioDriver CreateAudioDriver();
 
 }

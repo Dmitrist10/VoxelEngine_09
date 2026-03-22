@@ -19,3 +19,9 @@ namespace VoxelEngine.Audio
 {
     public readonly record struct AudioHandle(ResourceHandle Handle) : IAsset;
 }
+
+namespace VoxelEngine.Physics
+{
+    public readonly record struct PhysicsHandle(ResourceHandle Handle) : IAsset;
+    public readonly record struct PhysicsMeshColliderHandle(ResourceHandle Handle) : IAsset;
+}
