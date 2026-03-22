@@ -2,6 +2,7 @@ using Arch.Core;
 
 namespace VoxelEngine.Core;
 
+[NoInspect]
 public record struct C_Hierarchy : IComponent
 {
     // Parent-child relationship

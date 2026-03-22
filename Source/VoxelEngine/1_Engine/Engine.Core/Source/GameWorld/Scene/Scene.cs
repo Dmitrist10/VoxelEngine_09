@@ -27,6 +27,7 @@ public sealed partial class Scene
         _servicesRegistry = new SceneGameServicesRegistry(this);
         _entityProcessorsRegistry = new EntityProcessorsRegistry(this);
 
+        AddProcessor<EP_MeshBounds>();
         AddProcessor<EP_Transform>();
         AddProcessor<EP_Camera>();
         AddProcessor<EP_MeshRenderer>();

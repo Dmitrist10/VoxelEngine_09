@@ -1,6 +1,7 @@
 using System.Numerics;
 using VoxelEngine.Assets;
 using VoxelEngine.Core;
+using VoxelEngine.Common;
 
 namespace VoxelEngine.Graphics;
 
@@ -9,12 +10,14 @@ public record struct MeshAsset : IGraphicsAsset
     public MeshHandle Handle;
     public uint VertexCount;
     public uint IndexCount;
+    public AABB Bounds;
 
-    public MeshAsset(MeshHandle handle, uint vertexCount, uint indexCount)
+    public MeshAsset(MeshHandle handle, uint vertexCount, uint indexCount, AABB bounds)
     {
         Handle = handle;
         VertexCount = vertexCount;
         IndexCount = indexCount;
+        Bounds = bounds;
     }
 }
 

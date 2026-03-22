@@ -21,6 +21,7 @@ public static class GameSetUp
         C_Camera cameraComponent = new C_Camera(CameraProjectionType.Perspective, isMainCamera: true);
         camera.AddComponent(cameraComponent);
         camera.AddComponent(new C_EditorCamera());
+        // camera.AddComponent(new C_EditorOnly());
         camera.Position = new Vector3(0, 10, -5);
         camera.Rotation = new Vector3(-30, 0, 0).ToQuaternion();
         camera.AddBehavior(new B_CameraController());

@@ -2,6 +2,7 @@ using Assimp;
 using System.Numerics;
 
 using VoxelEngine.Core;
+using VoxelEngine.Common;
 using VoxelEngine.Graphics;
 using VoxelEngine.Diagnostics;
 using VoxelEngine.IO.FilesManagement;
@@ -10,6 +11,19 @@ namespace VoxelEngine.Assets;
 
 public static class MeshLoader
 {
+
+    public static AABB CalculateAABB(STDVertex[] vertices)
+    {
+        if (vertices.Length == 0) return new AABB(Vector3.Zero, Vector3.Zero);
+        Vector3 min = vertices[0].Position;
+        Vector3 max = vertices[0].Position;
+        foreach (var v in vertices)
+        {
+            min = Vector3.Min(min, v.Position);
+            max = Vector3.Max(max, v.Position);
+        }
+        return new AABB(min, max);
+    }
 
     public static MeshDataRaw LoadRaw(string path, MeshOptions options)
     {

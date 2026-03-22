@@ -7,6 +7,8 @@ using VoxelEngine.Graphics;
 using VoxelEngine.IO.FilesManagement;
 using VoxelEngine.Diagnostics;
 
+using VoxelEngine.Common;
+
 namespace VoxelEngine.Assets;
 
 public class AssetLoader_MeshAsset : IAssetLoader<MeshAsset, MeshOptions>
@@ -24,7 +26,8 @@ public class AssetLoader_MeshAsset : IAssetLoader<MeshAsset, MeshOptions>
     {
         STDMeshData data = MeshLoader.LoadStdMesh(path, options); // Get Data from file
         MeshHandle handle = _factory.CreateMesh(data); // upload to the GPU
-        MeshAsset asset = new MeshAsset(handle, data.VertexCount, data.IndexCount); // Create a wrapper for the handle
+        AABB bounds = MeshLoader.CalculateAABB(data.Vertices); // Calculate AABB bounds
+        MeshAsset asset = new MeshAsset(handle, data.VertexCount, data.IndexCount, bounds); // Create a wrapper for the handle
         return asset;
     }
 

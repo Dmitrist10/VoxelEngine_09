@@ -10,19 +10,19 @@ public enum CameraProjectionType
 
 public struct C_Camera : IComponent
 {
-    public Matrix4x4 View { get; private set; }
-    public Matrix4x4 Projection { get; private set; }
-    public bool IsMainCamera { get; internal set; }
-    public int Priority { get; internal set; }
+    [Inspect] public Matrix4x4 View { get; private set; }
+    [NoInspect] public Matrix4x4 Projection { get; private set; }
+    [Inspect] public bool IsMainCamera { get; internal set; }
+    [Inspect] public int Priority { get; internal set; }
 
-    public CameraProjectionType CameraType;
+    [Inspect] public CameraProjectionType CameraType;
 
-    public float OrthographicSize;
-    public float FieldOfView;
+    [Inspect] public float OrthographicSize;
+    [Inspect] public float FieldOfView;
 
-    public float AspectRatio;
-    public float NearPlane;
-    public float FarPlane;
+    [OnlyView] public float AspectRatio;
+    [Inspect] public float NearPlane;
+    [Inspect] public float FarPlane;
 
     public C_Camera(CameraProjectionType type = CameraProjectionType.Perspective, float fieldOfView = 0.8f, float aspectRatio = 16f / 9f,
         float nearPlane = 0.1f, float farPlane = 1000f, float orthographicSize = 8f, bool isMainCamera = false,

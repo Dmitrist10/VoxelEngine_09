@@ -47,6 +47,12 @@ public readonly partial struct Actor
         return scene.AddBehavior<T>(entity);
     }
 
+    public bool IsCoreComponent(Type type)
+    {
+        return type == typeof(C_ID) || type == typeof(C_Hierarchy) || type == typeof(C_Actor) ||
+                type == typeof(C_Transform) || type == typeof(C_WorldTransformMatrix);
+    }
+
     #endregion
 
 

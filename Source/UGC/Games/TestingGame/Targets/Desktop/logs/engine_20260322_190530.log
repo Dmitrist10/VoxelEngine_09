@@ -1,0 +1,53 @@
+================================================================================
+Engine Log - Started at 2026-03-22 19:05:30
+================================================================================
+
+[19:05:30.899] [INFO ] VoxelEngine initialized from Desktop platform with Standalone RuntimeContext.
+[19:05:30.909] [INFO ] [EntryPoint:39] Creating engine
+[19:05:30.910] [INFO ] [EntryPoint:50] Starting engine...
+[19:05:30.913] [DEBUG] [Engine:54] [Engine] Initializing Core Services & Drivers...
+[19:05:30.916] [INFO ] [DesktopWindow:26] Creating window: 'VoxelEngine' (1280x720)
+[19:05:30.994] [INFO ] [DesktopWindow:40] Desktop window created successfully.
+[19:05:30.994] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindowSurface
+[19:05:31.273] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputDriver
+[19:05:31.382] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputContext
+[19:05:31.384] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputContext
+[19:05:31.455] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDriver
+[19:05:31.461] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[19:05:31.462] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsFactory
+[19:05:31.480] [EXTRAINFO] [ServiceContainer:24] Registering service: IGuiRenderer
+[19:05:31.480] [EXTRAINFO] [ServiceContainer:24] Registering service: IFileManager
+[19:05:31.482] [EXTRAINFO] [ServiceContainer:24] Registering service: IAssetsManager
+[19:05:31.483] [EXTRAINFO] [ServiceContainer:24] Registering service: UniverseManager
+[19:05:31.484] [EXTRAINFO] [ServiceContainer:24] Registering service: LightingService
+[19:05:31.486] [EXTRAINFO] [ServiceContainer:24] Registering service: IRenderer
+[19:05:31.500] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[19:05:31.501] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[19:05:31.501] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[19:05:31.518] [DEBUG] [GameSetup:15] Game setup is running for scene: (Scene: scene_01, ID: 0)
+[19:06:37.039] [LINE ] ================================================================================
+[19:06:37.039] [LINE ] ================================================================================
+[19:06:37.040] [ERROR] [EntryPoint:59] Exception: fieldOfView ('3,15') must be less than '3,1415927'. (Parameter 'fieldOfView')
+Actual value was 3,15.
+[19:06:37.059] [ERROR] [EntryPoint:65] Exception Stack Trace:    at System.ArgumentOutOfRangeException.ThrowGreaterEqual[T](T value, T other, String paramName)
+   at System.Numerics.Matrix4x4.CreatePerspectiveFieldOfView(Single fieldOfView, Single aspectRatio, Single nearPlaneDistance, Single farPlaneDistance)
+   at VoxelEngine.Core.C_Camera.UpdateProjection() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\Modules\Rendering\Actors\ECS\C_Camera.cs:line 48
+   at VoxelEngine.Core.C_Camera.UpdateAspectRatio(Single aspectRatio) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\Modules\Rendering\Actors\ECS\C_Camera.cs:line 66
+   at VoxelEngine.Rendering.EP_Camera.<>c__DisplayClass5_0.<OnRender>b__0(C_Transform& transform, C_Camera& camera) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\Modules\Rendering\Actors\ECS\EP_Camera.cs:line 34
+   at Arch.Core.World.Query[T0,T1](QueryDescription& description, ForEach`2 forEach)
+   at VoxelEngine.Rendering.EP_Camera.OnRender() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\Modules\Rendering\Actors\ECS\EP_Camera.cs:line 31
+   at VoxelEngine.Core.EntityProcessorsRegistry.OnRender() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\GameWorld\Scene\Registries\EntityProcessorsRegistry.cs:line 106
+   at VoxelEngine.Core.Scene.OnRender() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\GameWorld\Scene\Scene.Lifecycle.cs:line 28
+   at VoxelEngine.Core.Universe.OnRender() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\GameWorld\Universe\Universe.Lifecycle.cs:line 32
+   at VoxelEngine.Core.UniverseManager.OnRender() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\GameWorld\Universe\UniverseManager.cs:line 36
+   at VoxelEngine.Core.Runtime.EngineLoop.OnRender() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\EngineLoop.cs:line 48
+   at VoxelEngine.Core.Runtime.Heartbeat.Start(IUpdateCallbacksHandler callbacks, IWindowSurface window) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\Heartbeat.cs:line 108
+   at VoxelEngine.Core.Runtime.Engine.Run() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\Engine.cs:line 137
+   at VoxelEngine.Core.Runtime.Engine.StartEngine() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\1_Engine\Engine.Core\Source\Runtime\Engine.cs:line 39
+   at VoxelEngine.Platforms.Desktop.EntryPoint.Run(String[] args, IRuntimeContext context, GameBase game) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_10\Source\VoxelEngine\6_Platforms\Platforms.Desktop\Source\EntryPoint.cs:line 51
+[19:06:37.059] [INFO ] [EntryPoint:69] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-22 19:06:37
+================================================================================

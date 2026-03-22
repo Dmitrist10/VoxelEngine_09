@@ -1,27 +1,28 @@
-using VoxelEngine.Core;
 using ImGuiNET;
-using VoxelEngine.Common;
 using Arch.Core;
-using System.Numerics;
+
 using System;
-using System.Reflection;
 using System.Collections.Generic;
+using System.Numerics;
+using System.Reflection;
+
+using VoxelEngine.Core;
+using VoxelEngine.Common;
+using VoxelEngine.Input;
 using VoxelEngine.Assets;
 using VoxelEngine.Graphics;
 using VoxelEngine.Rendering;
-using VoxelEngine.Input;
 using VoxelEngine.Diagnostics;
 
 namespace TestingGame;
 
 public record struct C_EditorCamera();
+public record struct C_EditorOnly(); // Hides this entity from the hierarchy
 
 
 public class EP_DebugUI : EntityProcessor, IRenderable, IUpdatable
 {
     private Entity _selectedEntity = Entity.Null;
-    private Dictionary<int, Vector3> _eulerCache = new();
-
     private IInputContext input;
 
     private float _hierarchyWidth = 350f;
@@ -43,20 +44,92 @@ public class EP_DebugUI : EntityProcessor, IRenderable, IUpdatable
 
     public void OnUpdate()
     {
-        if (input.IsKeyDown(Key.F5))
+        if (input.IsKeyPressed(Key.F5))
         {
             isUIEnabled = !isUIEnabled;
         }
 
-        if (input.IsKeyDown(Key.F) && _selectedEntity != Entity.Null)
+        if (input.IsKeyPressed(Key.F) && _selectedEntity != Entity.Null)
         {
             world.Query(new QueryDescription().WithAll<C_EditorCamera, C_Transform>(), (Entity e, ref C_EditorCamera c, ref C_Transform t) =>
             {
                 ref var targetT = ref world.Get<C_Transform>(_selectedEntity);
-                t.WorldPosition = targetT.WorldPosition + -targetT.Forward * 2;
+                t.LocalPosition = targetT.WorldPosition + -targetT.Forward * 2;
+                t.MarkDirty();
             });
         }
 
+        // Duplicate
+        if (input.IsKeyDown(Key.ControlLeft) && input.IsKeyPressed(Key.D))
+        {
+            if (_selectedEntity != Entity.Null && world.IsAlive(_selectedEntity))
+            {
+                DuplicateActor(new Actor(_selectedEntity, scene));
+            }
+        }
+
+        UpdatePicking();
+    }
+
+    private void UpdatePicking()
+    {
+        var io = ImGui.GetIO();
+        if (io.WantCaptureMouse) return;
+        if (!input.IsMouseButtonPressed(MouseButton.Left)) return;
+
+        // Find main camera
+        C_Camera? mainCam = null;
+        world.Query(new QueryDescription().WithAll<C_Camera, C_Transform>(), (ref C_Camera cam) =>
+        {
+            if (cam.IsMainCamera) mainCam = cam;
+        });
+
+        if (mainCam == null) return;
+
+        Ray ray = GetMouseRay(mainCam.Value, io.MousePos, io.DisplaySize.X, io.DisplaySize.Y);
+
+        Entity bestHit = Entity.Null;
+        float minT = float.MaxValue;
+
+        world.Query(new QueryDescription().WithAll<C_AABB, C_WorldTransformMatrix>(), (Entity e, ref C_AABB aabb, ref C_WorldTransformMatrix worldMatrix) =>
+        {
+            Matrix4x4.Invert(worldMatrix.WorldMatrix, out var invWorld);
+            Vector3 localOrigin = Vector3.Transform(ray.Origin, invWorld);
+            Vector3 localDir = Vector3.Normalize(Vector3.TransformNormal(ray.Direction, invWorld));
+            Ray localRay = new Ray(localOrigin, localDir);
+
+            if (aabb.LocalAABB.Intersects(localRay, out float t))
+            {
+                Vector3 worldHit = Vector3.Transform(localRay.GetPoint(t), worldMatrix.WorldMatrix);
+                float dist = Vector3.Distance(ray.Origin, worldHit);
+
+                if (dist < minT)
+                {
+                    minT = dist;
+                    bestHit = e;
+                }
+            }
+        });
+
+        if (bestHit != Entity.Null)
+            _selectedEntity = bestHit;
+    }
+
+    private Ray GetMouseRay(C_Camera cam, Vector2 mousePos, float sw, float sh)
+    {
+        float x = (2.0f * mousePos.X) / sw - 1.0f;
+        float y = 1.0f - (2.0f * mousePos.Y) / sh;
+
+        Matrix4x4.Invert(cam.View * cam.Projection, out var invVP);
+
+        Vector4 near = Vector4.Transform(new Vector4(x, y, 0.0f, 1.0f), invVP);
+        Vector4 far = Vector4.Transform(new Vector4(x, y, 1.0f, 1.0f), invVP);
+
+        Vector3 rayOrigin = new Vector3(near.X / near.W, near.Y / near.W, near.Z / near.W);
+        Vector3 rayEnd = new Vector3(far.X / far.W, far.Y / far.W, far.Z / far.W);
+        Vector3 rayDir = Vector3.Normalize(rayEnd - rayOrigin);
+
+        return new Ray(rayOrigin, rayDir);
     }
 
     public void OnRender()
@@ -132,18 +205,18 @@ public class EP_DebugUI : EntityProcessor, IRenderable, IUpdatable
                         lighting.Color = lightCol;
 
                     float ambient = lighting.AmbientIntensity;
-                    if (ImGui.DragFloat("Ambient Intensity", ref ambient, 0.01f, 0f, 3f))
+                    if (ImGui.DragFloat("Ambient Intensity", ref ambient, 0.025f, 0f, 10f))
                         lighting.AmbientIntensity = ambient;
 
                     ImGui.Separator();
                     ImGui.TextColored(new Vector4(0.5f, 0.5f, 1, 1), "Surface Settings");
 
                     float spec = lighting.SpecularIntensity;
-                    if (ImGui.DragFloat("Specular Intensity", ref spec, 0.01f, 0f, 1f))
+                    if (ImGui.DragFloat("Specular Intensity", ref spec, 0.01f, 0f, 2f))
                         lighting.SpecularIntensity = spec;
 
                     float gloss = lighting.Shininess;
-                    if (ImGui.DragFloat("Shininess", ref gloss, 1f, 1f, 256f))
+                    if (ImGui.DragFloat("Shininess", ref gloss, 1f, 1f, 512f))
                         lighting.Shininess = gloss;
 
                     ImGui.EndTabItem();
@@ -180,6 +253,8 @@ public class EP_DebugUI : EntityProcessor, IRenderable, IUpdatable
 
     private void DrawActorNode(Actor actor)
     {
+        if (actor.HasComponent<C_EditorOnly>()) return;
+
         string name = string.IsNullOrEmpty(actor.Name)
             ? $"Actor {actor.entity.Id}" : actor.Name;
 
@@ -195,7 +270,6 @@ public class EP_DebugUI : EntityProcessor, IRenderable, IUpdatable
             if (_selectedEntity != actor.entity)
             {
                 _selectedEntity = actor.entity;
-                _eulerCache.Remove(actor.entity.Id);
             }
         }
 
@@ -206,6 +280,13 @@ public class EP_DebugUI : EntityProcessor, IRenderable, IUpdatable
             unsafe { ImGui.SetDragDropPayload("ACTOR_DND", (IntPtr)(&id), sizeof(int)); }
             ImGui.Text($"Move: {name}");
             ImGui.EndDragDropSource();
+        }
+
+        // Context menu
+        if (ImGui.BeginPopupContextItem($"ActorContext{actor.entity.Id}"))
+        {
+            if (ImGui.MenuItem("Duplicate")) DuplicateActor(actor);
+            ImGui.EndPopup();
         }
 
         // Drop target → re-parent
@@ -257,9 +338,18 @@ public class EP_DebugUI : EntityProcessor, IRenderable, IUpdatable
 
             Actor actor = new Actor(_selectedEntity, scene);
 
-            // Name
+            // Name & Actions
             string name = actor.Name ?? "";
-            if (ImGui.InputText("Name", ref name, 128)) actor.Name = name;
+            ImGui.AlignTextToFramePadding();
+            ImGui.Text("Name");
+            ImGui.SameLine();
+            ImGui.SetNextItemWidth(ImGui.GetContentRegionAvail().X - 100);
+            if (ImGui.InputText("##Name", ref name, 128)) actor.Name = name;
+            ImGui.SameLine();
+            if (ImGui.Button("Duplicate"))
+            {
+                DuplicateActor(actor);
+            }
             ImGui.Separator();
 
             DrawTransform(actor);
@@ -278,24 +368,58 @@ public class EP_DebugUI : EntityProcessor, IRenderable, IUpdatable
         if (!ImGui.CollapsingHeader("Transform", ImGuiTreeNodeFlags.DefaultOpen)) return;
 
         Vector3 pos = actor.LocalPosition;
-        if (ImGui.DragFloat3("Position", ref pos, 0.1f))
+        if (LabeledControl("Position", () => ImGui.DragFloat3("##Position", ref pos, 0.1f), d => { pos += new Vector3(d * 0.1f); return true; }))
             actor.LocalPosition = pos;
 
-        // Cached Euler angles — prevents gimbal feedback each frame
-        if (!_eulerCache.TryGetValue(_selectedEntity.Id, out Vector3 rot))
-        {
-            rot = QuaternionToEuler(actor.LocalRotation);
-            _eulerCache[_selectedEntity.Id] = rot;
-        }
-        if (ImGui.DragFloat3("Rotation", ref rot, 1.0f))
-        {
-            _eulerCache[_selectedEntity.Id] = rot;
-            actor.LocalRotation = EulerToQuaternion(rot);
-        }
+        Quaternion rot = actor.LocalRotation;
+        if (DrawRotationField("Rotation", ref rot))
+            actor.LocalRotation = rot;
 
         Vector3 scale = actor.LocalScale;
-        if (ImGui.DragFloat3("Scale", ref scale, 0.1f))
+        if (LabeledControl("Scale", () => ImGui.DragFloat3("##Scale", ref scale, 0.1f), d => { scale *= (1.0f + d * 0.01f); return true; }))
             actor.LocalScale = scale;
+    }
+
+    private bool DrawRotationField(string label, ref Quaternion q)
+    {
+        Vector3 euler = q.QuaternionToEuler();
+
+        uint id = ImGui.GetID(label);
+        var storage = ImGui.GetStateStorage();
+
+        // If we were active in the previous frame, use the stored euler to stay stable
+        if (storage.GetBool(id + 3))
+        {
+            euler.X = storage.GetFloat(id + 0);
+            euler.Y = storage.GetFloat(id + 1);
+            euler.Z = storage.GetFloat(id + 2);
+        }
+
+        bool changed = LabeledControl(label, () => ImGui.DragFloat3("##" + label, ref euler, 1.0f), d => { euler += new Vector3(d); return true; });
+        if (changed)
+        {
+            q = euler.EulerToQuaternion();
+            storage.SetFloat(id + 0, euler.X);
+            storage.SetFloat(id + 1, euler.Y);
+            storage.SetFloat(id + 2, euler.Z);
+        }
+
+        bool isActive = storage.GetBool(id + 3) || ImGui.IsItemActive(); // Approximation for LabeledControl interaction
+                                                                         // Note: LabeledControl handles its own internal active state for the label, 
+                                                                         // but we sync storage here for the stability logic.
+
+        // Better: Sync isActive correctly if needed. For now, DragFloat3 activity is enough.
+
+        storage.SetBool(id + 3, ImGui.IsItemActive());
+
+        // Sync storage when not active to handle external changes
+        if (!ImGui.IsItemActive() && !changed)
+        {
+            storage.SetFloat(id + 0, euler.X);
+            storage.SetFloat(id + 1, euler.Y);
+            storage.SetFloat(id + 2, euler.Z);
+        }
+        return changed;
     }
 
     private void DrawCamera(Actor actor)
@@ -306,20 +430,20 @@ public class EP_DebugUI : EntityProcessor, IRenderable, IUpdatable
         ref C_Camera cam = ref world.Get<C_Camera>(_selectedEntity);
 
         float fov = cam.FieldOfView;
-        if (ImGui.DragFloat("Field of View", ref fov, 0.1f)) cam.FieldOfView = fov;
+        if (LabeledControl("Field of View", () => ImGui.DragFloat("##FOV", ref fov, 0.1f))) cam.FieldOfView = fov;
 
         float orthoSize = cam.OrthographicSize;
-        if (ImGui.DragFloat("Orthographic Size", ref orthoSize, 0.1f)) cam.OrthographicSize = orthoSize;
+        if (LabeledControl("Orthographic Size", () => ImGui.DragFloat("##Ortho", ref orthoSize, 0.1f))) cam.OrthographicSize = orthoSize;
 
         float near = cam.NearPlane;
-        if (ImGui.DragFloat("Near Clip", ref near, 0.1f)) cam.NearPlane = near;
+        if (LabeledControl("Near Clip", () => ImGui.DragFloat("##Near", ref near, 0.1f))) cam.NearPlane = near;
 
         float far = cam.FarPlane;
-        if (ImGui.DragFloat("Far Clip", ref far, 0.1f)) cam.FarPlane = far;
+        if (LabeledControl("Far Clip", () => ImGui.DragFloat("##Far", ref far, 0.1f))) cam.FarPlane = far;
 
         int camTypeIdx = (int)cam.CameraType;
         string[] typeNames = Enum.GetNames(typeof(CameraProjectionType));
-        if (ImGui.Combo("Projection", ref camTypeIdx, typeNames, typeNames.Length))
+        if (LabeledControl("Projection", () => ImGui.Combo("##Projection", ref camTypeIdx, typeNames, typeNames.Length)))
         {
             cam.CameraType = (CameraProjectionType)camTypeIdx;
             cam.UpdateProjection();
@@ -346,21 +470,21 @@ public class EP_DebugUI : EntityProcessor, IRenderable, IUpdatable
             }
 
             float ao = pbr.Properties.AO;
-            if (ImGui.DragFloat("AO", ref ao, 0.01f, 0f, 1f))
+            if (LabeledControl("AO", () => ImGui.DragFloat("##AO", ref ao, 0.01f, 0f, 1f)))
             {
                 pbr.Properties.AO = ao;
                 pbr.ApplyChanges();
             }
 
             float metallic = pbr.Properties.Metallic;
-            if (ImGui.DragFloat("Metallic", ref metallic, 0.01f, 0f, 1f))
+            if (LabeledControl("Metallic", () => ImGui.DragFloat("##Metallic", ref metallic, 0.01f, 0f, 1f)))
             {
                 pbr.Properties.Metallic = metallic;
                 pbr.ApplyChanges();
             }
 
             float roughness = pbr.Properties.Roughness;
-            if (ImGui.DragFloat("Roughness", ref roughness, 0.01f, 0f, 1f))
+            if (LabeledControl("Roughness", () => ImGui.DragFloat("##Roughness", ref roughness, 0.01f, 0f, 1f)))
             {
                 pbr.Properties.Roughness = roughness;
                 pbr.ApplyChanges();
@@ -386,96 +510,116 @@ public class EP_DebugUI : EntityProcessor, IRenderable, IUpdatable
         foreach (var component in components)
         {
             var type = component.GetType();
-            if (type == typeof(C_Transform) || type == typeof(C_WorldTransformMatrix) ||
-                        type == typeof(C_Camera) || type == typeof(C_Actor) ||
-                        type == typeof(C_ID) || type == typeof(C_Hierarchy) ||
-                        type == typeof(C_Mesh))
-                continue;
+            if (type.GetCustomAttribute<NoInspectAttribute>() != null) continue;
+            // if (type == typeof(C_Transform) || type == typeof(C_WorldTransformMatrix) ||
+            //             type == typeof(C_Camera) || type == typeof(C_Actor) ||
+            //             type == typeof(C_ID) || type == typeof(C_Hierarchy) ||
+            //             type == typeof(C_Mesh))
+            //     continue;
 
             if (ImGui.CollapsingHeader(component.GetType().Name))
             {
-
                 DrawComponentFields(type, component, actor.entity);
             }
         }
 
         void DrawComponentFields(Type type, object component, Entity entity)
         {
-
+            ImGui.PushID(type.FullName);
             foreach (var field in type.GetFields())
             {
-                var val = field.GetValue(component);
+                if (field.GetCustomAttribute<NoInspectAttribute>() != null) continue;
 
-                DrawField(field.Name, field, ref component);
-                world.Set(entity, component); // Push changes back to ECS
+                var onlyViewAttr = field.GetCustomAttribute<OnlyView>();
+                var attr = field.GetCustomAttribute<InspectAttribute>();
+                string label = attr?.Label ?? field.Name;
+
+                if (DrawField(label, field, ref component, onlyViewAttr != null))
+                {
+                    world.Set(entity, component); // Push changes back to ECS
+                }
             }
+            ImGui.PopID();
         }
     }
 
-    private bool DrawField(string label, FieldInfo field, ref object comp)
+    private bool DrawField(string label, FieldInfo field, ref object comp, bool onlyView)
     {
         Type ft = field.FieldType;
 
         if (ft == typeof(float))
         {
             float v = (float)field.GetValue(comp)!;
-            if (!ImGui.DragFloat(label, ref v, 0.1f)) return false;
+            if (!LabeledControl(label, () => ImGui.DragFloat("##" + label, ref v, 0.1f))) return false;
             field.SetValue(comp, v); return true;
         }
         if (ft == typeof(int))
         {
             int v = (int)field.GetValue(comp)!;
-            if (!ImGui.DragInt(label, ref v)) return false;
+            if (!LabeledControl(label, () => ImGui.DragInt("##" + label, ref v))) return false;
             field.SetValue(comp, v); return true;
         }
         if (ft == typeof(bool))
         {
             bool v = (bool)field.GetValue(comp)!;
-            if (!ImGui.Checkbox(label, ref v)) return false;
+            if (!LabeledControl(label, () => ImGui.Checkbox("##" + label, ref v))) return false;
             field.SetValue(comp, v); return true;
         }
         if (ft == typeof(Vector2))
         {
             Vector2 v = (Vector2)field.GetValue(comp)!;
-            if (!ImGui.DragFloat2(label, ref v, 0.1f)) return false;
+            if (!LabeledControl(label, () => ImGui.DragFloat2("##" + label, ref v, 0.1f), d => { v += new Vector2(d * 0.1f); return true; })) return false;
             field.SetValue(comp, v); return true;
         }
         if (ft == typeof(Vector3))
         {
             Vector3 v = (Vector3)field.GetValue(comp)!;
-            if (!ImGui.DragFloat3(label, ref v, 0.1f)) return false;
+            float dragFactor = label.Contains("Scale") ? 0.01f : 0.1f;
+            if (!LabeledControl(label, () => ImGui.DragFloat3("##" + label, ref v, 0.1f), d =>
+            {
+                if (label.Contains("Scale")) v *= (1.0f + d * dragFactor);
+                else v += new Vector3(d * dragFactor);
+                return true;
+            })) return false;
             field.SetValue(comp, v); return true;
         }
         if (ft == typeof(Vector4))
         {
             Vector4 v = (Vector4)field.GetValue(comp)!;
-            if (!ImGui.DragFloat4(label, ref v, 0.1f)) return false;
+            if (!LabeledControl(label, () => ImGui.DragFloat4("##" + label, ref v, 0.1f), d => { v += new Vector4(d * 0.1f); return true; })) return false;
             field.SetValue(comp, v); return true;
         }
         if (ft == typeof(Color))
         {
             // Color stores 0-1 floats — cast through Vector4
             Vector4 v = (Vector4)(Color)field.GetValue(comp)!;
-            if (!ImGui.ColorEdit4(label, ref v)) return false;
+            if (!LabeledControl(label, () => ImGui.ColorEdit4("##" + label, ref v))) return false;
             field.SetValue(comp, (Color)v); return true;
         }
         if (ft == typeof(string))
         {
             string v = (string?)field.GetValue(comp) ?? "";
-            if (!ImGui.InputText(label, ref v, 256)) return false;
+            if (!LabeledControl(label, () => ImGui.InputText("##" + label, ref v, 256))) return false;
             field.SetValue(comp, v); return true;
+        }
+        if (ft == typeof(Quaternion))
+        {
+            Quaternion v = (Quaternion)field.GetValue(comp)!;
+            if (DrawRotationField(label, ref v))
+            {
+                field.SetValue(comp, v);
+                return true;
+            }
+            return false;
         }
         if (ft.IsEnum)
         {
-            // string v = (string?)field.GetValue(comp) ?? "";
-            // if (!ImGui.InputText(label, ref v, 256)) return false;
-            // field.SetValue(comp, v); return true;
-
-            int camTypeIdx = (int)field.GetValue(comp)!;
+            int val = Convert.ToInt32(field.GetValue(comp)!);
             string[] typeNames = Enum.GetNames(ft);
-            if (ImGui.Combo(label, ref camTypeIdx, typeNames, typeNames.Length))
+            if (LabeledControl(label, () => ImGui.Combo("##" + label, ref val, typeNames, typeNames.Length)))
             {
-                field.SetValue(comp, (CameraProjectionType)camTypeIdx);
+                field.SetValue(comp, Enum.ToObject(ft, val));
+                return true;
             }
         }
 
@@ -484,75 +628,70 @@ public class EP_DebugUI : EntityProcessor, IRenderable, IUpdatable
         return false;
     }
 
-    // ──────────────────────────── Helpers ────────────────────────────
-
-    /// <summary>Pulls ComponentType[] from an Arch Archetype without knowing the exact property name.</summary>
-    private static ComponentType[] GetArchetypeComponentTypes(object archetype)
+    private bool LabeledControl(string label, Func<bool> drawControl, Func<float, bool>? onLabelDrag = null)
     {
-        if (archetype == null) return Array.Empty<ComponentType>();
-        Type at = archetype.GetType();
+        ImGui.Columns(2, "##" + label, false);
+        ImGui.SetColumnWidth(0, 120);
 
-        // 1. Scan fields
-        var allFields = at.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-        foreach (var f in allFields)
-        {
-            if (f.FieldType.IsArray && f.FieldType.Name.Contains("ComponentType"))
-                return (ComponentType[])f.GetValue(archetype)!;
-        }
+        ImGui.AlignTextToFramePadding();
 
-        // 2. Scan properties
-        var allProps = at.GetProperties(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-        foreach (var p in allProps)
-        {
-            if (p.PropertyType.IsArray && p.PropertyType.Name.Contains("ComponentType"))
-                return (ComponentType[])p.GetValue(archetype)!;
-        }
+        // Use a Selectable for the label to make it interactable for dragging
+        bool selected = false;
+        ImGui.Selectable(label, ref selected, ImGuiSelectableFlags.None);
 
-        // 3. Deeper search into common fields like Signature
-        foreach (var f in allFields)
+        bool labelChanged = false;
+        if (onLabelDrag != null && ImGui.IsItemActive() && ImGui.IsMouseDragging(ImGuiMouseButton.Left))
         {
-            if (f.Name.Contains("Signature"))
+            float delta = ImGui.GetIO().MouseDelta.X;
+            if (delta != 0)
             {
-                object sig = f.GetValue(archetype)!;
-                if (sig == null) continue;
-                var sigFields = sig.GetType().GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-                foreach (var sf in sigFields)
-                {
-                    if (sf.FieldType.IsArray && sf.FieldType.Name.Contains("ComponentType"))
-                        return (ComponentType[])sf.GetValue(sig)!;
-                }
+                labelChanged = onLabelDrag(delta);
             }
         }
 
-        // Fallback: Dump properties too if we still fail
-        Logger.Debug($"[DebugUI] Failed to find component types on {at.Name}. Properties found: {allProps.Length}");
-        foreach (var p in allProps) Logger.Debug($"  Prop: {p.Name} ({p.PropertyType.Name})");
+        ImGui.NextColumn();
+        ImGui.SetNextItemWidth(-1);
+        bool controlChanged = drawControl();
 
-        return Array.Empty<ComponentType>();
+        ImGui.Columns(1);
+        return controlChanged || labelChanged;
     }
 
-    private static Vector3 QuaternionToEuler(Quaternion q)
+    private void DuplicateActor(Actor source)
     {
-        float sinr = 2 * (q.W * q.X + q.Y * q.Z);
-        float cosr = 1 - 2 * (q.X * q.X + q.Y * q.Y);
-        float x = MathF.Atan2(sinr, cosr);
+        if (!source.IsValid) return;
 
-        float sinp = 2 * (q.W * q.Y - q.Z * q.X);
-        float y = MathF.Abs(sinp) >= 1
-            ? MathF.CopySign(MathF.PI / 2, sinp) : MathF.Asin(sinp);
+        // 1. Create a new actor with standard components
+        Actor newActor = scene.CreateActor();
+        newActor.Name = source.Name + " (Copy)";
 
-        float siny = 2 * (q.W * q.Z + q.X * q.Y);
-        float cosy = 1 - 2 * (q.Y * q.Y + q.Z * q.Z);
-        float z = MathF.Atan2(siny, cosy);
+        // 2. Copy all other components from source
+        object?[] components = world.GetAllComponents(source.entity)!;
+        foreach (var comp in components)
+        {
+            if (comp == null) continue;
+            var type = comp.GetType();
 
-        return new Vector3(x, y, z) * (180f / MathF.PI);
+            // Skip core components already handled by CreateActor or unique to an entity
+            if (newActor.IsCoreComponent(type))
+                continue;
+
+            // Add the component (assuming world.Add has a boxed/generic overload available)
+            world.Add(newActor.entity, comp);
+        }
+
+        // 3. Sync Transform
+        newActor.LocalPosition = source.LocalPosition;
+        newActor.LocalRotation = source.LocalRotation;
+        newActor.LocalScale = source.LocalScale;
+
+        // 4. Handle Parent
+        if (source.Parent != Actor.Null)
+        {
+            newActor.SetParent(source.Parent.entity, false);
+        }
+
+        _selectedEntity = newActor.entity;
     }
-
-    private static Quaternion EulerToQuaternion(Vector3 deg)
-    {
-        Vector3 r = deg * (MathF.PI / 180f);
-        return Quaternion.CreateFromYawPitchRoll(r.Y, r.X, r.Z);
-    }
-
 
 }

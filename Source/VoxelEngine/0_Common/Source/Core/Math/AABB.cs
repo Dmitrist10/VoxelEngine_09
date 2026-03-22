@@ -13,6 +13,18 @@ public record struct AABB
         Max = max;
     }
 
+    public static AABB CalculateAABB(Vector3[] positions)
+    {
+        if (positions.Length == 0) return new AABB(Vector3.Zero, Vector3.Zero);
+        Vector3 min = positions[0];
+        Vector3 max = positions[0];
+        foreach (var p in positions)
+        {
+            min = Vector3.Min(min, p);
+            max = Vector3.Max(max, p);
+        }
+        return new AABB(min, max);
+    }
 
     /// <summary>
     /// Checks if this AABB intersects with another AABB.
@@ -73,29 +85,49 @@ public record struct AABB
         return true;
     }
 
-    // Add this to your AABB struct
+    /// <summary>
+    /// Checks if a ray intersects with this AABB.
+    /// Returns true if hit, and outputs the distance t along the ray.
+    /// </summary>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public bool IsOutsidePlane(in Plane plane)
+    public bool Intersects(in Ray ray, out float t)
     {
-        Vector3 center = (Max + Min) * 0.5f;
-        Vector3 extents = (Max - Min) * 0.5f;
+        t = 0;
+        float t1 = (Min.X - ray.Origin.X) / ray.Direction.X;
+        float t2 = (Max.X - ray.Origin.X) / ray.Direction.X;
+        float t3 = (Min.Y - ray.Origin.Y) / ray.Direction.Y;
+        float t4 = (Max.Y - ray.Origin.Y) / ray.Direction.Y;
+        float t5 = (Min.Z - ray.Origin.Z) / ray.Direction.Z;
+        float t6 = (Max.Z - ray.Origin.Z) / ray.Direction.Z;
 
-        // Projected radius of the AABB onto the plane normal
-        float r = extents.X * MathF.Abs(plane.Normal.X) +
-                  extents.Y * MathF.Abs(plane.Normal.Y) +
-                  extents.Z * MathF.Abs(plane.Normal.Z);
+        float tmin = MathF.Max(MathF.Max(MathF.Min(t1, t2), MathF.Min(t3, t4)), MathF.Min(t5, t6));
+        float tmax = MathF.Min(MathF.Min(MathF.Max(t1, t2), MathF.Max(t3, t4)), MathF.Max(t5, t6));
 
-        float distance = Vector3.Dot(plane.Normal, center) + plane.D;
+        if (tmax < 0 || tmin > tmax) return false;
 
-        return distance < -r;
+        t = tmin;
+        return true;
     }
 
+}
 
+public record struct Ray
+{
+    public Vector3 Origin;
+    public Vector3 Direction;
+
+    public Ray(Vector3 origin, Vector3 direction)
+    {
+        Origin = origin;
+        Direction = direction;
+    }
+
+    public Vector3 GetPoint(float distance) => Origin + Direction * distance;
 }
 
 public readonly struct Frustum
 {
-    // Store 6 planes as an array or ReadOnlySpan
+    // Store 6 planes as an array or ReadOnlySpanj
     public readonly Plane[] Planes;
 
     public Frustum(Matrix4x4 vp)

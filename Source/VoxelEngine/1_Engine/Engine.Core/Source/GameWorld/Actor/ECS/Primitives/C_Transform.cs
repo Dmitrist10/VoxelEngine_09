@@ -3,6 +3,7 @@ using System.Numerics;
 // namespace Engine.VoxelEngine.Core.Architecture.Universe.Actors;
 namespace VoxelEngine.Core;
 
+[NoInspect]
 public record struct C_Transform : IComponent
 {
     // Local transform (relative to parent)
@@ -11,12 +12,12 @@ public record struct C_Transform : IComponent
     public Vector3 LocalScale;
 
     // World transform 
-    public Vector3 WorldPosition;
-    public Quaternion WorldRotation;
-    public Vector3 WorldScale;
+    [NoInspect] public Vector3 WorldPosition;
+    [NoInspect] public Quaternion WorldRotation;
+    [NoInspect] public Vector3 WorldScale;
 
     // Flags
-    public bool IsDirty;
+    [NoInspect] public bool IsDirty;
 
     public C_Transform()
     {
@@ -39,6 +40,7 @@ public record struct C_Transform : IComponent
     public void MarkDirty() => IsDirty = true;
 }
 
+[NoInspect]
 public record struct C_WorldTransformMatrix : IComponent
 {
     public Matrix4x4 WorldMatrix;
