@@ -1,0 +1,35 @@
+================================================================================
+Engine Log - Started at 2026-03-22 16:56:17
+================================================================================
+
+[16:56:17.593] [INFO ] VoxelEngine initialized from Desktop platform with Standalone RuntimeContext.
+[16:56:17.604] [INFO ] [EntryPoint:39] Creating engine
+[16:56:17.605] [INFO ] [EntryPoint:50] Starting engine...
+[16:56:17.607] [DEBUG] [Engine:54] [Engine] Initializing Core Services & Drivers...
+[16:56:17.610] [INFO ] [DesktopWindow:26] Creating window: 'VoxelEngine' (1280x720)
+[16:56:17.686] [INFO ] [DesktopWindow:40] Desktop window created successfully.
+[16:56:17.687] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindowSurface
+[16:56:17.938] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputDriver
+[16:56:18.040] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputContext
+[16:56:18.042] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputContext
+[16:56:18.043] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDriver
+[16:56:18.048] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[16:56:18.049] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsFactory
+[16:56:18.066] [EXTRAINFO] [ServiceContainer:24] Registering service: IGuiRenderer
+[16:56:18.067] [EXTRAINFO] [ServiceContainer:24] Registering service: IFileManager
+[16:56:18.068] [EXTRAINFO] [ServiceContainer:24] Registering service: IAssetsManager
+[16:56:18.070] [EXTRAINFO] [ServiceContainer:24] Registering service: UniverseManager
+[16:56:18.070] [EXTRAINFO] [ServiceContainer:24] Registering service: LightingService
+[16:56:18.073] [EXTRAINFO] [ServiceContainer:24] Registering service: IRenderer
+[16:56:18.086] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[16:56:18.087] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[16:56:18.088] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[16:56:18.104] [DEBUG] [GameSetup:15] Game setup is running for scene: (Scene: scene_01, ID: 0)
+[16:56:31.785] [INFO ] [DesktopWindow:53] Desktop window closing...
+[16:56:31.785] [EXTRAINFO] [Heartbeat:115] Heartbeat Stopped
+[16:56:31.786] [INFO ] [EntryPoint:69] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-22 16:56:31
+================================================================================

@@ -10,6 +10,7 @@ using VoxelEngine.Assets;
 using VoxelEngine.Graphics;
 using VoxelEngine.Rendering;
 using VoxelEngine.Input;
+using VoxelEngine.Diagnostics;
 
 namespace TestingGame;
 
@@ -378,75 +379,39 @@ public class EP_DebugUI : EntityProcessor, IRenderable, IUpdatable
         }
     }
 
-    // ──────────── Generic [Inspect] reflection drawer ────────────
-
-    /// <summary>
-    /// Draws editable controls for every public field on a component struct that
-    /// (a) has at least one [Inspect] attribute, OR
-    /// (b) is a struct in an unknown assembly — editing all public fields.
-    ///
-    /// We use Arch's World.Get/Set via reflection so we never need to know the
-    /// concrete type at compile time.
-    /// </summary>
     private void DrawInspectableComponents(Actor actor)
     {
-        // Use the entity's archetype to enumerate component types safely
-        var archetype = world.GetArchetype(actor.entity);
+        object[] components = world.GetAllComponents(actor.entity)!;
 
-        // GetType() info for all public generic methods on World
-        var worldType = world.GetType();
-        var getMethod = worldType.GetMethod("Get", 1, new[] { typeof(Entity) });
-        var setMethod = worldType.GetMethod("Set", 2, new[] { typeof(Entity), Type.MakeGenericMethodParameter(0) });
-
-        // Walk every component type in this archetype via its internal Types array
-        // The Arch library exposes component types through the Archetype object
-        // We use reflection on Archetype to avoid coupling to a specific property name
-        object archetypeBox = archetype;
-        ComponentType[] componentTypes = GetArchetypeComponentTypes(archetypeBox);
-
-        foreach (var compType in componentTypes)
+        foreach (var component in components)
         {
-            Type t = compType.Type;
-
-            // Skip the ones we already handle explicitly
-            if (t == typeof(C_Transform) || t == typeof(C_WorldTransformMatrix) ||
-                t == typeof(C_Camera) || t == typeof(C_Actor) ||
-                t == typeof(C_ID) || t == typeof(C_Hierarchy) ||
-                t == typeof(C_Mesh))
+            var type = component.GetType();
+            if (type == typeof(C_Transform) || type == typeof(C_WorldTransformMatrix) ||
+                        type == typeof(C_Camera) || type == typeof(C_Actor) ||
+                        type == typeof(C_ID) || type == typeof(C_Hierarchy) ||
+                        type == typeof(C_Mesh))
                 continue;
 
-            // Collect fields to show: those marked [Inspect], or all public fields if none tagged
-            var allPublicFields = t.GetFields(BindingFlags.Public | BindingFlags.Instance);
-            var taggedFields = Array.FindAll(allPublicFields, f => f.IsDefined(typeof(InspectAttribute), true));
-            var fieldsToShow = taggedFields.Length > 0 ? taggedFields : allPublicFields;
-
-            if (fieldsToShow.Length == 0) continue;
-
-            if (!ImGui.CollapsingHeader(t.Name, ImGuiTreeNodeFlags.DefaultOpen)) continue;
-
-            // Box → edit → write back via Set<T>
-            var getGeneric = getMethod?.MakeGenericMethod(t);
-            var setGeneric = setMethod?.MakeGenericMethod(t);
-            if (getGeneric == null) continue;
-
-            object comp = getGeneric.Invoke(world, new object[] { actor.entity })!;
-            bool changed = false;
-
-            foreach (var field in fieldsToShow)
+            if (ImGui.CollapsingHeader(component.GetType().Name))
             {
-                var attr = field.GetCustomAttribute<InspectAttribute>();
-                string label = attr?.Label ?? field.Name;
 
-                if (DrawField(label, field, ref comp))
-                    changed = true;
+                DrawComponentFields(type, component, actor.entity);
             }
+        }
 
-            if (changed && setGeneric != null)
-                setGeneric.Invoke(world, new object[] { actor.entity, comp });
+        void DrawComponentFields(Type type, object component, Entity entity)
+        {
+
+            foreach (var field in type.GetFields())
+            {
+                var val = field.GetValue(component);
+
+                DrawField(field.Name, field, ref component);
+                world.Set(entity, component); // Push changes back to ECS
+            }
         }
     }
 
-    /// <summary>Draws a single field control. Returns true if value was changed.</summary>
     private bool DrawField(string label, FieldInfo field, ref object comp)
     {
         Type ft = field.FieldType;
@@ -500,6 +465,19 @@ public class EP_DebugUI : EntityProcessor, IRenderable, IUpdatable
             if (!ImGui.InputText(label, ref v, 256)) return false;
             field.SetValue(comp, v); return true;
         }
+        if (ft.IsEnum)
+        {
+            // string v = (string?)field.GetValue(comp) ?? "";
+            // if (!ImGui.InputText(label, ref v, 256)) return false;
+            // field.SetValue(comp, v); return true;
+
+            int camTypeIdx = (int)field.GetValue(comp)!;
+            string[] typeNames = Enum.GetNames(ft);
+            if (ImGui.Combo(label, ref camTypeIdx, typeNames, typeNames.Length))
+            {
+                field.SetValue(comp, (CameraProjectionType)camTypeIdx);
+            }
+        }
 
         // Unrecognised type: show a read-only label
         ImGui.TextDisabled($"{label}: <{ft.Name}>");
@@ -511,19 +489,45 @@ public class EP_DebugUI : EntityProcessor, IRenderable, IUpdatable
     /// <summary>Pulls ComponentType[] from an Arch Archetype without knowing the exact property name.</summary>
     private static ComponentType[] GetArchetypeComponentTypes(object archetype)
     {
+        if (archetype == null) return Array.Empty<ComponentType>();
         Type at = archetype.GetType();
 
-        // Try common property names Arch uses across versions
-        foreach (string candidate in new[] { "Types", "ComponentTypes", "Components" })
+        // 1. Scan fields
+        var allFields = at.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+        foreach (var f in allFields)
         {
-            var prop = at.GetProperty(candidate, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-            if (prop != null && prop.PropertyType == typeof(ComponentType[]))
-                return (ComponentType[])prop.GetValue(archetype)!;
-
-            var field = at.GetField(candidate, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-            if (field != null && field.FieldType == typeof(ComponentType[]))
-                return (ComponentType[])field.GetValue(archetype)!;
+            if (f.FieldType.IsArray && f.FieldType.Name.Contains("ComponentType"))
+                return (ComponentType[])f.GetValue(archetype)!;
         }
+
+        // 2. Scan properties
+        var allProps = at.GetProperties(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+        foreach (var p in allProps)
+        {
+            if (p.PropertyType.IsArray && p.PropertyType.Name.Contains("ComponentType"))
+                return (ComponentType[])p.GetValue(archetype)!;
+        }
+
+        // 3. Deeper search into common fields like Signature
+        foreach (var f in allFields)
+        {
+            if (f.Name.Contains("Signature"))
+            {
+                object sig = f.GetValue(archetype)!;
+                if (sig == null) continue;
+                var sigFields = sig.GetType().GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+                foreach (var sf in sigFields)
+                {
+                    if (sf.FieldType.IsArray && sf.FieldType.Name.Contains("ComponentType"))
+                        return (ComponentType[])sf.GetValue(sig)!;
+                }
+            }
+        }
+
+        // Fallback: Dump properties too if we still fail
+        Logger.Debug($"[DebugUI] Failed to find component types on {at.Name}. Properties found: {allProps.Length}");
+        foreach (var p in allProps) Logger.Debug($"  Prop: {p.Name} ({p.PropertyType.Name})");
+
         return Array.Empty<ComponentType>();
     }
 

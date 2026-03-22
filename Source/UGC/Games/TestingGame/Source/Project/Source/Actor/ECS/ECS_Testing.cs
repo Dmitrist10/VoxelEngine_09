@@ -1,14 +1,14 @@
 using Arch.Core;
 using VoxelEngine.Common;
 using VoxelEngine.Core;
-using VoxelEngine.Diagnostics;
 
 namespace TestingGame;
 
-internal record struct C_Testing
+public record struct C_Testing
 {
     [Inspect] public float Speed;
     [Inspect] public bool IsActive;
+    [Inspect] public CameraProjectionType ProjectionType;
     [Inspect("Jump Height")] public float JumpHeight;
 }
 
