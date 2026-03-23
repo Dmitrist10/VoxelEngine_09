@@ -1,5 +1,6 @@
 using System.Numerics;
 using Silk.NET.Input;
+using System.Collections.Generic;
 
 using silkInputContext = Silk.NET.Input.IInputContext;
 using silksNativeKeyboard = Silk.NET.Input.IKeyboard;
@@ -129,6 +130,10 @@ public sealed class InputContext : IInputContext
         {
             if (m is SilkMouse sm) sm.Update();
         }
+        foreach (var k in _keyboards)
+        {
+            if (k is SilkKeyboard sk) sk.Update();
+        }
     }
 
 }
@@ -173,15 +178,43 @@ public sealed class AxisMapping : IAxisMapping
 internal class SilkKeyboard : IKeyboard
 {
     private readonly silksNativeKeyboard _keyboard;
-    public SilkKeyboard(silksNativeKeyboard keyboard) => _keyboard = keyboard;
+    private readonly HashSet<Silk.NET.Input.Key> _currentlyDown = new();
+    private readonly HashSet<Silk.NET.Input.Key> _previouslyDown = new();
+    private readonly HashSet<Silk.NET.Input.Key> _pendingDown = new();
+    private readonly HashSet<Silk.NET.Input.Key> _pendingUp = new();
+
+    public SilkKeyboard(silksNativeKeyboard keyboard)
+    {
+        _keyboard = keyboard;
+        _keyboard.KeyDown += (k, key, i) => _pendingDown.Add(key);
+        _keyboard.KeyUp += (k, key, i) => _pendingUp.Add(key);
+        
+        // Initialize state
+        foreach (var key in _keyboard.SupportedKeys ?? Array.Empty<Silk.NET.Input.Key>())
+        {
+            if (_keyboard.IsKeyPressed(key)) _currentlyDown.Add(key);
+        }
+    }
+
+    public void Update()
+    {
+        _previouslyDown.Clear();
+        foreach (var key in _currentlyDown) _previouslyDown.Add(key);
+
+        foreach (var key in _pendingDown) _currentlyDown.Add(key);
+        foreach (var key in _pendingUp) _currentlyDown.Remove(key);
+        _pendingDown.Clear();
+        _pendingUp.Clear();
+    }
 
     public string Name => _keyboard.Name;
     public bool IsConnected => _keyboard.IsConnected;
     public InputDeviceType Type => InputDeviceType.Keyboard;
 
+    // IsKeyDown uses the native silk polling method for maximum reliability
     public bool IsKeyDown(Key key) => _keyboard.IsKeyPressed((Silk.NET.Input.Key)key);
-    public bool IsKeyPressed(Key key) => _keyboard.IsKeyPressed((Silk.NET.Input.Key)key);
-    public bool IsKeyReleased(Key key) => !_keyboard.IsKeyPressed((Silk.NET.Input.Key)key);
+    public bool IsKeyPressed(Key key) => IsKeyDown(key) && !_previouslyDown.Contains((Silk.NET.Input.Key)key);
+    public bool IsKeyReleased(Key key) => !IsKeyDown(key) && _previouslyDown.Contains((Silk.NET.Input.Key)key);
 }
 
 internal class SilkMouse : IMouse
@@ -189,11 +222,24 @@ internal class SilkMouse : IMouse
     private readonly silkMouse _mouse;
     private Vector2 _lastPosition;
     private Vector2 _delta;
+    private readonly HashSet<Silk.NET.Input.MouseButton> _currentlyDown = new();
+    private readonly HashSet<Silk.NET.Input.MouseButton> _previouslyDown = new();
+    private readonly HashSet<Silk.NET.Input.MouseButton> _pendingDown = new();
+    private readonly HashSet<Silk.NET.Input.MouseButton> _pendingUp = new();
 
     public SilkMouse(silkMouse mouse)
     {
         _mouse = mouse;
         _lastPosition = mouse.Position;
+        _mouse.MouseDown += (m, btn) => _pendingDown.Add(btn);
+        _mouse.MouseUp += (m, btn) => _pendingUp.Add(btn);
+        
+        // Initialize state
+        for (int i = 0; i < 12; i++)
+        {
+            var btn = (Silk.NET.Input.MouseButton)i;
+            if (_mouse.IsButtonPressed(btn)) _currentlyDown.Add(btn);
+        }
     }
 
     public void Update()
@@ -201,6 +247,14 @@ internal class SilkMouse : IMouse
         Vector2 currentPosition = _mouse.Position;
         _delta = currentPosition - _lastPosition;
         _lastPosition = currentPosition;
+
+        _previouslyDown.Clear();
+        foreach (var btn in _currentlyDown) _previouslyDown.Add(btn);
+
+        foreach (var btn in _pendingDown) _currentlyDown.Add(btn);
+        foreach (var btn in _pendingUp) _currentlyDown.Remove(btn);
+        _pendingDown.Clear();
+        _pendingUp.Clear();
     }
 
     public string Name => _mouse.Name;
@@ -211,9 +265,9 @@ internal class SilkMouse : IMouse
     public Vector2 Delta => _delta;
     public Vector2 ScrollDelta => new Vector2(_mouse.ScrollWheels.FirstOrDefault().X, _mouse.ScrollWheels.FirstOrDefault().Y);
 
-    public bool IsButtonPressed(MouseButton button) => _mouse.IsButtonPressed((Silk.NET.Input.MouseButton)button);
+    public bool IsButtonPressed(MouseButton button) => IsButtonDown(button) && !_previouslyDown.Contains((Silk.NET.Input.MouseButton)button);
     public bool IsButtonDown(MouseButton button) => _mouse.IsButtonPressed((Silk.NET.Input.MouseButton)button);
-    public bool IsButtonReleased(MouseButton button) => !_mouse.IsButtonPressed((Silk.NET.Input.MouseButton)button);
+    public bool IsButtonReleased(MouseButton button) => !IsButtonDown(button) && _previouslyDown.Contains((Silk.NET.Input.MouseButton)button);
 }
 
 internal class SilkGamepad : VoxelEngine.Input.IGamepad

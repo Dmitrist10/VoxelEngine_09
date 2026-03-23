@@ -43,7 +43,8 @@ internal class B_CameraController : Behavior, IUpdatable
         input = EngineContext.Get<IInputContext>();
         input.RegisterAxisMapping("Horizontal", Key.A, Key.D);
         input.RegisterAxisMapping("Vertical", Key.W, Key.S);
-        input.RegisterAxisMapping("UP_DOWN", Key.Space, Key.ControlLeft);
+        // input.RegisterAxisMapping("UP_DOWN", Key.Space, Key.ControlLeft);
+        input.RegisterAxisMapping("UP_DOWN", Key.Q, Key.E);
     }
 
     public override void OnAwake()
@@ -112,7 +113,7 @@ internal class B_CameraController : Behavior, IUpdatable
     // ── Right-Click Mouse Look ─────────────────────────────────────
     private void HandleMouseLook()
     {
-        if (!input.IsMouseButtonPressed(MouseButton.Right))
+        if (!input.IsMouseButtonDown(MouseButton.Right))
             return;
 
         _yaw -= input.MouseDelta.X * sensitivity;
@@ -129,7 +130,7 @@ internal class B_CameraController : Behavior, IUpdatable
     {
         // Only adjust speed when right-click is NOT held (zoom uses scroll when looking)
         // Adjust speed with Ctrl + Scroll
-        if (!input.IsMouseButtonPressed(movementBtn))
+        if (!input.IsMouseButtonDown(movementBtn))
             return;
 
         float scrollY = input.MouseScrollDelta.Y;
@@ -143,7 +144,7 @@ internal class B_CameraController : Behavior, IUpdatable
     // ── Zoom: FOV (Perspective) or OrthoSize (Orthographic) ────────
     private void HandleZoom()
     {
-        if (input.IsMouseButtonPressed(movementBtn))
+        if (input.IsMouseButtonDown(movementBtn))
             return;
 
         float scrollY = input.MouseScrollDelta.Y;
@@ -179,8 +180,8 @@ internal class B_CameraController : Behavior, IUpdatable
         if (!Self.HasComponent<C_Camera>())
             return;
 
-        bool switchedToPerspective = input.IsKeyDown(Key.F1);
-        bool switchedToOrtho = input.IsKeyDown(Key.F2);
+        bool switchedToPerspective = input.IsKeyPressed(Key.F1);
+        bool switchedToOrtho = input.IsKeyPressed(Key.F2);
 
         if (!switchedToPerspective && !switchedToOrtho)
             return;

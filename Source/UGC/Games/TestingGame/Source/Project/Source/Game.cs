@@ -3,6 +3,7 @@ using VoxelEngine.Core.UGC;
 using VoxelEngine.Diagnostics;
 using VoxelEngine.IO;
 using VoxelEngine.IO.FilesManagement;
+using VoxelEngine.Packages.Voxel;
 
 namespace TestingGame;
 
@@ -15,6 +16,9 @@ public sealed class Game : GameBase
         IFileManager fileManager = EngineContext.Get<IFileManager>();
         // fileManager.Mount("assets", new DiskFilesProvider(ASSETS_PATH, true, true));
         fileManager.Mount("resources", new DiskFilesProvider(ASSETS_PATH, true, true));
+
+        VoxelPackage voxelPackage = new();
+        voxelPackage.Initialize();
     }
 
     public override void StartSession()
@@ -24,5 +28,5 @@ public sealed class Game : GameBase
 
         GameSetUp.SetUp(scene);
     }
-
+     
 }

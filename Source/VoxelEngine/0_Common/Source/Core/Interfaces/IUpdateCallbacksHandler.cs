@@ -9,7 +9,6 @@ public interface IUpdateCallbacksHandler : IDisposable
     void OnTick();
     void OnRender();
     void OnSecond();
-
 }
 
 public readonly record struct Event_OnSecond();

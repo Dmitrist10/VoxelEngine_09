@@ -478,6 +478,18 @@
           }
         }
       },
+      "Packages.Voxel/0.0.1-alpha": {
+        "dependencies": {
+          "Common.Core": "0.0.1-alpha",
+          "Engine.Core": "0.0.1-alpha"
+        },
+        "runtime": {
+          "Packages.Voxel.dll": {
+            "assemblyVersion": "0.0.1.0",
+            "fileVersion": "0.0.1.0"
+          }
+        }
+      },
       "Platforms.Desktop/0.0.1-alpha": {
         "dependencies": {
           "Common.Core": "0.0.1-alpha",
@@ -508,7 +520,8 @@
       "TestingGame/0.0.1-alpha": {
         "dependencies": {
           "Common.Core": "0.0.1-alpha",
-          "Engine.Core": "0.0.1-alpha"
+          "Engine.Core": "0.0.1-alpha",
+          "Packages.Voxel": "0.0.1-alpha"
         },
         "runtime": {
           "TestingGame.dll": {
@@ -796,6 +809,11 @@
       "sha512": ""
     },
     "Engine.Core/0.0.1-alpha": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Packages.Voxel/0.0.1-alpha": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
