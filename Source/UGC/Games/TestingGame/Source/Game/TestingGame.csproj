@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>TestingGame</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Source\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\VoxelEngine\Engine\Engine.Core\Engine.Core.csproj" />
+    <ProjectReference Include="..\..\..\..\..\VoxelEngine\Packages\Packages.Voxel.Core\Packages.Voxel.Core.csproj" />
+    <ProjectReference Include="..\..\..\..\..\VoxelEngine\Platforms\Platforms.Desktop\Platforms.Desktop.csproj" />
+  </ItemGroup>
+
+</Project>

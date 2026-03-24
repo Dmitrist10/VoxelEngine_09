@@ -1,9 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <RootNamespace>VoxelEngine.Platforms.Mobile.Android</RootNamespace>
-  </PropertyGroup>
-
-  <ItemGroup>
-  </ItemGroup>
-</Project>

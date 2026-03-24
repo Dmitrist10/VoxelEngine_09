@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Common.Core</id>
+    <version>0.0.1-alpha</version>
+    <authors>Dmitrist10</authors>
+    <description>Package Description</description>
+    <copyright>Copyright ©  2026</copyright>
+    <repository type="git" commit="90bce0a8f8b206bcfef7b4b9ef6aa117e7a23937" />
+    <dependencies>
+      <group targetFramework="net11.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\bin\Common.Core\net11.0\Common.Core.dll" target="lib\net11.0\Common.Core.dll" />
+  </files>
+</package>

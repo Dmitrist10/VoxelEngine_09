@@ -1,0 +1,14 @@
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\bin\VoxelEngine.Physics.bepu\net11.0\VoxelEngine.Physics.bepu.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\bin\VoxelEngine.Physics.bepu\net11.0\VoxelEngine.Physics.bepu.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\bin\VoxelEngine.Physics.bepu\net11.0\VoxelEngine.Physics.bepu.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Drivers\VoxelEngine.Physics.bepu\obj\Debug\net11.0\VoxelEngine.Physics.bepu.csproj.AssemblyReference.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Drivers\VoxelEngine.Physics.bepu\obj\Debug\net11.0\VoxelEngine.Physics.bepu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Drivers\VoxelEngine.Physics.bepu\obj\Debug\net11.0\VoxelEngine.Physics.bepu.AssemblyInfoInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Drivers\VoxelEngine.Physics.bepu\obj\Debug\net11.0\VoxelEngine.Physics.bepu.AssemblyInfo.cs
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Drivers\VoxelEngine.Physics.bepu\obj\Debug\net11.0\VoxelEngine.Physics.bepu.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Drivers\VoxelEngine.Physics.bepu\obj\Debug\net11.0\VoxelEngine.Physics.bepu.sourcelink.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Drivers\VoxelEngine.Physics.bepu\obj\Debug\net11.0\VoxelEng.A413B0E8.Up2Date
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Drivers\VoxelEngine.Physics.bepu\obj\Debug\net11.0\VoxelEngine.Physics.bepu.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Drivers\VoxelEngine.Physics.bepu\obj\Debug\net11.0\refint\VoxelEngine.Physics.bepu.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Drivers\VoxelEngine.Physics.bepu\obj\Debug\net11.0\VoxelEngine.Physics.bepu.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Drivers\VoxelEngine.Physics.bepu\obj\Debug\net11.0\ref\VoxelEngine.Physics.bepu.dll

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Engine.Core</id>
+    <version>0.0.1-alpha</version>
+    <authors>Dmitrist10</authors>
+    <description>Package Description</description>
+    <copyright>Copyright ©  2026</copyright>
+    <repository type="git" commit="90bce0a8f8b206bcfef7b4b9ef6aa117e7a23937" />
+    <dependencies>
+      <group targetFramework="net11.0">
+        <dependency id="Common.Core" version="0.0.1-alpha" exclude="Build,Analyzers" />
+        <dependency id="Arch" version="2.1.0-custom" exclude="Build,Analyzers" />
+        <dependency id="AssimpNet" version="4.1.0" exclude="Build,Analyzers" />
+        <dependency id="ImGui.NET" version="1.91.6.1" exclude="Build,Analyzers" />
+        <dependency id="NAudio" version="2.2.1" exclude="Build,Analyzers" />
+        <dependency id="NVorbis" version="0.10.5" exclude="Build,Analyzers" />
+        <dependency id="StbImageSharp" version="2.30.15" exclude="Build,Analyzers" />
+        <dependency id="ini-parser" version="2.5.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\bin\Engine.Core\net11.0\Engine.Core.dll" target="lib\net11.0\Engine.Core.dll" />
+  </files>
+</package>

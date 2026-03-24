@@ -1,0 +1,31 @@
+================================================================================
+Engine Log - Started at 2026-03-24 20:15:29
+================================================================================
+
+[20:15:29.968] [INFO ] VoxelEngine initializing
+[20:15:29.979] [INFO ] [EntryPoint:29] Creating engine...
+[20:15:29.979] [INFO ] [EntryPoint:36] Starting engine...
+[20:15:29.982] [INFO ] [Engine:49] PreInit
+[20:15:29.999] [INFO ] [DesktopWindow:27] Creating window: 'VoxelEngine' (1280x720)
+[20:15:30.072] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindow
+[20:15:30.073] [INFO ] [DesktopWindow:42] Desktop window created successfully.
+[20:15:30.310] [INFO ] [Engine:80] OnWindowLoad Started...
+[20:15:30.405] [LINE ] ================================================================================
+[20:15:30.406] [LINE ] ================================================================================
+[20:15:30.406] [ERROR] [EntryPoint:45] Exception: Requested service 'IWindowSurface' is not registered.
+[20:15:30.449] [ERROR] [EntryPoint:51] Exception Stack Trace:    at VoxelEngine.Core.EngineContext.Get[T]() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\EngineContext.cs:line 29
+   at VoxelEngine.Graphics.OpenGL.GL_GraphicsDriver..ctor() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Drivers\VoxelEngine.Graphics.OpenGL\GL_GraphicsDriver.cs:line 13
+   at VoxelEngine.Platforms.Desktop.DesktopProfile.CreateEngineSubSystems() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Platforms\Platforms.Desktop\Source\DesktopProfile.cs:line 33
+   at VoxelEngine.Core.Runtime.Engine.<PreInit>b__9_0() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\Engine.cs:line 82
+   at VoxelEngine.Platforms.Desktop.DesktopWindow.Load() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Platforms\Platforms.Desktop\Source\DesktopWindow.cs:line 49
+   at Silk.NET.Windowing.Internals.ViewImplementationBase.Initialize()
+   at VoxelEngine.Platforms.Desktop.DesktopWindow.Initialize() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Platforms\Platforms.Desktop\Source\DesktopWindow.cs:line 68
+   at VoxelEngine.Core.Runtime.Engine.PreInit() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\Engine.cs:line 85
+   at VoxelEngine.Core.Runtime.Engine.Start() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\Engine.cs:line 39
+   at VoxelEngine.Core.Runtime.EntryPoint.GuardedMain(String[] args, IGame game, IEngineProfile profile) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\EntryPoint.cs:line 37
+[20:15:30.450] [INFO ] [EntryPoint:55] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-24 20:15:30
+================================================================================

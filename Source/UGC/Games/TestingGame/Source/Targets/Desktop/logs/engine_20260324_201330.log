@@ -1,0 +1,34 @@
+================================================================================
+Engine Log - Started at 2026-03-24 20:13:30
+================================================================================
+
+[20:13:30.408] [INFO ] VoxelEngine initializing
+[20:13:30.420] [INFO ] [EntryPoint:29] Creating engine...
+[20:13:30.421] [INFO ] [EntryPoint:36] Starting engine...
+[20:13:30.424] [INFO ] [Engine:49] PreInit
+[20:13:30.445] [INFO ] [DesktopWindow:27] Creating window: 'VoxelEngine' (1280x720)
+[20:13:30.524] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindow
+[20:13:30.535] [INFO ] [DesktopWindow:42] Desktop window created successfully.
+[20:13:30.823] [INFO ] [Engine:80] OnWindowLoad Started...
+[20:13:31.032] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[20:13:31.234] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputContext
+[20:13:31.236] [EXTRAINFO] [ServiceContainer:24] Registering service: IFileManager
+[20:13:31.238] [EXTRAINFO] [ServiceContainer:24] Registering service: IAssetsManager
+[20:13:31.241] [EXTRAINFO] [ServiceContainer:24] Registering service: Multiverse
+[20:13:31.243] [EXTRAINFO] [ServiceContainer:24] Registering service: LightingService
+[20:13:31.253] [LINE ] ================================================================================
+[20:13:31.256] [LINE ] ================================================================================
+[20:13:31.257] [ERROR] [EntryPoint:45] Exception: Object reference not set to an instance of an object.
+[20:13:31.299] [ERROR] [EntryPoint:51] Exception Stack Trace:    at VoxelEngine.Rendering.OpaquePass.Initialize() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Modules\Rendering\Implementation\OpaquePass.cs:line 38
+   at VoxelEngine.Rendering.RenderGraph.Initialize() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Modules\Rendering\Implementation\RenderGraph.cs:line 33
+   at VoxelEngine.Rendering.RenderGraph..ctor(Renderer renderer) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Modules\Rendering\Implementation\RenderGraph.cs:line 26
+   at VoxelEngine.Rendering.Renderer..ctor(IWindowSurface windowSurface, IGraphicsDevice graphicsDevice) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Modules\Rendering\Implementation\Renderer.cs:line 24
+   at VoxelEngine.Core.Runtime.Engine.PreInit() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\Engine.cs:line 120
+   at VoxelEngine.Core.Runtime.Engine.Start() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\Engine.cs:line 39
+   at VoxelEngine.Core.Runtime.EntryPoint.GuardedMain(String[] args, IGame game, IEngineProfile profile) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\EntryPoint.cs:line 37
+[20:13:31.299] [INFO ] [EntryPoint:55] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-24 20:13:31
+================================================================================

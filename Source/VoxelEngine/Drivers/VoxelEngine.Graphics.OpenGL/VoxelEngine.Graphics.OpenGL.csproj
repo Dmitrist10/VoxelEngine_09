@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>VoxelEngine.Graphics.OpenGL</RootNamespace>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Silk.NET" />
+    <PackageReference Include="Silk.NET.OpenGL.Extensions.ImGui" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\Engine\Engine.Core\Engine.Core.csproj" />
+  </ItemGroup>
+
+</Project>

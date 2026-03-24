@@ -12,7 +12,8 @@
           "Engine.Core": "0.0.1-alpha",
           "Silk.NET": "2.23.0",
           "VoxelEngine.Graphics.OpenGL": "0.0.1-alpha",
-          "VoxelEngine.Input": "0.0.1-alpha"
+          "VoxelEngine.Input": "0.0.1-alpha",
+          "VoxelEngine.Physics.bepu": "0.0.1-alpha"
         },
         "runtime": {
           "Platforms.Desktop.dll": {}
@@ -75,6 +76,25 @@
           }
         }
       },
+      "BepuPhysics/2.4.0": {
+        "dependencies": {
+          "BepuUtilities": "2.4.0"
+        },
+        "runtime": {
+          "lib/net6.0/BepuPhysics.dll": {
+            "assemblyVersion": "2.4.0.0",
+            "fileVersion": "2.4.0.0"
+          }
+        }
+      },
+      "BepuUtilities/2.4.0": {
+        "runtime": {
+          "lib/net6.0/BepuUtilities.dll": {
+            "assemblyVersion": "2.4.0.0",
+            "fileVersion": "2.4.0.0"
+          }
+        }
+      },
       "Collections.Pooled/2.0.0-preview.27": {
         "runtime": {
           "lib/netcoreapp3.0/Collections.Pooled.dll": {
@@ -123,6 +143,14 @@
             "rid": "win-x86",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "ini-parser/2.5.2": {
+        "runtime": {
+          "lib/net20/INIFileParser.dll": {
+            "assemblyVersion": "2.5.2.0",
+            "fileVersion": "2.5.2.0"
           }
         }
       },
@@ -469,7 +497,8 @@
           "ImGui.NET": "1.91.6.1",
           "NAudio": "2.2.1",
           "NVorbis": "0.10.5",
-          "StbImageSharp": "2.30.15"
+          "StbImageSharp": "2.30.15",
+          "ini-parser": "2.5.2"
         },
         "runtime": {
           "Engine.Core.dll": {
@@ -504,6 +533,20 @@
             "fileVersion": "0.0.1.0"
           }
         }
+      },
+      "VoxelEngine.Physics.bepu/0.0.1-alpha": {
+        "dependencies": {
+          "BepuPhysics": "2.4.0",
+          "BepuUtilities": "2.4.0",
+          "Common.Core": "0.0.1-alpha",
+          "Engine.Core": "0.0.1-alpha"
+        },
+        "runtime": {
+          "VoxelEngine.Physics.bepu.dll": {
+            "assemblyVersion": "0.0.1.0",
+            "fileVersion": "0.0.1.0"
+          }
+        }
       }
     }
   },
@@ -534,6 +577,20 @@
       "path": "assimpnet/4.1.0",
       "hashPath": "assimpnet.4.1.0.nupkg.sha512"
     },
+    "BepuPhysics/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ck/BJgSQrBqYrj0T9jGljDdHNILBP5kTPTylc7N/hCzR1XJJc7p6ORzwtjTfjgoYkkdajvLHxEQv6BRC8kaysQ==",
+      "path": "bepuphysics/2.4.0",
+      "hashPath": "bepuphysics.2.4.0.nupkg.sha512"
+    },
+    "BepuUtilities/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KNMxkzKLHAvV7jRtErxs3rPv71fHToqo/WN96HlT6iomWuwL97tohEbt0B1WA8A6sO5t6PP+qF08d4T9A8k2uA==",
+      "path": "bepuutilities/2.4.0",
+      "hashPath": "bepuutilities.2.4.0.nupkg.sha512"
+    },
     "Collections.Pooled/2.0.0-preview.27": {
       "type": "package",
       "serviceable": true,
@@ -554,6 +611,13 @@
       "sha512": "sha512-Ph3j8pO6UM28PPJWP+5LEJSPVPkd8ivpVS8tRyY9b0IHn1HDIrMZ2o/FdiXaYW6YhNxMHmbevw6Jcfs+IDKi0Q==",
       "path": "imgui.net/1.91.6.1",
       "hashPath": "imgui.net.1.91.6.1.nupkg.sha512"
+    },
+    "ini-parser/2.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hp3gKmC/14+6eKLgv7Jd1Z7OV86lO+tNfOXr/stQbwmRhdQuXVSvrRAuAe7G5+lwhkov0XkqZ8/bn1PYWMx6eg==",
+      "path": "ini-parser/2.5.2",
+      "hashPath": "ini-parser.2.5.2.nupkg.sha512"
     },
     "Microsoft.DotNet.PlatformAbstractions/3.1.6": {
       "type": "package",
@@ -767,6 +831,11 @@
       "sha512": ""
     },
     "VoxelEngine.Input/0.0.1-alpha": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VoxelEngine.Physics.bepu/0.0.1-alpha": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

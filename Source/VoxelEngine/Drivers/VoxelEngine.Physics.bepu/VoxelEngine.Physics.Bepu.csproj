@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>VoxelEngine.Physics.Bepu</RootNamespace>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="BepuPhysics" />
+    <PackageReference Include="BepuUtilities" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\Engine\Engine.Core\Engine.Core.csproj" />
+  </ItemGroup>
+
+</Project>

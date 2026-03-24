@@ -6,6 +6,7 @@
     <PackageVersion Include="BepuPhysics" Version="2.4.0" />
     <PackageVersion Include="BepuUtilities" Version="2.4.0" />
     <PackageVersion Include="ImGui.NET" Version="1.91.6.1" />
+    <PackageVersion Include="ini-parser" Version="2.5.2" />
     <PackageVersion Include="NAudio" Version="2.2.1" />
     <PackageVersion Include="NVorbis" Version="0.10.5" />
     <PackageVersion Include="Silk.NET" Version="2.23.0" />

@@ -1,0 +1,40 @@
+================================================================================
+Engine Log - Started at 2026-03-24 20:14:16
+================================================================================
+
+[20:14:16.997] [INFO ] VoxelEngine initializing
+[20:14:17.019] [INFO ] [EntryPoint:29] Creating engine...
+[20:14:17.022] [INFO ] [EntryPoint:36] Starting engine...
+[20:14:17.027] [INFO ] [Engine:49] PreInit
+[20:14:17.064] [INFO ] [DesktopWindow:27] Creating window: 'VoxelEngine' (1280x720)
+[20:14:17.189] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindow
+[20:14:17.190] [INFO ] [DesktopWindow:42] Desktop window created successfully.
+[20:14:17.702] [INFO ] [Engine:80] OnWindowLoad Started...
+[20:14:17.711] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[20:14:17.895] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputContext
+[20:14:17.897] [EXTRAINFO] [ServiceContainer:24] Registering service: IFileManager
+[20:14:17.899] [EXTRAINFO] [ServiceContainer:24] Registering service: IAssetsManager
+[20:14:17.901] [EXTRAINFO] [ServiceContainer:24] Registering service: Multiverse
+[20:14:17.902] [EXTRAINFO] [ServiceContainer:24] Registering service: LightingService
+[20:14:17.904] [EXTRAINFO] [ServiceContainer:24] Registering service: IRenderer
+[20:14:17.909] [INFO ] [Engine:128] Init
+[20:14:17.934] [INFO ] [Engine:146] Run
+[20:14:17.935] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[20:14:17.935] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[20:14:17.936] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[20:14:17.951] [LINE ] ================================================================================
+[20:14:17.951] [LINE ] ================================================================================
+[20:14:17.952] [ERROR] [EntryPoint:45] Exception: Object reference not set to an instance of an object.
+[20:14:18.023] [ERROR] [EntryPoint:51] Exception Stack Trace:    at VoxelEngine.Graphics.OpenGL.GL_GraphicsDevice.Present() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Drivers\VoxelEngine.Graphics.OpenGL\Source\GL_GraphicsDevice.cs:line 58
+   at VoxelEngine.Rendering.Renderer.RenderFrame() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Modules\Rendering\Implementation\Renderer.cs:line 39
+   at VoxelEngine.Core.Runtime.EngineLoop.OnRender() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\EngineLoop.cs:line 41
+   at VoxelEngine.Core.Runtime.Heartbeat.Start(IUpdateCallbacksHandler callbacks, IWindowSurface window) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\Heartbeat.cs:line 108
+   at VoxelEngine.Core.Runtime.Engine.Run() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\Engine.cs:line 152
+   at VoxelEngine.Core.Runtime.Engine.Start() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\Engine.cs:line 42
+   at VoxelEngine.Core.Runtime.EntryPoint.GuardedMain(String[] args, IGame game, IEngineProfile profile) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\EntryPoint.cs:line 37
+[20:14:18.060] [INFO ] [EntryPoint:55] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-24 20:14:18
+================================================================================

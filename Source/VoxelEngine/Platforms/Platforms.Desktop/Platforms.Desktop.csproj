@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>VoxelEngine.Platforms.Desktop</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Silk.NET" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Drivers\VoxelEngine.Graphics.OpenGL\VoxelEngine.Graphics.OpenGL.csproj" />
+    <ProjectReference Include="..\..\Drivers\VoxelEngine.Input\VoxelEngine.Input.csproj" />
+    <ProjectReference Include="..\..\Drivers\VoxelEngine.Physics.bepu\VoxelEngine.Physics.bepu.csproj" />
+    <ProjectReference Include="..\..\Engine\Engine.Core\Engine.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Config\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  
+
+</Project>

@@ -59,19 +59,26 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Company>DarkSecretStudios</Company>
+    <!-- <Company>DarkSecretStudios</Company> -->
+    <Company>VoxelGames</Company>
+    <Authors>Dmitrist10</Authors>
     <Product>VoxelEngine</Product>
-    <Copyright>Copyright © 2026</Copyright>
+    <Copyright>Copyright ©  2026</Copyright>
+    <!-- <License>MIT</License> -->
     <Version>0.0.1-alpha</Version>
+    
+    <!-- NuGet Packing Configuration -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)LocalPackages</PackageOutputPath>
+    <RepositoryType>git</RepositoryType>
+    <!-- <RepositoryUrl>https://github.com/your-repo</RepositoryUrl> -->
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="$(MSBuildThisFileDirectory)Source/VoxelEngine/0_Common/Common.Core.csproj" 
+    <!-- Auto reference Common for all engines projects -->
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Source/Common/Common.Core.csproj" 
                       Condition="'$(MSBuildProjectName)' != 'Common.Core'" />
     
-    <!-- Core.IO depends on Core.Common, so Core.Common must NOT reference Core.IO to avoid a loop -->
-    
-    <!-- Automatically give Engine.* projects access to Engine.Core.Common -->
     <!-- <ProjectReference Include="$(MSBuildThisFileDirectory)Source/VoxelEngine/Engine/Core/Engine.Core.Common/Engine.Core.Common.csproj" 
                       Condition="$(MSBuildProjectName.StartsWith('Engine.')) And '$(MSBuildProjectName)' != 'Engine.Core.Common'" /> -->
   </ItemGroup> 

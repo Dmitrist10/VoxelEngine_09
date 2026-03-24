@@ -1,0 +1,25 @@
+================================================================================
+Engine Log - Started at 2026-03-24 20:12:48
+================================================================================
+
+[20:12:48.993] [INFO ] VoxelEngine initializing
+[20:12:49.004] [INFO ] [EntryPoint:29] Creating engine...
+[20:12:49.005] [INFO ] [EntryPoint:36] Starting engine...
+[20:12:49.008] [INFO ] [Engine:48] PreInit
+[20:12:49.312] [INFO ] [DesktopWindow:27] Creating window: 'VoxelEngine' (1280x720)
+[20:12:49.489] [LINE ] ================================================================================
+[20:12:49.490] [LINE ] ================================================================================
+[20:12:49.490] [ERROR] [EntryPoint:45] Exception: EngineContext has not been initialized. Ensure the Engine is started.
+[20:12:49.519] [ERROR] [EntryPoint:51] Exception Stack Trace:    at VoxelEngine.Core.EngineContext.get_Instance() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\EngineContext.cs:line 10
+   at VoxelEngine.Core.EngineContext.Register[T](T service) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\EngineContext.cs:line 33
+   at VoxelEngine.Platforms.Desktop.DesktopWindow..ctor(String title, Int32 width, Int32 height) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Platforms\Platforms.Desktop\Source\DesktopWindow.cs:line 36
+   at VoxelEngine.Platforms.Desktop.DesktopProfile.CreateWindowSurface(String title, Int32 width, Int32 height) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Platforms\Platforms.Desktop\Source\DesktopProfile.cs:line 42
+   at VoxelEngine.Core.Runtime.Engine.PreInit() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\Engine.cs:line 69
+   at VoxelEngine.Core.Runtime.Engine.Start() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\Engine.cs:line 38
+   at VoxelEngine.Core.Runtime.EntryPoint.GuardedMain(String[] args, IGame game, IEngineProfile profile) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\EntryPoint.cs:line 37
+[20:12:49.519] [INFO ] [EntryPoint:55] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-24 20:12:49
+================================================================================

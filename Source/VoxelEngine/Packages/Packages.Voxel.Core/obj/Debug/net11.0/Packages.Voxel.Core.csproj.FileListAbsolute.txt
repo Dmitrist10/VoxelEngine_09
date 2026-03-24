@@ -1,0 +1,14 @@
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\bin\Packages.Voxel.Core\net11.0\Packages.Voxel.Core.deps.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\bin\Packages.Voxel.Core\net11.0\Packages.Voxel.Core.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\bin\Packages.Voxel.Core\net11.0\Packages.Voxel.Core.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Packages\Packages.Voxel.Core\obj\Debug\net11.0\Packages.Voxel.Core.csproj.AssemblyReference.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Packages\Packages.Voxel.Core\obj\Debug\net11.0\Packages.Voxel.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Packages\Packages.Voxel.Core\obj\Debug\net11.0\Packages.Voxel.Core.AssemblyInfoInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Packages\Packages.Voxel.Core\obj\Debug\net11.0\Packages.Voxel.Core.AssemblyInfo.cs
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Packages\Packages.Voxel.Core\obj\Debug\net11.0\Packages.Voxel.Core.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Packages\Packages.Voxel.Core\obj\Debug\net11.0\Packages.Voxel.Core.sourcelink.json
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Packages\Packages.Voxel.Core\obj\Debug\net11.0\Packages.454A69C5.Up2Date
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Packages\Packages.Voxel.Core\obj\Debug\net11.0\Packages.Voxel.Core.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Packages\Packages.Voxel.Core\obj\Debug\net11.0\refint\Packages.Voxel.Core.dll
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Packages\Packages.Voxel.Core\obj\Debug\net11.0\Packages.Voxel.Core.pdb
+C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Packages\Packages.Voxel.Core\obj\Debug\net11.0\ref\Packages.Voxel.Core.dll

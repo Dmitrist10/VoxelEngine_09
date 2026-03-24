@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>VoxelEngine.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Arch" />
+    <PackageReference Include="ini-parser" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="AssimpNet" />
+    <PackageReference Include="NAudio" />
+    <PackageReference Include="NVorbis" />
+    <PackageReference Include="StbImageSharp" />
+    <PackageReference Include="ImGui.NET" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <!-- <InternalsVisibleTO -->
+  </ItemGroup>
+
+</Project>

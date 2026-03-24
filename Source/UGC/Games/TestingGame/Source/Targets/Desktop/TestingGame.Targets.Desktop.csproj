@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TestingGame.Targets.Desktop</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\VoxelEngine\Engine\Engine.Core\Engine.Core.csproj" />
+    <ProjectReference Include="..\..\Game\TestingGame.csproj" />
+  </ItemGroup>
+
+</Project>
