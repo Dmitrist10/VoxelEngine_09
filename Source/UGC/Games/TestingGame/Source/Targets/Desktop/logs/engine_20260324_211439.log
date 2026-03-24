@@ -1,0 +1,155 @@
+================================================================================
+Engine Log - Started at 2026-03-24 21:14:39
+================================================================================
+
+[21:14:39.933] [INFO ] VoxelEngine initializing
+[21:14:39.944] [INFO ] [Engine:57] Creating engine...
+[21:14:39.945] [INFO ] [Engine:64] Starting engine...
+[21:14:39.948] [INFO ] [Engine:118] PreInit
+[21:14:39.967] [INFO ] [DesktopWindow:27] Creating window: 'VoxelEngine' (1280x720)
+[21:14:40.039] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindow
+[21:14:40.049] [INFO ] [DesktopWindow:42] Desktop window created successfully.
+[21:14:40.049] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindowSurface
+[21:14:40.286] [INFO ] [Engine:150] OnWindowLoad Started...
+[21:14:40.298] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[21:14:40.298] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsFactory
+[21:14:40.298] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[21:14:40.423] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputContext
+[21:14:40.424] [EXTRAINFO] [ServiceContainer:24] Registering service: IFileManager
+[21:14:40.425] [EXTRAINFO] [ServiceContainer:24] Registering service: IAssetsManager
+[21:14:40.426] [EXTRAINFO] [ServiceContainer:24] Registering service: Multiverse
+[21:14:40.427] [EXTRAINFO] [ServiceContainer:24] Registering service: LightingService
+[21:14:40.428] [EXTRAINFO] [ServiceContainer:24] Registering service: IRenderer
+[21:14:40.431] [INFO ] [Engine:198] Init
+[21:14:40.445] [INFO ] [Engine:216] Run
+[21:14:40.446] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[21:14:40.447] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[21:14:40.447] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[21:14:40.460] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.470] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.473] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.627] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.632] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.638] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.644] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.650] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.656] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.662] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.668] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.674] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.681] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.687] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.693] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.699] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.705] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.711] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.717] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.723] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.729] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.735] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.741] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.747] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.753] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.759] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.765] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.771] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.777] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.784] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.790] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.796] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.802] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.808] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.814] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.820] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.826] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.832] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.838] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.844] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.850] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.856] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.862] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.868] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.874] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.881] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.887] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.893] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.899] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.905] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.911] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.917] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.923] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.929] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.935] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.941] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.947] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.953] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.959] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.965] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.971] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.977] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.984] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.990] [DEBUG] [Renderer:30] RenderFrame
+[21:14:40.996] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.002] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.008] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.014] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.020] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.026] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.032] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.038] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.044] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.050] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.056] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.062] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.068] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.074] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.081] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.087] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.093] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.099] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.105] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.111] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.117] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.123] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.129] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.135] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.141] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.147] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.153] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.159] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.165] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.172] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.178] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.184] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.190] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.196] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.202] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.208] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.214] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.220] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.226] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.232] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.238] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.244] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.250] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.256] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.262] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.268] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.274] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.281] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.290] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.296] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.311] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.326] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.341] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.356] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.372] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.387] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.403] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.418] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.432] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.448] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.463] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.478] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.494] [DEBUG] [Renderer:30] RenderFrame
+[21:14:41.509] [DEBUG] [Renderer:30] RenderFrame

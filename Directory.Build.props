@@ -69,7 +69,7 @@
     
     <!-- NuGet Packing Configuration -->
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageOutputPath>$(MSBuildThisFileDirectory)LocalPackages</PackageOutputPath>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)LocalPackages/Engine</PackageOutputPath>
     <RepositoryType>git</RepositoryType>
     <!-- <RepositoryUrl>https://github.com/your-repo</RepositoryUrl> -->
   </PropertyGroup>

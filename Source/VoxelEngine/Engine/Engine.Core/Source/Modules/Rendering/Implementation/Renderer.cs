@@ -1,6 +1,7 @@
 using VoxelEngine.Graphics;
 using VoxelEngine.Windowing;
 using VoxelEngine.Core;
+using VoxelEngine.Diagnostics;
 
 namespace VoxelEngine.Rendering;
 

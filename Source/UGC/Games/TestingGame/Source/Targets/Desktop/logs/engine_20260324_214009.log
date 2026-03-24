@@ -1,0 +1,21 @@
+================================================================================
+Engine Log - Started at 2026-03-24 21:40:09
+================================================================================
+
+[21:40:09.900] [INFO ] VoxelEngine initializing
+[21:40:09.910] [INFO ] [Engine:59] Creating engine...
+[21:40:09.912] [LINE ] ================================================================================
+[21:40:09.912] [LINE ] ================================================================================
+[21:40:09.913] [ERROR] [Engine:75] Exception: EngineContext has not been initialized. Ensure the Engine is started.
+[21:40:09.931] [ERROR] [Engine:81] Exception Stack Trace:    at VoxelEngine.Core.EngineContext.get_Instance() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\EngineContext.cs:line 10
+   at VoxelEngine.Core.EngineContext.Subscribe[T](Action`1 action) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\EngineContext.cs:line 41
+   at VoxelEngine.Core.Runtime.EnginePackagesManager..ctor() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\EnginePackagesManager.cs:line 9
+   at VoxelEngine.Core.Runtime.Engine..ctor(IEngineProfile profile, IGame game) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Engine.cs:line 35
+   at VoxelEngine.Core.Runtime.EngineBuilder.Build() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Runtime\EngineBuilder.cs:line 25
+   at VoxelEngine.Core.Runtime.Engine.GuardedMain(String[] args, IGame game, IEngineProfile profile) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Engine.cs:line 61
+[21:40:09.932] [INFO ] [Engine:85] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-24 21:40:09
+================================================================================

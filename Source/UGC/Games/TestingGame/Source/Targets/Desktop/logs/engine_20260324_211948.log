@@ -1,0 +1,93 @@
+================================================================================
+Engine Log - Started at 2026-03-24 21:19:48
+================================================================================
+
+[21:19:48.063] [INFO ] VoxelEngine initializing
+[21:19:48.074] [INFO ] [Engine:57] Creating engine...
+[21:19:48.074] [INFO ] [Engine:64] Starting engine...
+[21:19:48.077] [INFO ] [Engine:118] PreInit
+[21:19:48.095] [INFO ] [DesktopWindow:27] Creating window: 'VoxelEngine' (1280x720)
+[21:19:48.167] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindow
+[21:19:48.168] [INFO ] [DesktopWindow:42] Desktop window created successfully.
+[21:19:48.169] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindowSurface
+[21:19:48.407] [INFO ] [Engine:150] OnWindowLoad Started...
+[21:19:48.528] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[21:19:48.528] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsFactory
+[21:19:48.528] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[21:19:48.640] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputContext
+[21:19:48.640] [EXTRAINFO] [ServiceContainer:24] Registering service: IFileManager
+[21:19:48.641] [EXTRAINFO] [ServiceContainer:24] Registering service: IAssetsManager
+[21:19:48.642] [EXTRAINFO] [ServiceContainer:24] Registering service: Multiverse
+[21:19:48.643] [EXTRAINFO] [ServiceContainer:24] Registering service: LightingService
+[21:19:48.644] [EXTRAINFO] [ServiceContainer:24] Registering service: IRenderer
+[21:19:48.647] [INFO ] [Engine:198] Init
+[21:19:48.658] [INFO ] [Engine:216] Run
+[21:19:48.659] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[21:19:48.659] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[21:19:48.660] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[21:19:48.666] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.672] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.675] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.772] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.777] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.783] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.789] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.795] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.801] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.807] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.813] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.819] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.825] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.832] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.838] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.844] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.850] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.856] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.862] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.868] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.874] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.880] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.886] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.892] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.898] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.904] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.910] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.916] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.922] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.929] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.935] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.941] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.947] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.953] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.959] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.965] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.971] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.977] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.983] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.989] [DEBUG] [Multiverse:35] AAAA
+[21:19:48.995] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.001] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.007] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.013] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.019] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.026] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.032] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.038] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.044] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.050] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.056] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.062] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.068] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.083] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.094] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.094] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.106] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.121] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.137] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.152] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.168] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.183] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.198] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.214] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.230] [DEBUG] [Multiverse:35] AAAA
+[21:19:49.245] [DEBUG] [Multiverse:35] AAAA

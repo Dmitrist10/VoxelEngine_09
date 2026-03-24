@@ -1,0 +1,36 @@
+================================================================================
+Engine Log - Started at 2026-03-24 21:14:08
+================================================================================
+
+[21:14:08.738] [INFO ] VoxelEngine initializing
+[21:14:08.750] [INFO ] [Engine:57] Creating engine...
+[21:14:08.751] [INFO ] [Engine:64] Starting engine...
+[21:14:08.753] [INFO ] [Engine:118] PreInit
+[21:14:08.771] [INFO ] [DesktopWindow:27] Creating window: 'VoxelEngine' (1280x720)
+[21:14:08.847] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindow
+[21:14:08.852] [INFO ] [DesktopWindow:42] Desktop window created successfully.
+[21:14:08.852] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindowSurface
+[21:14:09.119] [INFO ] [Engine:150] OnWindowLoad Started...
+[21:14:09.129] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[21:14:09.129] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsFactory
+[21:14:09.129] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[21:14:09.258] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputContext
+[21:14:09.259] [EXTRAINFO] [ServiceContainer:24] Registering service: IFileManager
+[21:14:09.260] [EXTRAINFO] [ServiceContainer:24] Registering service: IAssetsManager
+[21:14:09.261] [EXTRAINFO] [ServiceContainer:24] Registering service: Multiverse
+[21:14:09.262] [EXTRAINFO] [ServiceContainer:24] Registering service: LightingService
+[21:14:09.263] [EXTRAINFO] [ServiceContainer:24] Registering service: IRenderer
+[21:14:09.266] [INFO ] [Engine:198] Init
+[21:14:09.280] [INFO ] [Engine:216] Run
+[21:14:09.281] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[21:14:09.282] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[21:14:09.283] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[21:14:12.232] [INFO ] [DesktopWindow:55] Desktop window closing...
+[21:14:12.233] [EXTRAINFO] [Heartbeat:115] Heartbeat Stopped
+[21:14:12.233] [INFO ] [Engine:227] ShutDown
+[21:14:12.245] [INFO ] [Engine:83] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-24 21:14:12
+================================================================================

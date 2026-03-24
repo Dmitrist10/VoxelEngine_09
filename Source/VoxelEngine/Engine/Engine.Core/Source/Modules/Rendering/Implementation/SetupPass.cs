@@ -6,7 +6,6 @@ namespace VoxelEngine.Rendering;
 public sealed class SetupPass : IRenderPass
 {
 
-
     public void Execute(in RenderContext renderContext)
     {
         var commands = renderContext.CreateGraphicsCommandsList();
@@ -17,12 +16,10 @@ public sealed class SetupPass : IRenderPass
         // commands.SetScissor(0, 0, renderContext.windowSurface.Width, renderContext.windowSurface.Height);
 
         commands.ClearColor(Color.Gray);
-        Logger.Debug("SetupPass");
 
         commands.End();
 
         renderContext.Submit(commands);
     }
-
 
 }

@@ -1,0 +1,27 @@
+================================================================================
+Engine Log - Started at 2026-03-24 21:41:46
+================================================================================
+
+[21:41:46.825] [INFO ] VoxelEngine initializing
+[21:41:46.835] [INFO ] [Engine:66] Creating engine...
+[21:41:46.838] [INFO ] [Engine:73] Starting engine...
+[21:41:46.841] [INFO ] [Engine:127] PreInit
+[21:41:46.859] [INFO ] [DesktopWindow:27] Creating window: 'VoxelEngine' (1280x720)
+[21:41:46.938] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindow
+[21:41:46.939] [INFO ] [DesktopWindow:42] Desktop window created successfully.
+[21:41:46.939] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindowSurface
+[21:41:47.177] [INFO ] [Engine:153] OnWindowLoad Started...
+[21:41:47.186] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[21:41:47.187] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsFactory
+[21:41:47.187] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[21:41:47.305] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputContext
+[21:41:47.306] [EXTRAINFO] [ServiceContainer:24] Registering service: IFileManager
+[21:41:47.307] [EXTRAINFO] [ServiceContainer:24] Registering service: IAssetsManager
+[21:41:47.309] [EXTRAINFO] [ServiceContainer:24] Registering service: Multiverse
+[21:41:47.309] [EXTRAINFO] [ServiceContainer:24] Registering service: LightingService
+[21:41:47.310] [EXTRAINFO] [ServiceContainer:24] Registering service: IRenderer
+[21:41:47.315] [INFO ] [Engine:201] Init
+[21:41:47.328] [INFO ] [Engine:223] Run
+[21:41:47.329] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[21:41:47.723] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[21:41:47.724] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat

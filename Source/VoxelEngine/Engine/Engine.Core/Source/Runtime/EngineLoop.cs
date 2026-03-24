@@ -34,16 +34,16 @@ public sealed class EngineLoop : IUpdateCallbacksHandler
         _engineSubSystemsManager.OnFixedUpdate();
         _multiverse.OnFixedUpdate();
     }
+    public void OnTick()
+    {
+        _engineSubSystemsManager.OnTick();
+        _multiverse.OnTick();
+    }
     public void OnRender()
     {
         _engineSubSystemsManager.OnRender();
         _multiverse.OnRender();
         _renderer.RenderFrame();
-    }
-    public void OnTick()
-    {
-        _engineSubSystemsManager.OnTick();
-        _multiverse.OnTick();
     }
 
     public void OnSecond()

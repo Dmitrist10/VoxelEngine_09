@@ -21,7 +21,7 @@ internal sealed class RenderGraph
         _renderer = renderer;
 
         _RenderPasses.Add(new SetupPass());
-        // _RenderPasses.Add(new OpaquePass());
+        _RenderPasses.Add(new OpaquePass());
 
         Initialize();
     }

@@ -6,7 +6,7 @@
     <authors>Dmitrist10</authors>
     <description>Package Description</description>
     <copyright>Copyright ©  2026</copyright>
-    <repository type="git" commit="90bce0a8f8b206bcfef7b4b9ef6aa117e7a23937" />
+    <repository type="git" commit="529226d055edf5f704a4080d1097072ec65cc53b" />
     <dependencies>
       <group targetFramework="net11.0" />
     </dependencies>

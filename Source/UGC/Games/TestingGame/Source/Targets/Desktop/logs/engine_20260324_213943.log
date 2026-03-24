@@ -1,0 +1,35 @@
+================================================================================
+Engine Log - Started at 2026-03-24 21:39:44
+================================================================================
+
+[21:39:44.004] [INFO ] VoxelEngine initializing
+[21:39:44.015] [INFO ] [Engine:58] Creating engine...
+[21:39:44.016] [INFO ] [Engine:65] Starting engine...
+[21:39:44.020] [INFO ] [Engine:119] PreInit
+[21:39:44.038] [INFO ] [DesktopWindow:27] Creating window: 'VoxelEngine' (1280x720)
+[21:39:44.123] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindow
+[21:39:44.127] [INFO ] [DesktopWindow:42] Desktop window created successfully.
+[21:39:44.127] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindowSurface
+[21:39:44.436] [INFO ] [Engine:151] OnWindowLoad Started...
+[21:39:44.444] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[21:39:44.444] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsFactory
+[21:39:44.444] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[21:39:44.551] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputContext
+[21:39:44.552] [EXTRAINFO] [ServiceContainer:24] Registering service: IFileManager
+[21:39:44.552] [EXTRAINFO] [ServiceContainer:24] Registering service: IAssetsManager
+[21:39:44.554] [EXTRAINFO] [ServiceContainer:24] Registering service: Multiverse
+[21:39:44.554] [EXTRAINFO] [ServiceContainer:24] Registering service: LightingService
+[21:39:44.555] [EXTRAINFO] [ServiceContainer:24] Registering service: IRenderer
+[21:39:44.559] [INFO ] [Engine:199] Init
+[21:39:44.634] [LINE ] ================================================================================
+[21:39:44.635] [LINE ] ================================================================================
+[21:39:44.635] [ERROR] [Engine:74] Exception: Object reference not set to an instance of an object.
+[21:39:44.652] [ERROR] [Engine:80] Exception Stack Trace:    at VoxelEngine.Core.Runtime.Engine.Init() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Engine.cs:line 212
+   at VoxelEngine.Core.Runtime.Engine.Start() in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Engine.cs:line 110
+   at VoxelEngine.Core.Runtime.Engine.GuardedMain(String[] args, IGame game, IEngineProfile profile) in C:\Users\Dmitrist10\Desktop\VoxelGames\Source\Project_11\Source\VoxelEngine\Engine\Engine.Core\Source\Engine.cs:line 66
+[21:39:44.652] [INFO ] [Engine:84] Application Completed.
+Exiting with code 0
+
+================================================================================
+Engine Log - Ended at 2026-03-24 21:39:44
+================================================================================

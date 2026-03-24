@@ -1,0 +1,63 @@
+================================================================================
+Engine Log - Started at 2026-03-24 21:21:28
+================================================================================
+
+[21:21:28.301] [INFO ] VoxelEngine initializing
+[21:21:28.311] [INFO ] [Engine:57] Creating engine...
+[21:21:28.312] [INFO ] [Engine:64] Starting engine...
+[21:21:28.315] [INFO ] [Engine:118] PreInit
+[21:21:28.332] [INFO ] [DesktopWindow:27] Creating window: 'VoxelEngine' (1280x720)
+[21:21:28.407] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindow
+[21:21:28.408] [INFO ] [DesktopWindow:42] Desktop window created successfully.
+[21:21:28.409] [EXTRAINFO] [ServiceContainer:24] Registering service: IWindowSurface
+[21:21:28.692] [INFO ] [Engine:150] OnWindowLoad Started...
+[21:21:28.704] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[21:21:28.705] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsFactory
+[21:21:28.705] [EXTRAINFO] [ServiceContainer:24] Registering service: IGraphicsDevice
+[21:21:28.833] [EXTRAINFO] [ServiceContainer:24] Registering service: IInputContext
+[21:21:28.834] [EXTRAINFO] [ServiceContainer:24] Registering service: IFileManager
+[21:21:28.835] [EXTRAINFO] [ServiceContainer:24] Registering service: IAssetsManager
+[21:21:28.836] [EXTRAINFO] [ServiceContainer:24] Registering service: Multiverse
+[21:21:28.837] [EXTRAINFO] [ServiceContainer:24] Registering service: LightingService
+[21:21:28.838] [EXTRAINFO] [ServiceContainer:24] Registering service: IRenderer
+[21:21:28.841] [INFO ] [Engine:198] Init
+[21:21:28.853] [INFO ] [Engine:216] Run
+[21:21:28.853] [INFO ] [Heartbeat:57] Frame rate limit disabled (unlimited FPS)
+[21:21:28.854] [INFO ] [Heartbeat:57] Frame rate limit set to 165,0 FPS
+[21:21:28.854] [EXTRAINFO] [Heartbeat:64] Starting Heartbeat
+[21:21:28.863] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:28.868] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:28.882] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:28.968] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:28.974] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:28.980] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:28.990] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:28.997] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.008] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.009] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.024] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.038] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.054] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.069] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.084] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.100] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.114] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.130] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.145] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.160] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.175] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.191] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.206] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.222] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.237] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.252] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.267] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.282] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.297] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.313] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.328] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.344] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.359] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.375] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.391] [DEBUG] [Multiverse:35] rehgrghAAAAedrg
+[21:21:29.407] [DEBUG] [Multiverse:35] rehgrghAAAAedrg

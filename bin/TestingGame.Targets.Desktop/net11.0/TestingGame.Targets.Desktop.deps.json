@@ -9,6 +9,7 @@
       "TestingGame.Targets.Desktop/0.0.1-alpha": {
         "dependencies": {
           "Common.Core": "0.0.1-alpha",
+          "Engine.Core": "0.0.1-alpha",
           "TestingGame": "0.0.1-alpha"
         },
         "runtime": {
